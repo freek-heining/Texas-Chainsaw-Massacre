@@ -17,7 +17,7 @@ function ButtonScenarioClick()
     end
 end
 
--- Cycle scenario cards. Table is used to set filenames in XML
+-- Cycle scenario cards. scenarioTable is used to set filenames in XML
 function ButtonScenarioLeftClick()
     currentScenarioIndex = currentScenarioIndex - 1
     UI.setAttribute("buttonScenarioRight", "interactable", "true" )
@@ -48,11 +48,15 @@ function ButtonScenarioRightClick()
     end
 end
 
+-- Toggle for achievements
 local achievements = false
-
 function ToggleAchievementsChanged(player, isOn)
     UI.setAttribute("toggleAchievements", "isOn", isOn)
-    if isOn then
-        achievements = true
-    end
+    achievements = isOn
+    log("Achievements" .. " is " .. isOn)
+end
+
+-- Start game
+function ButtonStartGameClick()
+    log("Start!")
 end

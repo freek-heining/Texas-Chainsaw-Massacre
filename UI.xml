@@ -2,18 +2,27 @@
     <TableLayout 
     id="setupWindow"
     class="menu" 
-    cellBackgroundColor="red" 
-    rowBackgroundColor="#f0eddc"
+    cellBackgroundColor="clear" 
+    rowBackgroundColor="#942d28"
     width="1000"
-    height="800"
+    height="900"
     columnWidths="75 850 75"
     useGlobalCellPadding="false"
+    raycastTarget="1"
     />
     <Button 
     ignoreLayout="true"
+    fontStyle="Bold"
+    textColor="#bf161c"
+    color="#f0eddc"
+    fontSize="20"
     />
     <Toggle 
     ignoreLayout="true"
+    fontStyle="Bold"
+    textColor="White" 
+    fontSize="18"
+    padding="0 10 0 0"
     />
 </Defaults>
 
@@ -29,7 +38,7 @@
     <Row preferredHeight="70">
         <Cell />
         <Cell><Toggle id="toggleAchievements" tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!" 
-        width="200" textColor="White" onValueChanged="ToggleAchievementsChanged">Use Achievement Cards</Toggle></Cell>
+        width="250" onValueChanged="ToggleAchievementsChanged">Use Achievement Cards</Toggle></Cell>
         <Cell />
     </Row>
     <!-- Row 3 -->
