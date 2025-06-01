@@ -1,0 +1,62 @@
+{
+  "GUID": "382ea5",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 24.0,
+    "posY": 2.61578822,
+    "posZ": -22.0,
+    "rotX": -4.0636575E-08,
+    "rotY": 180.020935,
+    "rotZ": 0.000167385355,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Scenario A Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    1400,
+    1401,
+    1402,
+    1403,
+    1404,
+    1405
+  ],
+  "CustomDeck": {
+    "14": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15092710986018653023/0F9A390D2C4D923AC6123453B3111BA866D30167/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

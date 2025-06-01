@@ -1,0 +1,55 @@
+{
+  "GUID": "2ec962",
+  "Name": "CardCustom",
+  "Transform": {
+    "posX": -35.0000153,
+    "posY": 2.57975221,
+    "posZ": 20.99999,
+    "rotX": 7.055701E-08,
+    "rotY": 0.006753207,
+    "rotZ": -0.000167511229,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86
+  },
+  "Nickname": "Trespasser Player Aid - Front",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 3700,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "37": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16261023631601001729/42FB3562A67B45C367DC4C4755B01CC29F3D200C/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/16261023631601001729/42FB3562A67B45C367DC4C4755B01CC29F3D200C/",
+      "NumWidth": 1,
+      "NumHeight": 1,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "GUID": "6fcdfc",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -25.0,
+    "posY": 2.56611657,
+    "posZ": 21.0,
+    "rotX": 1.78616883E-05,
+    "rotY": 359.9794,
+    "rotZ": -0.000186151417,
+    "scaleX": 2.83,
+    "scaleY": 1.0,
+    "scaleZ": 2.83
+  },
+  "Nickname": "Green Trespasser Board",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16893091186439893978/CD5F0EC10E3290CD0847D27F08765760E827C9FD/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14661531805787904006/B138C43794637652760FCDE3F7DCF06006FE9043/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.150948033,
+      "Stackable": false,
+      "Stretch": true
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": -0.2149184,
+        "y": 0.150948778,
+        "z": 0.6342485
+      },
+      "Rotation": {
+        "x": -1.76671381E-06,
+        "y": 270.0344,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.1629133,
+        "y": 0.150947958,
+        "z": 0.6363226
+      },
+      "Rotation": {
+        "x": 2.04296654E-07,
+        "y": 270.034424,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.5407395,
+        "y": 0.15094763,
+        "z": 0.636097848
+      },
+      "Rotation": {
+        "x": 1.13605545E-07,
+        "y": 270.034424,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.918536663,
+        "y": 0.150948,
+        "z": 0.6358778
+      },
+      "Rotation": {
+        "x": 5.240872E-07,
+        "y": 270.034424,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 1.29639447,
+        "y": 0.1509479,
+        "z": 0.6356577
+      },
+      "Rotation": {
+        "x": 1.48278588E-07,
+        "y": 270.0344,
+        "z": 180.0
+      }
+    }
+  ]
+}

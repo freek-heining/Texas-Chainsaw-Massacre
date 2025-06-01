@@ -1,0 +1,47 @@
+<Defaults>
+    <TableLayout 
+    id="setupWindow"
+    class="menu" 
+    cellBackgroundColor="red" 
+    rowBackgroundColor="#f0eddc"
+    width="1000"
+    height="800"
+    columnWidths="75 850 75"
+    useGlobalCellPadding="false"
+    />
+    <Button 
+    ignoreLayout="true"
+    />
+    <Toggle 
+    ignoreLayout="true"
+    />
+</Defaults>
+
+
+<TableLayout class="menu">
+    <!-- Row 1 -->
+    <Row preferredHeight="200">
+        <Cell />
+        <Cell><Image image="Title_Image" preserveAspect="true"/></Cell>
+        <Cell><Button onClick="ButtonCloseWindowClick" tooltip="Skip setup and just look around" rectAlignment="UpperRight" width="40" height="40">X</Button></Cell>
+    </Row>
+    <!-- Row 2 -->
+    <Row preferredHeight="70">
+        <Cell />
+        <Cell><Toggle id="toggleAchievements" tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!" 
+        width="200" textColor="White" onValueChanged="ToggleAchievementsChanged">Use Achievement Cards</Toggle></Cell>
+        <Cell />
+    </Row>
+    <!-- Row 3 -->
+    <Row>
+        <Cell><Button id="buttonScenarioLeft" tooltip="Previous Scenario" interactable="false" onClick="ButtonScenarioLeftClick" width="75" height="75">&lt;&lt;</Button></Cell>
+        <Cell><Image id="scenario_Carousel" image="Scenario_A_Front" preserveAspect="true" onClick="ButtonScenarioClick" tooltip="Click for backside"/></Cell>
+        <Cell><Button id="buttonScenarioRight" tooltip="Next Scenario" onClick="ButtonScenarioRightClick" width="75" height="75">>></Button></Cell>
+    </Row>
+    <!-- Row 4 -->
+    <Row preferredHeight="70">
+        <Cell />
+        <Cell><Button tooltip="Good luck!" onClick="ButtonStartGameClick" width="170" height="60">Start Game</Button></Cell>
+        <Cell />
+    </Row>    
+</TableLayout>

@@ -1,0 +1,76 @@
+{
+  "GUID": "dc7f3e",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 36.0,
+    "posY": 2.68315148,
+    "posZ": 18.0,
+    "rotX": -2.90333784E-08,
+    "rotY": 180.026474,
+    "rotZ": 180.000168,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86145675
+  },
+  "Nickname": "Desperation Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419
+  ],
+  "CustomDeck": {
+    "4": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10979705831304039363/8DAC98BD75EC0D2EF4673C4CAF174EBBE64921EF/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/17643779272698297758/DD0E3C742D60E3B54800F95EEADD773A3D414B74/",
+      "NumWidth": 6,
+      "NumHeight": 4,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

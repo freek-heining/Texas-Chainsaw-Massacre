@@ -1,0 +1,54 @@
+{
+  "GUID": "ec4505",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 39.2182732,
+    "posY": 2.565651,
+    "posZ": 6.90711,
+    "rotX": 0.001163475,
+    "rotY": 271.712219,
+    "rotZ": -0.00411359174,
+    "scaleX": 3.3,
+    "scaleY": 1.0,
+    "scaleZ": 3.3
+  },
+  "Nickname": "Scenario Card E: Things Happened Here",
+  "Description": "Flip for setup",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/11554232178650614633/868448F9CA493867F9D1CA462F8ED9D8CDFC8519/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9320485995439812669/FC73B92AE731C52D26D16DF039010900B697645A/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

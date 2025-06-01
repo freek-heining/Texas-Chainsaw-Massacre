@@ -1,0 +1,55 @@
+{
+  "GUID": "cca8f7",
+  "Name": "CardCustom",
+  "Transform": {
+    "posX": -29.0001221,
+    "posY": 2.57973313,
+    "posZ": -21.0,
+    "rotX": -4.585529E-08,
+    "rotY": 179.99939,
+    "rotZ": 0.000167471,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86
+  },
+  "Nickname": "Sawyer Player Aid - Front",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 4000,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "40": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13257046407636822477/86948F181C20B4DFCCAE3D11159489A54C7920AB/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/13257046407636822477/86948F181C20B4DFCCAE3D11159489A54C7920AB/",
+      "NumWidth": 1,
+      "NumHeight": 1,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

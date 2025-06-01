@@ -1,0 +1,54 @@
+{
+  "GUID": "b9804c",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 17.0,
+    "posY": 2.565994,
+    "posZ": 23.0,
+    "rotX": 9.75938E-07,
+    "rotY": 0.002925417,
+    "rotZ": -0.000168198356,
+    "scaleX": 0.63,
+    "scaleY": 1.0,
+    "scaleZ": 0.63
+  },
+  "Nickname": "Hidden Token Blue",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/10676446208862683028/CDB986FFC4DB0C4D0498369E23158E3840307AC5/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

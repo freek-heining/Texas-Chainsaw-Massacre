@@ -1,0 +1,62 @@
+{
+  "GUID": "8c348f",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 40.0,
+    "posY": 2.615743,
+    "posZ": -22.0,
+    "rotX": -1.794696E-07,
+    "rotY": 180.044281,
+    "rotZ": 0.000167672886,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Scenario E Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    1800,
+    1801,
+    1802,
+    1803,
+    1804,
+    1805
+  ],
+  "CustomDeck": {
+    "18": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15013841136715604193/D37DE01AF71533F286962D4772A282C053408E39/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

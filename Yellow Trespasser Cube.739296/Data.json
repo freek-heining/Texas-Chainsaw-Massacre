@@ -1,0 +1,52 @@
+{
+  "GUID": "739296",
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -5.29081535,
+    "posY": 3.291996,
+    "posZ": 22.8470936,
+    "rotX": -0.000252082653,
+    "rotY": 270.013824,
+    "rotZ": 179.999969,
+    "scaleX": 1.14999986,
+    "scaleY": 1.14999986,
+    "scaleZ": 1.14999986
+  },
+  "Nickname": "Yellow Trespasser Cube",
+  "Description": "Indicates amount of Actions available",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.97647053,
+    "g": 0.7745098,
+    "b": 0.168626815
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/17129976106761357908/F1D01448294C99438DAD56FF0972D9057B505480/",
+    "DiffuseURL": "",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  }
+}

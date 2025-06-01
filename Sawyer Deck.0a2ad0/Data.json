@@ -1,0 +1,76 @@
+{
+  "GUID": "0a2ad0",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 36.0,
+    "posY": 2.68315148,
+    "posZ": -16.0,
+    "rotX": 6.695143E-08,
+    "rotY": 179.9802,
+    "rotZ": 180.000168,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86
+  },
+  "Nickname": "Sawyer Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    3500,
+    3501,
+    3502,
+    3503,
+    3504,
+    3505,
+    3506,
+    3507,
+    3508,
+    3509,
+    3510,
+    3511,
+    3512,
+    3513,
+    3514,
+    3515,
+    3516,
+    3517,
+    3518,
+    3519
+  ],
+  "CustomDeck": {
+    "35": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13746759534843471655/C101470A6E0A53053D8DC27AEF015ACD9618047E/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/17641837453150798682/F99AFCD02AB758F0606A82DD7FDBBE3A37B4AB5C/",
+      "NumWidth": 6,
+      "NumHeight": 4,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

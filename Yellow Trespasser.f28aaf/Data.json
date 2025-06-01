@@ -1,0 +1,54 @@
+{
+  "GUID": "f28aaf",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": -15.0001707,
+    "posY": 4.231226,
+    "posZ": 18.9994583,
+    "rotX": 359.931854,
+    "rotY": -8.119223E-06,
+    "rotZ": 0.0231437832,
+    "scaleX": 0.5500004,
+    "scaleY": 0.5500004,
+    "scaleZ": 0.5500004
+  },
+  "Nickname": "Yellow Trespasser",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16844229479783756910/C5A01C1A038C1C94B197FF8E17594961FED7CEF3/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.146042943,
+      "MergeDistancePixels": 14.9716482,
+      "StandUp": true,
+      "Stackable": false
+    }
+  }
+}

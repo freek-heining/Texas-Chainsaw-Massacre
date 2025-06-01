@@ -1,0 +1,54 @@
+{
+  "GUID": "376afb",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -15.0,
+    "posY": 2.56608772,
+    "posZ": 23.0,
+    "rotX": 5.539724E-07,
+    "rotY": 0.0303217955,
+    "rotZ": -0.00016809,
+    "scaleX": 0.63,
+    "scaleY": 1.0,
+    "scaleZ": 0.63
+  },
+  "Nickname": "Hidden Token Yellow",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/14564224981097816778/D8C18A23622C9E526BB6494860CBB6B5FAF0E9D3/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

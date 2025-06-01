@@ -1,0 +1,48 @@
+{
+  "GUID": "b0a327",
+  "Name": "Figurine_Custom",
+  "Transform": {
+    "posX": 25.8469429,
+    "posY": 1.609745,
+    "posZ": -9.428992,
+    "rotX": 359.9831,
+    "rotY": -0.00038455968,
+    "rotZ": 359.920074,
+    "scaleX": 1.0,
+    "scaleY": 1.0,
+    "scaleZ": 1.0
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18327423909741474700/121F522691AE78A8E3219DD8B323243561B20493/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16721456011812531958/72F6E5495F25463005113365C63CC48B8783B581/",
+    "ImageScalar": 3.0,
+    "WidthScale": 0.0
+  }
+}

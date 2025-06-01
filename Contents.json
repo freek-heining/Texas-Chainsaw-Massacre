@@ -1,0 +1,245 @@
+[
+  {
+    "path": "./Flex Table Control.bd69bd"
+  },
+  {
+    "path": "./Old Man.45f92b"
+  },
+  {
+    "path": "./Leatherface.22b0eb"
+  },
+  {
+    "path": "./Hitchhiker.b0b279"
+  },
+  {
+    "path": "./Custom_Tile.7cd743"
+  },
+  {
+    "path": "./Custom_Tile.bc6987"
+  },
+  {
+    "path": "./Chainsaw Panic Meter.b388dd"
+  },
+  {
+    "path": "./Yellow Trespasser.f28aaf"
+  },
+  {
+    "path": "./Blue Trespasser.41fe06"
+  },
+  {
+    "path": "./Grey Trepasser.59777c"
+  },
+  {
+    "path": "./Green Trespasser.2f2728"
+  },
+  {
+    "path": "./Grandpa.74ff73"
+  },
+  {
+    "path": "./Grey Trepasser Board.d1e1ea"
+  },
+  {
+    "path": "./Yellow Trespasser Board.0f652c"
+  },
+  {
+    "path": "./Green Trespasser Board.6fcdfc"
+  },
+  {
+    "path": "./Blue Trespasser Board.c52a7d"
+  },
+  {
+    "path": "./Scenario Card A- Who Will Survive-.1e83c0"
+  },
+  {
+    "path": "./Scenario Card B- Burn it Down.0fdd50"
+  },
+  {
+    "path": "./Scenario Card C- Ransack.bf3bc5"
+  },
+  {
+    "path": "./Scenario Card D- I Dare You.6fc7e2"
+  },
+  {
+    "path": "./Scenario Card E- Things Happened Here.ec4505"
+  },
+  {
+    "path": "./Custom_Tile.15fcfb"
+  },
+  {
+    "path": "./Sawyer Player Aid - Front.cca8f7"
+  },
+  {
+    "path": "./Sawyer Player Aid - Back.277b26"
+  },
+  {
+    "path": "./Trespasser Player Aid - Front.2ec962"
+  },
+  {
+    "path": "./Trespasser Player Aid - Back.dc8b18"
+  },
+  {
+    "path": "./Horror Tile.8ed2c6"
+  },
+  {
+    "path": "./Horror Tile.244493"
+  },
+  {
+    "path": "./Horror Tile.9e4a74"
+  },
+  {
+    "path": "./Horror Tile.7e5650"
+  },
+  {
+    "path": "./Horror Tile.99511e"
+  },
+  {
+    "path": "./Horror Tile.991770"
+  },
+  {
+    "path": "./Horror Tile.2cae64"
+  },
+  {
+    "path": "./Horror Tile.237ead"
+  },
+  {
+    "path": "./Hidden Token Grey.57833e"
+  },
+  {
+    "path": "./Hidden Token Green.3a8c59"
+  },
+  {
+    "path": "./Hidden Token Blue.b9804c"
+  },
+  {
+    "path": "./Desperation Deck.dc7f3e"
+  },
+  {
+    "path": "./Desperation Deck + Achievements.7ba0bc"
+  },
+  {
+    "path": "./Injury Deck.ab13cc"
+  },
+  {
+    "path": "./Injury Deck + Achievements.f1ac4c"
+  },
+  {
+    "path": "./Item Deck.920a1b"
+  },
+  {
+    "path": "./Item Deck + Achievements.ad86a4"
+  },
+  {
+    "path": "./Personal Item Deck.d89d3a"
+  },
+  {
+    "path": "./Sawyer Deck.0a2ad0"
+  },
+  {
+    "path": "./Sawyer Deck + Achievements.4300c2"
+  },
+  {
+    "path": "./Scenario A Deck.382ea5"
+  },
+  {
+    "path": "./Scenario B Deck.12acdc"
+  },
+  {
+    "path": "./Scenario C Deck.d94c03"
+  },
+  {
+    "path": "./Scenario E Deck.8c348f"
+  },
+  {
+    "path": "./Scenario D-E Card.d71bc0"
+  },
+  {
+    "path": "./HandTrigger.a91033"
+  },
+  {
+    "path": "./HandTrigger.c56965"
+  },
+  {
+    "path": "./HandTrigger.94812a"
+  },
+  {
+    "path": "./HandTrigger.0b313e"
+  },
+  {
+    "path": "./Custom_Model.b1cd0c"
+  },
+  {
+    "path": "./Searched Token.8625c0"
+  },
+  {
+    "path": "./Bone Die.520c5e"
+  },
+  {
+    "path": "./Noise - Fear Token.e93b7a"
+  },
+  {
+    "path": "./Bone Die.ac4393"
+  },
+  {
+    "path": "./Bone Die.335521"
+  },
+  {
+    "path": "./Hidden Token Yellow.376afb"
+  },
+  {
+    "path": "./Sawyer Action Cube.0b184e"
+  },
+  {
+    "path": "./Sawyer Action Cube.6aeb93"
+  },
+  {
+    "path": "./Sawyer Action Cube.d9e871"
+  },
+  {
+    "path": "./Yellow Trespasser Cube.739296"
+  },
+  {
+    "path": "./Blue Trespasser Cube.19bc0d"
+  },
+  {
+    "path": "./Green Trespasser Cube.91d1f1"
+  },
+  {
+    "path": "./Grey Trespasser Cube.1c5f72"
+  },
+  {
+    "path": "./Old Man Board.a30ee9"
+  },
+  {
+    "path": "./Leatherface Board.5ec27f"
+  },
+  {
+    "path": "./Hitchhiker Board.06c597"
+  },
+  {
+    "path": "./Panic Meter Cube.1d88e3"
+  },
+  {
+    "path": "./Vehicle Deck.c884d4"
+  },
+  {
+    "path": "./Fire Token.24f6eb"
+  },
+  {
+    "path": "./Custom_Tile.3eca25"
+  },
+  {
+    "path": "./Loot Token.ceac14"
+  },
+  {
+    "path": "./Photo Token.764fd1"
+  },
+  {
+    "path": "./Custom_Assetbundle.985b0d"
+  },
+  {
+    "path": "./Noise - Fear Token.0d8170"
+  },
+  {
+    "path": "./HandTrigger.41aabe"
+  }
+]

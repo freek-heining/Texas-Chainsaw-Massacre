@@ -1,0 +1,55 @@
+{
+  "GUID": "d71bc0",
+  "Name": "CardCustom",
+  "Transform": {
+    "posX": 36.0,
+    "posY": 2.57954335,
+    "posZ": -22.0,
+    "rotX": -1.41950736E-07,
+    "rotY": 180.030975,
+    "rotZ": 0.00016754742,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Scenario D/E Card",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 1700,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "17": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16549249443547799475/695CD0A0826E334D668DCCD1A6F1AF52698F21F7/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 1,
+      "NumHeight": 1,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

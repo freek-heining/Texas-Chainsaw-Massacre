@@ -1,0 +1,68 @@
+{
+  "GUID": "d89d3a",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 43.0,
+    "posY": 2.644617,
+    "posZ": -9.0,
+    "rotX": -4.96320745E-08,
+    "rotY": 179.970474,
+    "rotZ": 0.000167628619,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Personal Item Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    1100,
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108,
+    1109,
+    1110,
+    1111
+  ],
+  "CustomDeck": {
+    "11": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9301335914065674899/DC46937F43CB5E47E4F76934A6DAA33C878AAEF9/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 5,
+      "NumHeight": 3,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

@@ -2,10 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"name": "Tabletop Simulator Files",
-			"path": "../../../../AppData/Local/Temp/TabletopSimulatorLua"
 		}
 	],
 	"settings": {}

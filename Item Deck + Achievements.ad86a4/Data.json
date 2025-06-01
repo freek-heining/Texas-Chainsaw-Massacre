@@ -1,0 +1,72 @@
+{
+  "GUID": "ad86a4",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 39.0,
+    "posY": 2.66388488,
+    "posZ": -9.0,
+    "rotX": 5.2777942E-08,
+    "rotY": 180.017731,
+    "rotZ": 180.000168,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Item Deck + Achievements",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    2201,
+    2200,
+    2202,
+    2203,
+    2204,
+    2205,
+    2206,
+    2207,
+    2208,
+    2209,
+    2210,
+    2211,
+    2212,
+    2213,
+    2214,
+    2215
+  ],
+  "CustomDeck": {
+    "22": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16390083394661327445/ACEA6393039F69BC3472EE5981B7781AAEC85811/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 5,
+      "NumHeight": 4,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

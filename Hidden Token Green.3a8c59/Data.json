@@ -1,0 +1,54 @@
+{
+  "GUID": "3a8c59",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -31.0,
+    "posY": 2.566133,
+    "posZ": 23.0,
+    "rotX": 8.69422365E-07,
+    "rotY": -0.000287222851,
+    "rotZ": -0.000168240935,
+    "scaleX": 0.63,
+    "scaleY": 1.0,
+    "scaleZ": 0.63
+  },
+  "Nickname": "Hidden Token Green",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/17774037352801913265/083C811E8953ACCFCE6C8B206110EE7FC4D52DC8/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

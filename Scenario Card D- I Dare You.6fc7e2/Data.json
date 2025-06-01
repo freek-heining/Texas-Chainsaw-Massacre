@@ -1,0 +1,54 @@
+{
+  "GUID": "6fc7e2",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 38.7906952,
+    "posY": 2.71461,
+    "posZ": 6.700414,
+    "rotX": 359.9934,
+    "rotY": 269.3775,
+    "rotZ": 359.978729,
+    "scaleX": 3.3,
+    "scaleY": 1.0,
+    "scaleZ": 3.3
+  },
+  "Nickname": "Scenario Card D: I Dare You",
+  "Description": "Flip for setup",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15422823020581021818/E7436A1FF723A6FDC3BB5667CACF5D827EBD24D2/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18363825922389725183/E02552F14B164658CA1EE2A1985FD26161BCC7A3/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.146043554,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

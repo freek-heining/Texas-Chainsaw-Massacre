@@ -1,0 +1,54 @@
+{
+  "GUID": "0fdd50",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 39.2094231,
+    "posY": 3.01003146,
+    "posZ": 6.836014,
+    "rotX": 359.993134,
+    "rotY": 270.120056,
+    "rotZ": 359.961365,
+    "scaleX": 3.3,
+    "scaleY": 1.0,
+    "scaleZ": 3.3
+  },
+  "Nickname": "Scenario Card B: Burn it Down",
+  "Description": "Flip for setup",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18038119606463975261/03D48D8B2C2F0B75000FC1C1AD0B5EBD68EBA14E/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17758854641836826936/AE9A0B3FA8A842E60D54B14CE361F36F5A46658E/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

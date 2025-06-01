@@ -1,0 +1,82 @@
+{
+  "GUID": "f1ac4c",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 39.0,
+    "posY": 2.71202517,
+    "posZ": -3.0,
+    "rotX": 2.428518E-07,
+    "rotY": 179.978485,
+    "rotZ": 180.000168,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Injury Deck + Achievements",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    1900,
+    1901,
+    1902,
+    1903,
+    1904,
+    1905,
+    1906,
+    1907,
+    1908,
+    1909,
+    1910,
+    1911,
+    1912,
+    1913,
+    1914,
+    1915,
+    1916,
+    1917,
+    1918,
+    1919,
+    1920,
+    1921,
+    1922,
+    1923,
+    1924,
+    1925
+  ],
+  "CustomDeck": {
+    "19": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12795346229556005402/8EEBF369D8008240676BFFAC023BA8D0831F45AE/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/14771864602372699774/67117EBE2071677442CC4CD30DDCA0D47D74B838/",
+      "NumWidth": 6,
+      "NumHeight": 5,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

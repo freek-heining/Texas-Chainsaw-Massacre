@@ -1,0 +1,99 @@
+{
+  "GUID": "520c5e",
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -32.4488335,
+    "posY": 3.214497,
+    "posZ": 2.56989312,
+    "rotX": 90.0,
+    "rotY": 20.6774139,
+    "rotZ": 0.0,
+    "scaleX": 1.0,
+    "scaleY": 1.0,
+    "scaleZ": 1.0
+  },
+  "Nickname": "Bone Die",
+  "Description": "3x: 0 Success, 2x: 1 Success, 1x: 2 Success.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 0.9872584,
+    "b": 0.9103774
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": false,
+  "Snap": false,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "https://steamusercontent-a.akamaihd.net/ugc/14293894388418343597/BFCF37A8B1A7F5DF2009CFD67E181A72FEA5D591/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 0,
+    "TypeIndex": 2,
+    "LoopingEffectIndex": 0
+  },
+  "RotationValues": [
+    {
+      "Value": "1",
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      }
+    },
+    {
+      "Value": "2",
+      "Rotation": {
+        "x": 270.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Value": "3",
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Value": "4",
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 180.0
+      }
+    },
+    {
+      "Value": "5",
+      "Rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "Value": "6",
+      "Rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 270.0
+      }
+    }
+  ]
+}

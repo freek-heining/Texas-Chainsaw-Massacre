@@ -1,0 +1,188 @@
+{
+  "GUID": "a30ee9",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -21.0000019,
+    "posY": 2.56610417,
+    "posZ": -18.9999981,
+    "rotX": -3.18484626E-06,
+    "rotY": 180.016113,
+    "rotZ": 0.000123494436,
+    "scaleX": 5.12,
+    "scaleY": 1.0,
+    "scaleZ": 5.12
+  },
+  "Nickname": "Old Man Board",
+  "Description": "Flip for Normal / Brutal",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360783666,
+    "g": 0.360783666,
+    "b": 0.360783666
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15104566191763416452/CB1DB1D40A04172F3C5541071038D9E836D0BA34/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9784327054633869849/B51C30AE38944424E9045A75C6C0EBA59CDAAF3A/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.150948644,
+      "Stackable": false,
+      "Stretch": true
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 0.363191247,
+        "y": 0.150948882,
+        "z": 0.7960324
+      },
+      "Rotation": {
+        "x": -1.6648421E-06,
+        "y": 90.00765,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.176053509,
+        "y": 0.150948539,
+        "z": 0.79605037
+      },
+      "Rotation": {
+        "x": -1.38245719E-06,
+        "y": 90.00765,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": -0.0104375072,
+        "y": 0.150949135,
+        "z": 0.7960718
+      },
+      "Rotation": {
+        "x": -3.938345E-07,
+        "y": 90.00765,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": -0.3872596,
+        "y": 3.89523848E-07,
+        "z": 0.7903669
+      },
+      "Rotation": {
+        "x": 1.11519148E-06,
+        "y": 269.9864,
+        "z": -6.34396338E-06
+      }
+    },
+    {
+      "Position": {
+        "x": -0.237799838,
+        "y": -1.52413668E-06,
+        "z": 0.790397048
+      },
+      "Rotation": {
+        "x": 2.37661015E-06,
+        "y": 269.9864,
+        "z": -6.34394746E-06
+      }
+    },
+    {
+      "Position": {
+        "x": -0.08962492,
+        "y": -5.31626938E-07,
+        "z": 0.7904254
+      },
+      "Rotation": {
+        "x": 1.8695514E-06,
+        "y": 269.9864,
+        "z": -6.34396E-06
+      }
+    },
+    {
+      "Position": {
+        "x": 0.05983112,
+        "y": -2.99402473E-07,
+        "z": 0.790460765
+      },
+      "Rotation": {
+        "x": 2.15372E-06,
+        "y": 269.9864,
+        "z": -6.343957E-06
+      }
+    },
+    {
+      "Position": {
+        "x": 0.208021671,
+        "y": -2.61134119E-07,
+        "z": 0.7904973
+      },
+      "Rotation": {
+        "x": 2.380019E-06,
+        "y": 269.9864,
+        "z": -6.34396565E-06
+      }
+    },
+    {
+      "Position": {
+        "x": -0.196294457,
+        "y": 0.1509487,
+        "z": 0.7961112
+      },
+      "Rotation": {
+        "x": 0.000444798265,
+        "y": 90.01353,
+        "z": 179.999268
+      }
+    },
+    {
+      "Position": {
+        "x": -0.382790327,
+        "y": 0.150948748,
+        "z": 0.7961566
+      },
+      "Rotation": {
+        "x": -2.39749625E-06,
+        "y": 90.01353,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.35811466,
+        "y": -9.50419235E-07,
+        "z": 0.7905351
+      },
+      "Rotation": {
+        "x": 3.31603269E-06,
+        "y": 269.9864,
+        "z": 9.130177E-07
+      }
+    }
+  ]
+}

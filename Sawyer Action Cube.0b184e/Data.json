@@ -1,0 +1,52 @@
+{
+  "GUID": "0b184e",
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": 0.9452841,
+    "posY": 3.29195166,
+    "posZ": -22.9942265,
+    "rotX": 0.0008696276,
+    "rotY": 90.44866,
+    "rotZ": 179.99707,
+    "scaleX": 1.14999986,
+    "scaleY": 1.14999986,
+    "scaleZ": 1.14999986
+  },
+  "Nickname": "Sawyer Action Cube",
+  "Description": "Indicates amount of Actions available",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.9592771,
+    "g": 0.0,
+    "b": 0.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/17129976106761357908/F1D01448294C99438DAD56FF0972D9057B505480/",
+    "DiffuseURL": "",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 0,
+    "CastShadows": true
+  }
+}

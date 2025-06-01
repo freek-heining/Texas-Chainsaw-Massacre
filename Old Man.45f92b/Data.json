@@ -1,0 +1,62 @@
+{
+  "GUID": "45f92b",
+  "Name": "Custom_Model",
+  "Transform": {
+    "posX": -25.0,
+    "posY": 2.56873083,
+    "posZ": -15.0,
+    "rotX": 4.35424372E-05,
+    "rotY": 180.0,
+    "rotZ": 0.000177264723,
+    "scaleX": 0.78,
+    "scaleY": 0.78,
+    "scaleZ": 0.78
+  },
+  "Nickname": "Old Man",
+  "Description": "Starts in the Pantry",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomMesh": {
+    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/12530658409649046282/73EDC946F53E0163368C0BCD856C0D466DB685C2/",
+    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/12889694286811447427/E2A0C7D039788941B814E5C1BA363824FA1B462F/",
+    "NormalURL": "",
+    "ColliderURL": "https://steamusercontent-a.akamaihd.net/ugc/14465363718687799239/174E2A853670549E6D6405AA3011D5F9F8D625FE/",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 1,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "SpecularIntensity": 0.2,
+      "SpecularSharpness": 2.0,
+      "FresnelStrength": 0.0
+    },
+    "CastShadows": true
+  }
+}

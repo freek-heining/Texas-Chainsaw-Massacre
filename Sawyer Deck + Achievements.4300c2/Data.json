@@ -1,0 +1,80 @@
+{
+  "GUID": "4300c2",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 42.0,
+    "posY": 2.70238662,
+    "posZ": -16.0,
+    "rotX": -1.28451907E-08,
+    "rotY": 180.0108,
+    "rotZ": 180.000168,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86
+  },
+  "Nickname": "Sawyer Deck + Achievements",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    3400,
+    3401,
+    3402,
+    3403,
+    3404,
+    3405,
+    3406,
+    3407,
+    3408,
+    3409,
+    3410,
+    3411,
+    3412,
+    3413,
+    3414,
+    3415,
+    3416,
+    3417,
+    3418,
+    3419,
+    3420,
+    3421,
+    3422,
+    3423
+  ],
+  "CustomDeck": {
+    "34": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12405317665515483771/AA8D4D9151A7B4BD464E18716A591AC9635E3A3E/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/17641837453150798682/F99AFCD02AB758F0606A82DD7FDBBE3A37B4AB5C/",
+      "NumWidth": 5,
+      "NumHeight": 5,
+      "BackIsHidden": false,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

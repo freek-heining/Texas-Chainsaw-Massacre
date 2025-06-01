@@ -1,0 +1,54 @@
+{
+  "GUID": "bc6987",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 16.0,
+    "posY": 2.5660007,
+    "posZ": 4.09828829E-08,
+    "rotX": -0.000167465943,
+    "rotY": 269.9695,
+    "rotZ": 2.46617424E-06,
+    "scaleX": 6.99006033,
+    "scaleY": 1.0,
+    "scaleZ": 6.99006033
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16791804925160484081/12633552AD5DD10C6CB5478C78E4AB10846FF4EC/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 0,
+      "Thickness": 0.154374689,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "GUID": "06c597",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -9.0,
+    "posY": 2.5660677,
+    "posZ": -19.0,
+    "rotX": 2.61282844E-06,
+    "rotY": 179.999619,
+    "rotZ": 0.000111015273,
+    "scaleX": 5.12,
+    "scaleY": 1.0,
+    "scaleZ": 5.121482
+  },
+  "Nickname": "Hitchhiker Board",
+  "Description": "Flip for Normal / Brutal",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360783666,
+    "g": 0.360783666,
+    "b": 0.360783666
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/10293068533626972125/315D824AC877474FF332A30EB0F8D86D64640455/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17416444803144539616/1EF8D8D8316CC65439F9D635AFB3AC9E9EEB2BF2/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.150948033,
+      "Stackable": false,
+      "Stretch": true
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 0.2920201,
+        "y": 0.150948778,
+        "z": 0.7953628
+      },
+      "Rotation": {
+        "x": -1.28212321E-06,
+        "y": 90.015976,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": 0.10615997,
+        "y": 0.1509484,
+        "z": 0.79541105
+      },
+      "Rotation": {
+        "x": 1.09289965E-06,
+        "y": 90.015976,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": -0.08097477,
+        "y": 0.150948778,
+        "z": 0.7954621
+      },
+      "Rotation": {
+        "x": -1.25863289E-06,
+        "y": 90.015976,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": -0.267470717,
+        "y": 0.1509477,
+        "z": 0.795508564
+      },
+      "Rotation": {
+        "x": -4.863098E-07,
+        "y": 90.015976,
+        "z": 180.0
+      }
+    },
+    {
+      "Position": {
+        "x": -0.36583218,
+        "y": -2.0583866E-07,
+        "z": 0.7910626
+      },
+      "Rotation": {
+        "x": -1.14374859E-06,
+        "y": 90.015976,
+        "z": 4.910449E-06
+      }
+    },
+    {
+      "Position": {
+        "x": -0.178694844,
+        "y": -3.99727E-07,
+        "z": 0.791021645
+      },
+      "Rotation": {
+        "x": -1.90277012E-06,
+        "y": 90.015976,
+        "z": 4.910454E-06
+      }
+    },
+    {
+      "Position": {
+        "x": 0.00716659427,
+        "y": -5.7441207E-07,
+        "z": 0.7909781
+      },
+      "Rotation": {
+        "x": -3.15518975E-07,
+        "y": 90.015976,
+        "z": 4.910445E-06
+      }
+    },
+    {
+      "Position": {
+        "x": 0.1936645,
+        "y": -7.586759E-07,
+        "z": 0.7909311
+      },
+      "Rotation": {
+        "x": -2.28771546E-06,
+        "y": 90.015976,
+        "z": 4.910455E-06
+      }
+    },
+    {
+      "Position": {
+        "x": 0.3795223,
+        "y": -2.18051355E-07,
+        "z": 0.7908835
+      },
+      "Rotation": {
+        "x": -2.932435E-07,
+        "y": 90.015976,
+        "z": 4.9104483E-06
+      }
+    }
+  ]
+}

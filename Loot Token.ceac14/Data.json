@@ -1,0 +1,57 @@
+{
+  "GUID": "ceac14",
+  "Name": "Custom_Tile_Stack",
+  "Transform": {
+    "posX": 26.0,
+    "posY": 2.53898716,
+    "posZ": -14.0,
+    "rotX": -1.02920176E-05,
+    "rotY": 180.019821,
+    "rotZ": 0.000113118156,
+    "scaleX": 0.63,
+    "scaleY": 1.0,
+    "scaleZ": 0.63
+  },
+  "Nickname": "Loot Token",
+  "Description": "Used in Scenrario C: Ransack",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360784143,
+    "g": 0.360784143,
+    "b": 0.360784143
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "Number": 7,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16013449759615909738/F4DD0C479040B5101C6D9A5C5BF067893BCCBE73/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1460434,
+      "Stackable": true,
+      "Stretch": true
+    }
+  }
+}
