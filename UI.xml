@@ -5,37 +5,56 @@
     cellBackgroundColor="clear" 
     rowBackgroundColor="#942d28"
     width="1000"
-    height="900"
-    columnWidths="75 850 75"
+    height="850"
+    columnWidths="80 840 80"
     useGlobalCellPadding="false"
     raycastTarget="1"
     />
+    <!-- colorblock = (normalColor|highlightedColor|pressedColor|disabledColor) -->
     <Button 
     ignoreLayout="true"
     fontStyle="Bold"
-    textColor="#bf161c"
-    color="#f0eddc"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
     fontSize="20"
+    shadow="#00000099"
+    shadowDistance="3 -3"
     />
     <Toggle 
     ignoreLayout="true"
     fontStyle="Bold"
     textColor="White" 
     fontSize="18"
-    padding="0 10 0 0"
+    />
+    <Tooltip
+    tooltipTextColor="#bf161c"
+    tooltipBorderColor="#942d28"
+    tooltipBackgroundColor="#f0eddc"
+    tooltipPosition="Below"
+    tooltipOffset="5"
+    />
+    <Image
+    shadow="#00000099"
+    shadowDistance="3 -3"   
+    />
+    <Image
+    class="carouselImage"
+    preserveAspect="true"  
+    onClick="ScenarioClick" 
+    tooltip="Selected scenario to play (Click for backside)" 
+    tooltipOffset="-200"
     />
 </Defaults>
-
 
 <TableLayout class="menu">
     <!-- Row 1 -->
     <Row preferredHeight="200">
         <Cell />
-        <Cell><Image image="Title_Image" preserveAspect="true"/></Cell>
+        <Cell padding="0 0 0 10"><Image image="Title_Image" preserveAspect="true"/></Cell>
         <Cell><Button onClick="ButtonCloseWindowClick" tooltip="Skip setup and just look around" rectAlignment="UpperRight" width="40" height="40">X</Button></Cell>
     </Row>
     <!-- Row 2 -->
-    <Row preferredHeight="70">
+    <Row preferredHeight="40">
         <Cell />
         <Cell><Toggle id="toggleAchievements" tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!" 
         width="250" onValueChanged="ToggleAchievementsChanged">Use Achievement Cards</Toggle></Cell>
@@ -43,9 +62,9 @@
     </Row>
     <!-- Row 3 -->
     <Row>
-        <Cell><Button id="buttonScenarioLeft" tooltip="Previous Scenario" interactable="false" onClick="ButtonScenarioLeftClick" width="75" height="75">&lt;&lt;</Button></Cell>
-        <Cell><Image id="scenario_Carousel" image="Scenario_A_Front" preserveAspect="true" onClick="ButtonScenarioClick" tooltip="Click for backside"/></Cell>
-        <Cell><Button id="buttonScenarioRight" tooltip="Next Scenario" onClick="ButtonScenarioRightClick" width="75" height="75">>></Button></Cell>
+        <Cell><Button id="buttonScenarioLeft" interactable="false" onClick="ButtonScenarioLeftClick" width="70" height="70">&lt;&lt;</Button></Cell>
+        <Cell padding="10 10 0 10"><Image class="carouselImage" id="scenario_Carousel" image="Scenario_A_Front"/></Cell>
+        <Cell><Button id="buttonScenarioRight" tooltip="Next Scenario" onClick="ButtonScenarioRightClick" width="70" height="70">>></Button></Cell>
     </Row>
     <!-- Row 4 -->
     <Row preferredHeight="70">
