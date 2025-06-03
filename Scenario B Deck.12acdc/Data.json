@@ -3,11 +3,11 @@
   "Name": "DeckCustom",
   "Transform": {
     "posX": 28.0,
-    "posY": 2.60133,
+    "posY": 2.60133433,
     "posZ": -22.0,
-    "rotX": -5.20921155E-08,
+    "rotX": 4.13866337E-06,
     "rotY": 180.021851,
-    "rotZ": 0.000167667109,
+    "rotZ": 0.0001676285,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35

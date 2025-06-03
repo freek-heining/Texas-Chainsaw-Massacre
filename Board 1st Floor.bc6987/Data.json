@@ -1,19 +1,19 @@
 {
-  "GUID": "764fd1",
-  "Name": "Custom_Tile_Stack",
+  "GUID": "bc6987",
+  "Name": "Custom_Tile",
   "Transform": {
-    "posX": 30.0,
-    "posY": 2.54143047,
-    "posZ": -14.0,
-    "rotX": 4.625873E-07,
-    "rotY": 180.003311,
-    "rotZ": 0.000174938017,
-    "scaleX": 0.63,
+    "posX": 16.0,
+    "posY": 2.5660007,
+    "posZ": 4.09828829E-08,
+    "rotX": -0.000167465943,
+    "rotY": 269.9695,
+    "rotZ": 2.46617424E-06,
+    "scaleX": 6.99006033,
     "scaleY": 1.0,
-    "scaleZ": 0.63
+    "scaleZ": 6.99006033
   },
-  "Nickname": "Photo Token",
-  "Description": "Used in Scenario D: I Dare You",
+  "Nickname": "Board 1st Floor",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -27,7 +27,7 @@
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
-  "Locked": false,
+  "Locked": true,
   "Grid": true,
   "Snap": true,
   "IgnoreFoW": false,
@@ -39,18 +39,15 @@
   "GridProjection": false,
   "HideWhenFaceDown": false,
   "Hands": false,
-  "MaterialIndex": -1,
-  "MeshIndex": -1,
-  "Number": 7,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16082417618935411111/9BAFCCC29A05BBA18B48D8167E34CF9C6A4EB3A8/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16791804925160484081/12633552AD5DD10C6CB5478C78E4AB10846FF4EC/",
     "ImageSecondaryURL": "",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {
-      "Type": 3,
-      "Thickness": 0.1509485,
-      "Stackable": true,
+      "Type": 0,
+      "Thickness": 0.154374689,
+      "Stackable": false,
       "Stretch": true
     }
   }

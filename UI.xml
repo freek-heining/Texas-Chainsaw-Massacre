@@ -1,7 +1,5 @@
 <Defaults>
     <TableLayout 
-    id="setupWindow"
-    class="menu" 
     cellBackgroundColor="clear" 
     rowBackgroundColor="#942d28"
     width="1000"
@@ -46,7 +44,7 @@
     />
 </Defaults>
 
-<TableLayout class="menu">
+<TableLayout id="setupWindow">
     <!-- Row 1 -->
     <Row preferredHeight="200">
         <Cell />

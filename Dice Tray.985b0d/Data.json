@@ -1,0 +1,49 @@
+{
+  "GUID": "985b0d",
+  "Name": "Custom_Assetbundle",
+  "Transform": {
+    "posX": -33.99989,
+    "posY": 2.56609535,
+    "posZ": 9.812415E-06,
+    "rotX": 0.000180876537,
+    "rotY": 89.99739,
+    "rotZ": -1.96041856E-05,
+    "scaleX": 3.69999576,
+    "scaleY": 3.69999576,
+    "scaleZ": 3.69999576
+  },
+  "Nickname": "Dice Tray",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 0.9882353,
+    "b": 0.9098039
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomAssetbundle": {
+    "AssetbundleURL": "https://steamusercontent-a.akamaihd.net/ugc/14815993766825856622/63FDF05CAA3EABF1FFB6E55BE2C91132FC81441A/",
+    "AssetbundleSecondaryURL": "",
+    "MaterialIndex": 1,
+    "TypeIndex": 0,
+    "LoopingEffectIndex": 0
+  }
+}

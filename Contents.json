@@ -12,10 +12,10 @@
     "path": "./Hitchhiker.b0b279"
   },
   {
-    "path": "./Custom_Tile.7cd743"
+    "path": "./Board Ground Floor.7cd743"
   },
   {
-    "path": "./Custom_Tile.bc6987"
+    "path": "./Board 1st Floor.bc6987"
   },
   {
     "path": "./Chainsaw Panic Meter.b388dd"
@@ -234,12 +234,15 @@
     "path": "./Photo Token.764fd1"
   },
   {
-    "path": "./Custom_Assetbundle.985b0d"
+    "path": "./Dice Tray.985b0d"
   },
   {
     "path": "./Noise - Fear Token.0d8170"
   },
   {
     "path": "./HandTrigger.41aabe"
+  },
+  {
+    "path": "./Dice Tray Zone.89711c"
   }
 ]

@@ -1,0 +1,42 @@
+<Defaults>
+    <TableLayout
+    cellBackgroundColor="white" 
+    rowBackgroundColor="#942d28"
+    width="400"
+    height="100"
+    scale="0.1 0.1 0.1"
+    useGlobalCellPadding="false"
+    raycastTarget="1"
+    />
+    <Button 
+    ignoreLayout="true"
+    fontStyle="Bold"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
+    fontSize="20"
+    shadow="#00000099"
+    shadowDistance="3 -3"
+    />  
+    <Text
+    fontSize="30"
+    color="white"
+    />  
+</Defaults>
+
+<TableLayout rotation="0 0 -90" position="-65 172 -1">
+    <Row>
+        <Cell><Text>Roll:</Text></Cell>
+        <Cell><Button id="ButtonRollOne" onClick="RollOne">1</Button></Cell>
+        <Cell><Button id="ButtonRollTwo" onClick="RollThree">2</Button></Cell>
+        <Cell><Button id="ButtonRollThree" onClick="RollThree">3</Button></Cell>
+    </Row>
+</TableLayout>
+
+<TableLayout rotation="0 0 90" position="65 172 -1"> 
+    <Row>
+        <Cell><Text>Roll:</Text></Cell>
+        <Cell><Button id="ButtonRollOne" onClick="RollOne">1</Button></Cell>
+        <Cell><Button id="ButtonRollTwo" onClick="RollThree">2</Button></Cell>
+        <Cell><Button id="ButtonRollThree" onClick="RollThree">3</Button></Cell>
+    </Row>
+</TableLayout>
