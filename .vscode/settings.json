@@ -1,7 +1,8 @@
 {
     "Lua.diagnostics.globals": [
         "UI",
-        "onLoad"
+        "onLoad",
+        "diceObjects"
     ],
     "Lua.diagnostics.disable": [
         "undefined-global"
