@@ -29,6 +29,7 @@ function GetDiceFromZone()
     end
 end
 
+-- Translate normal D6 to a Bone Die
 local function interpretDieValue(value)
     if value == 1 then
         return 1
@@ -46,29 +47,41 @@ local function interpretDieValue(value)
 end
 
 -- Roll 1-3 dice in random order
-function RollDice(player, amount)
+function RollDice(player, amount, id)
     local randomUniqueNumbers = {}
     local tableSize = 0
 
-    -- Disable buttons for 10 seconds to prevent spam
-    local object = getObjectFromGUID("7cd743")
-    object.UI.setAttribute("ButtonRollOneLeft", "interactable", false)
-    object.UI.setAttribute("ButtonRollTwoLeft", "interactable", false)
-    object.UI.setAttribute("ButtonRollThreeLeft", "interactable", false)
-    object.UI.setAttribute("ButtonRollOneRight", "interactable", false)
-    object.UI.setAttribute("ButtonRollTwoRight", "interactable", false)
-    object.UI.setAttribute("ButtonRollThreeRight", "interactable", false)
+    if amount == 1 then
+        broadcastToAll(player.color .. " player rolls 1 die...", player.color)
+    else
+        broadcastToAll(player.color .. " player rolls " .. amount .. " dice...", player.color)
+    end
+
+    -- Disable buttons for 5 seconds to prevent spam
+    local boardObject = getObjectFromGUID("7cd743")
+    boardObject.UI.setAttribute("ButtonRollOneLeft", "interactable", false)
+    boardObject.UI.setAttribute("ButtonRollTwoLeft", "interactable", false)
+    boardObject.UI.setAttribute("ButtonRollThreeLeft", "interactable", false)
+    boardObject.UI.setAttribute("ButtonRollOneRight", "interactable", false)
+    boardObject.UI.setAttribute("ButtonRollTwoRight", "interactable", false)
+    boardObject.UI.setAttribute("ButtonRollThreeRight", "interactable", false)
+    
     Wait.time(
         function()
-            object.UI.setAttribute("ButtonRollOneLeft", "interactable", true)
-            object.UI.setAttribute("ButtonRollTwoLeft", "interactable", true)
-            object.UI.setAttribute("ButtonRollThreeLeft", "interactable", true)
-            object.UI.setAttribute("ButtonRollOneRight", "interactable", true)
-            object.UI.setAttribute("ButtonRollTwoRight", "interactable", true)
-            object.UI.setAttribute("ButtonRollThreeRight", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollOneLeft", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollTwoLeft", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollThreeLeft", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollOneRight", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollTwoRight", "interactable", true)
+            boardObject.UI.setAttribute("ButtonRollThreeRight", "interactable", true)
         end,
         5
     )
+
+    -- Change button color to pushing player's color
+    boardObject.UI.setAttribute("TextSuccessesLeft", "color", "#f0eddc")
+    boardObject.UI.setAttribute("TextSuccessesRight", "color", "#f0eddc")
+
 
     -- Create random unique numbers for rolling
     while tableSize < tonumber(amount) do
@@ -104,10 +117,37 @@ function RollDice(player, amount)
             end
             log(numberOfSuccesses)
 
+            if numberOfSuccesses == 0 then
+                broadcastToAll("Scoring 0 success...", player.color)
+            elseif numberOfSuccesses == 1 then 
+                broadcastToAll("Scoring 1 success!", player.color)
+            else
+                broadcastToAll("Scoring " .. numberOfSuccesses .. " successes!", player.color)
+            end
             
-            object.UI.setAttribute("TextSuccessesLeft", "text", numberOfSuccesses)
-            object.UI.setAttribute("TextSuccessesRight", "text", numberOfSuccesses)
+            -- Change text color to pushing player's color
+            boardObject.UI.setAttribute("TextSuccessesLeft", "color", player.color)
+            boardObject.UI.setAttribute("TextSuccessesRight", "color", player.color)   
+
+            boardObject.UI.setAttribute("TextSuccessesLeft", "text", numberOfSuccesses)
+            boardObject.UI.setAttribute("TextSuccessesRight", "text", numberOfSuccesses)
         end,
         3
     )
+end
+
+-- Prevent dice change with num keys (cheating)
+local numberTriggered -- Prevents message spam
+function onObjectNumberTyped(object, player_color, number)
+    if not numberTriggered and object.type == "Dice" then
+        broadcastToAll(player_color .. " typed '" .. number .. "' whilst hovering over a die. Please use the buttons only...", player_color)
+        numberTriggered = true
+        Wait.time(function() numberTriggered = false end, 2)
+    end
+
+    if object.type == "Dice" then
+        return true
+    end
+
+    return false
 end

@@ -2,7 +2,10 @@
     "Lua.diagnostics.globals": [
         "UI",
         "onLoad",
-        "diceObjects"
+        "diceObjects",
+        "onObjectNumberTyped",
+        "onPlayerAction",
+        "tryObjectRandomize"
     ],
     "Lua.diagnostics.disable": [
         "undefined-global"
