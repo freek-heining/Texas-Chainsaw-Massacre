@@ -1,0 +1,54 @@
+{
+  "GUID": "339a5f",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": 31.9960327,
+    "posY": 3.01047921,
+    "posZ": -6.006432,
+    "rotX": 0.0202120487,
+    "rotY": 270.021362,
+    "rotZ": 180.021774,
+    "scaleX": 3.3,
+    "scaleY": 1.0,
+    "scaleZ": 3.3
+  },
+  "Nickname": "Scenario Card C: Ransack",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360783845,
+    "g": 0.360783845,
+    "b": 0.360783845
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16199794377338992966/2D7158A774B58EDFD3CCC0121996DE0AE7CF947D/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12510068455320080832/4A1AE3EB351A32CD3C16889AC7379CEFB960B4EE/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": false,
+      "Stretch": true
+    }
+  }
+}

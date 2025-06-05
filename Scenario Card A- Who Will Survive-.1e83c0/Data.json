@@ -2,18 +2,18 @@
   "GUID": "1e83c0",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 38.9998856,
-    "posY": 3.16015148,
-    "posZ": 7.00009871,
-    "rotX": -0.00457403576,
-    "rotY": 269.8462,
-    "rotZ": 359.965454,
+    "posX": 32.00026,
+    "posY": 3.160103,
+    "posZ": 6.000677,
+    "rotX": 359.9863,
+    "rotY": 269.9963,
+    "rotZ": -0.00248194928,
     "scaleX": 3.3,
     "scaleY": 1.0,
     "scaleZ": 3.3
   },
   "Nickname": "Scenario Card A: Who Will Survive?",
-  "Description": "Flip for setup",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360783964,
-    "g": 0.360783964,
-    "b": 0.360783964
+    "r": 0.360783845,
+    "g": 0.360783845,
+    "b": 0.360783845
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

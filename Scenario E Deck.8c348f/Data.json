@@ -2,12 +2,12 @@
   "GUID": "8c348f",
   "Name": "DeckCustom",
   "Transform": {
-    "posX": 40.0,
-    "posY": 2.61574149,
-    "posZ": -22.0,
-    "rotX": -2.712205E-07,
-    "rotY": 180.044281,
-    "rotZ": 0.000167473336,
+    "posX": 31.0,
+    "posY": 2.61576629,
+    "posZ": -23.0,
+    "rotX": -0.0001676305,
+    "rotY": 270.00293,
+    "rotZ": 5.999839E-08,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35
@@ -41,20 +41,20 @@
   "Hands": false,
   "SidewaysCard": false,
   "DeckIDs": [
-    1800,
-    1801,
-    1802,
-    1803,
-    1804,
-    1805
+    5400,
+    5401,
+    5402,
+    5403,
+    5404,
+    5405
   ],
   "CustomDeck": {
-    "18": {
+    "54": {
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15013841136715604193/D37DE01AF71533F286962D4772A282C053408E39/",
       "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
       "NumWidth": 4,
       "NumHeight": 2,
-      "BackIsHidden": false,
+      "BackIsHidden": true,
       "UniqueBack": false,
       "Type": 0
     }

@@ -2,18 +2,18 @@
   "GUID": "6fc7e2",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 38.79068,
-    "posY": 2.71531343,
-    "posZ": 6.70042944,
-    "rotX": -0.00237281621,
-    "rotY": 269.3775,
-    "rotZ": 359.9832,
+    "posX": 31.9998589,
+    "posY": 2.71450853,
+    "posZ": 6.00001669,
+    "rotX": 359.982269,
+    "rotY": 269.997,
+    "rotZ": 359.990234,
     "scaleX": 3.3,
     "scaleY": 1.0,
     "scaleZ": 3.3
   },
   "Nickname": "Scenario Card D: I Dare You",
-  "Description": "Flip for setup",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360783964,
-    "g": 0.360783964,
-    "b": 0.360783964
+    "r": 0.360783845,
+    "g": 0.360783845,
+    "b": 0.360783845
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

@@ -11,21 +11,6 @@ function onLoad()
     diceObjects = GetDiceFromZone()
 end
 
--- Prevent shuffling decks with 'R'
-
-function tryObjectRandomize(object, player_color)
-    if object.type == "Deck" and not shuffleTriggered then
-        broadcastToAll("Decks are never shuffled, only bury cards!", white)
-        shuffleTriggered = true
-        Wait.time(function() shuffleTriggered = false end, 2)
-    end
-
-    if object.type == "Deck" then
-        return false
-    end
-
-    return true
-end
 
 -- Prevent rolling dice and shuffling decks with 'R'
 local randomizeTriggered -- Prevents message spam

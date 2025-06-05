@@ -2,18 +2,18 @@
   "GUID": "0fdd50",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 39.2094154,
-    "posY": 3.01000571,
-    "posZ": 6.836062,
-    "rotX": 0.000497713336,
-    "rotY": 270.120056,
-    "rotZ": 359.966522,
+    "posX": 31.9997864,
+    "posY": 3.00986719,
+    "posZ": 6.000185,
+    "rotX": 359.985626,
+    "rotY": 269.955872,
+    "rotZ": 359.9942,
     "scaleX": 3.3,
     "scaleY": 1.0,
     "scaleZ": 3.3
   },
   "Nickname": "Scenario Card B: Burn it Down",
-  "Description": "Flip for setup",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360783964,
-    "g": 0.360783964,
-    "b": 0.360783964
+    "r": 0.360783845,
+    "g": 0.360783845,
+    "b": 0.360783845
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
