@@ -43,11 +43,11 @@ function onPlayerAction(player, action, targets)
         Wait.time(function() shuffleTriggered = false end, 2)
     end
 
-    if randomizedObject.type == "Dice" then
+    if action == Player.Action.Randomize and randomizedObject.type == "Dice" then
         return false
     end
 
-    if randomizedObject.type == "Deck" then
+    if action == Player.Action.Randomize and randomizedObject.type == "Deck" then
         return false
     end
 
