@@ -2,15 +2,15 @@
   "GUID": "15fcfb",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": -45.1751366,
-    "posY": 8.09665,
-    "posZ": -16.4356422,
-    "rotX": 90.0,
-    "rotY": 90.1419,
-    "rotZ": 0.0,
-    "scaleX": 5.532553,
+    "posX": -48.26212,
+    "posY": 8.084836,
+    "posZ": -5.376479,
+    "rotX": 66.99999,
+    "rotY": 90.0,
+    "rotZ": 1.3110398E-05,
+    "scaleX": 6.0,
     "scaleY": 1.0,
-    "scaleZ": 5.532553
+    "scaleZ": 6.0
   },
   "Nickname": "",
   "Description": "",
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360783726,
-    "g": 0.360783726,
-    "b": 0.360783726
+    "r": 0.360783249,
+    "g": 0.360783249,
+    "b": 0.360783249
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

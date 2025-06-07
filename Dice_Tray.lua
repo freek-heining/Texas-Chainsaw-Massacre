@@ -1,5 +1,5 @@
 -- Get all dice objects in tray
-function GetDiceFromZone()
+local function getDiceFromZone()
     local DiceTrayZoneGuid = "89711c"
     local DiceTrayZoneObject = getObjectFromGUID(DiceTrayZoneGuid)
     local diceStartPositions = {
@@ -8,10 +8,12 @@ function GetDiceFromZone()
         Vector(-34.00, 3.24, -3.50)
     }
     local diceObjects = {}
+    local diceObjectCount = 0
 
     for _, object in pairs(DiceTrayZoneObject.getObjects()) do
         if object.getName() == "Bone Die" then
             table.insert(diceObjects, object)
+            diceObjectCount = diceObjectCount + 1
         end
     end
 
@@ -24,6 +26,8 @@ function GetDiceFromZone()
 
     if next(diceObjects) == nil then
         error("No dice found in tray!")
+    elseif diceObjectCount < 3 then
+        error("Less then 3 dice in tray, put them back!")
     else
         return diceObjects
     end
@@ -51,6 +55,7 @@ function RollDice(player, amount, id)
     local randomUniqueNumbers = {}
     local tableSize = 0
 
+    -- amount is value 1-3 from button
     if amount == 1 then
         broadcastToAll(player.color .. " player rolls 1 die...", player.color)
     else
@@ -83,7 +88,7 @@ function RollDice(player, amount, id)
     boardObject.UI.setAttribute("TextSuccessesRight", "color", "#f0eddc")
 
 
-    -- Create random unique numbers for rolling
+    -- Create random unique numbers for rolling, equal amount to amount of button
     while tableSize < tonumber(amount) do
         local number = math.random(3)
 
@@ -95,13 +100,14 @@ function RollDice(player, amount, id)
             end
         end
 
+        -- Insert in table if not already present
         if not checkTableContains() then
             table.insert(randomUniqueNumbers, number)
             tableSize = tableSize + 1
         end
     end
 
-    local diceObjects = GetDiceFromZone()
+    local diceObjects = getDiceFromZone()
 
     -- Only roll the randomly selected numbers dice
     for _, number in pairs(randomUniqueNumbers) do

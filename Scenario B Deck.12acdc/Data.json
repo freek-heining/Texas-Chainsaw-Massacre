@@ -2,12 +2,12 @@
   "GUID": "12acdc",
   "Name": "DeckCustom",
   "Transform": {
-    "posX": 37.0,
-    "posY": 2.601308,
-    "posZ": -19.0,
-    "rotX": -0.000166587692,
-    "rotY": 270.00293,
-    "rotZ": 1.3482213E-07,
+    "posX": -42.99987,
+    "posY": 2.601542,
+    "posZ": 0.037435,
+    "rotX": 0.000167563587,
+    "rotY": 89.99295,
+    "rotZ": -4.12582573E-08,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35

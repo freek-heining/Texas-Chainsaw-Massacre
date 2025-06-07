@@ -1,7 +1,7 @@
 {
-  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v4.8",
-  "EpochTime": 1749133532,
-  "Date": "6/5/2025 4:25:32 PM",
+  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v5.1",
+  "EpochTime": 1749331982,
+  "Date": "6/7/2025 11:33:02 PM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -245,6 +245,126 @@
     "PassTurns": true,
     "TurnColor": ""
   },
+  "CameraStates": [
+    null,
+    null,
+    {
+      "Position": {
+        "x": -9.92657,
+        "y": -2.5,
+        "z": 0.367590666
+      },
+      "Rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Distance": 30.7357,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -9.926569,
+        "y": 28.2356968,
+        "z": 0.367588818
+      }
+    },
+    {
+      "Position": {
+        "x": 15.676281,
+        "y": -2.5,
+        "z": -0.7845353
+      },
+      "Rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Distance": 30.7357,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": 15.67628,
+        "y": 28.2356968,
+        "z": -0.7845372
+      }
+    },
+    {
+      "Position": {
+        "x": -37.18912,
+        "y": -2.5,
+        "z": 0.159314856
+      },
+      "Rotation": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Distance": 36.50221,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -37.18912,
+        "y": 34.0022,
+        "z": 0.15931268
+      }
+    },
+    {
+      "Position": {
+        "x": 15.6615353,
+        "y": -2.5,
+        "z": -14.0066023
+      },
+      "Rotation": {
+        "x": 89.98022,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Distance": 17.7750568,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": 15.6615343,
+        "y": 15.275053,
+        "z": -14.0066042
+      }
+    },
+    {
+      "Position": {
+        "x": -0.7539546,
+        "y": -2.5,
+        "z": -0.267629683
+      },
+      "Rotation": {
+        "x": 74.29055,
+        "y": 90.0680847,
+        "z": 0.0
+      },
+      "Distance": 51.76731,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -14.770442,
+        "y": 47.3336372,
+        "z": -0.2509769
+      }
+    },
+    {
+      "Position": {
+        "x": 41.82896,
+        "y": -2.49999619,
+        "z": -0.128438666
+      },
+      "Rotation": {
+        "x": 90.0,
+        "y": 90.0680847,
+        "z": 0.0
+      },
+      "Distance": 15.456316,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": 41.8289642,
+        "y": 12.95632,
+        "z": -0.128439575
+      }
+    },
+    null,
+    null
+  ],
   "DecalPallet": [],
   "CustomUIAssets": [
     {

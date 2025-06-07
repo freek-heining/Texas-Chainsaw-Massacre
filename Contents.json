@@ -78,30 +78,6 @@
     "path": "./Trespasser Player Aid - Back.dc8b18"
   },
   {
-    "path": "./Horror Tile.8ed2c6"
-  },
-  {
-    "path": "./Horror Tile.244493"
-  },
-  {
-    "path": "./Horror Tile.9e4a74"
-  },
-  {
-    "path": "./Horror Tile.7e5650"
-  },
-  {
-    "path": "./Horror Tile.99511e"
-  },
-  {
-    "path": "./Horror Tile.991770"
-  },
-  {
-    "path": "./Horror Tile.2cae64"
-  },
-  {
-    "path": "./Horror Tile.237ead"
-  },
-  {
     "path": "./Hidden Token Grey.57833e"
   },
   {
@@ -271,5 +247,26 @@
   },
   {
     "path": "./Custom_Token.958c7b"
+  },
+  {
+    "path": "./Horror Tile Container.dc8f40"
+  },
+  {
+    "path": "./Horror Tile Hidden Zone.ecf37e"
+  },
+  {
+    "path": "./Custom_Token.89b51f"
+  },
+  {
+    "path": "./Custom_Token.cbb4ea"
+  },
+  {
+    "path": "./Custom_Token.1b032d"
+  },
+  {
+    "path": "./Custom_Token.f6ba31"
+  },
+  {
+    "path": "./Custom_Token.7c689d"
   }
 ]

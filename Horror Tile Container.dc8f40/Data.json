@@ -1,0 +1,67 @@
+{
+  "GUID": "dc8f40",
+  "Name": "Custom_Model_Bag",
+  "Transform": {
+    "posX": -42.2476349,
+    "posY": 2.78616714,
+    "posZ": -14.9443417,
+    "rotX": -0.000167763137,
+    "rotY": 270.00293,
+    "rotZ": 1.00371426E-06,
+    "scaleX": 1.0,
+    "scaleY": 1.0,
+    "scaleZ": 1.0
+  },
+  "Nickname": "Horror Tile Container",
+  "Description": "Contains the 8 Horror Tiles randomly shuffled",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "CustomMesh": {
+    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/12111722355504581875/CBE4CC8FC7E365C87AD88DA1CCE5EB2299E198ED/",
+    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/15586307201529863270/EC17CCCA8761F96937F371DC4FEB3A42692D3A0C/",
+    "NormalURL": "",
+    "ColliderURL": "",
+    "Convex": true,
+    "MaterialIndex": 0,
+    "TypeIndex": 6,
+    "CustomShader": {
+      "SpecularColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "SpecularIntensity": 0.3,
+      "SpecularSharpness": 5.0592103,
+      "FresnelStrength": 0.4
+    },
+    "CastShadows": true
+  },
+  "Bag": {
+    "Order": 2
+  }
+}

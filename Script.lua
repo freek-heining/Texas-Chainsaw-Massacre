@@ -1,14 +1,13 @@
--- Initial dice objects
-local diceObjects = {}
-
 -- Setup Menu
 require("Menu")
 -- Dice Tray 
 require("Dice_Tray")
 -- Restrict certain player actions
 require("Behavior_Restrictions")
+-- Dealing 4 random Horror Tiles
+require("Horror_Tiles")
 
 function onLoad()
     UI.setAttribute("setupWindow", "active", false)
-    diceObjects = GetDiceFromZone()
+    --startLuaCoroutine(Global, "DealHorrorTilesCoroutine")
 end

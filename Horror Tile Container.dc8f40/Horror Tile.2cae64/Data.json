@@ -1,0 +1,54 @@
+{
+  "GUID": "2cae64",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -42.1255951,
+    "posY": 3.17163515,
+    "posZ": -15.0678492,
+    "rotX": -0.00017912421,
+    "rotY": 180.011978,
+    "rotZ": 180.0002,
+    "scaleX": 0.78,
+    "scaleY": 1.0,
+    "scaleZ": 0.78
+  },
+  "Nickname": "Horror Tile",
+  "Description": "Flip to reveal",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360783279,
+    "g": 0.360783279,
+    "b": 0.360783279
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/11805870637163735260/AA687019BCD53C44406B8C7C96CA0610FF711B76/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10673966532431652191/3B289DA3B0A72204FAFADCAD7B479514EFA31B03/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 3,
+      "Thickness": 0.1509485,
+      "Stackable": true,
+      "Stretch": true
+    }
+  }
+}

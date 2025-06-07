@@ -1,0 +1,69 @@
+{
+  "GUID": "cbb4ea",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 5.73,
+    "posY": 2.62,
+    "posZ": 7.397446E-05,
+    "rotX": -8.103614E-06,
+    "rotY": 0.0181397218,
+    "rotZ": -0.000154399531,
+    "scaleX": 1.04923213,
+    "scaleY": 1.0,
+    "scaleZ": 1.04923213
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15413042664049647204/8DA7DDDDC6542E29FC87A63F47F4EB6282C00474/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.0,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 3.5093683E-06,
+        "y": 0.0499994755,
+        "z": -6.56171233E-06
+      },
+      "Rotation": {
+        "x": 3.61434722E-08,
+        "y": 0.004598465,
+        "z": 180.0
+      }
+    }
+  ]
+}
