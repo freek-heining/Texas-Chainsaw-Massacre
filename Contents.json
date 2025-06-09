@@ -195,9 +195,6 @@
     "path": "./Panic Meter Cube.1d88e3"
   },
   {
-    "path": "./Vehicle Deck.c884d4"
-  },
-  {
     "path": "./Fire Token.24f6eb"
   },
   {
@@ -271,5 +268,8 @@
   },
   {
     "path": "./Manual.dd8f8a"
+  },
+  {
+    "path": "./Vehicle Deck.83a551"
   }
 ]

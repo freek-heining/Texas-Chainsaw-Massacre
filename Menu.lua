@@ -86,4 +86,5 @@ end
 -- Start game
 function ButtonStartGameClick()
     log("Start!")
+    StartGame(achievements, currentScenarioIndex)
 end
