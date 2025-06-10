@@ -3,13 +3,13 @@
   "Name": "FogOfWarTrigger",
   "Transform": {
     "posX": -28.99,
-    "posY": 3.0,
+    "posY": 3.51635742,
     "posZ": -19.0,
     "rotX": 0.0,
     "rotY": -4.46236045E-05,
     "rotZ": 0.0,
     "scaleX": 3.4,
-    "scaleY": 0.88,
+    "scaleY": 2.0,
     "scaleZ": 10.05
   },
   "Nickname": "Horror Tile Hidden Zone",
@@ -24,7 +24,7 @@
     "r": 0.856,
     "g": 0.09999997,
     "b": 0.09399996,
-    "a": 0.07694851
+    "a": 0.6493157
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
