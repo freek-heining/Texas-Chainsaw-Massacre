@@ -14,10 +14,13 @@ function DealHorrorTilesCoroutine()
     for i = 1, 4 do
         horrorTileContainer.takeObject({
             position = horrorTilePositions[i],
-            rotation = { 0, 180, 0 }
+            rotation = { 0, 180, 180 },
+            callback_function = function(spawnedObject)
+                Wait.frames(function()
+                    spawnedObject.flip()
+                end)
+            end
         })
-
-        log(horrorTilePositions[i])
 
         for _ = 1, 20 do
             coroutine.yield(0)

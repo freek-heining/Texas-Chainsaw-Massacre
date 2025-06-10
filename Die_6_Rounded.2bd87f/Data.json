@@ -1,19 +1,19 @@
 {
-  "GUID": "335521",
-  "Name": "Custom_Assetbundle",
+  "GUID": "2bd87f",
+  "Name": "Die_6_Rounded",
   "Transform": {
-    "posX": -36.2871628,
-    "posY": 3.24042916,
-    "posZ": 3.49998426,
-    "rotX": -1.6970911E-05,
-    "rotY": 355.661835,
-    "rotZ": -0.0001807592,
+    "posX": 27.5368748,
+    "posY": 2.9159615,
+    "posZ": -1.87512219,
+    "rotX": -1.03901912E-05,
+    "rotY": -6.97280348E-06,
+    "rotZ": -8.41770743E-05,
     "scaleX": 1.0,
     "scaleY": 1.0,
     "scaleZ": 1.0
   },
-  "Nickname": "Bone Die",
-  "Description": "3x: 0 Success, 2x: 1 Success, 1x: 2 Success.",
+  "Nickname": "",
+  "Description": "Roll to determine first pick on Personal Items",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,15 +21,15 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 1.0,
-    "g": 0.9872584,
-    "b": 0.9103774
+    "r": 0.996078432,
+    "g": 0.0,
+    "b": 0.0
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,
-  "Grid": false,
-  "Snap": false,
+  "Grid": true,
+  "Snap": true,
   "IgnoreFoW": false,
   "MeasureMovement": false,
   "DragSelectable": true,
@@ -39,26 +39,20 @@
   "GridProjection": false,
   "HideWhenFaceDown": false,
   "Hands": false,
-  "CustomAssetbundle": {
-    "AssetbundleURL": "https://steamusercontent-a.akamaihd.net/ugc/14293894388418343597/BFCF37A8B1A7F5DF2009CFD67E181A72FEA5D591/",
-    "AssetbundleSecondaryURL": "",
-    "MaterialIndex": 0,
-    "TypeIndex": 2,
-    "LoopingEffectIndex": 0
-  },
+  "MaterialIndex": 1,
   "RotationValues": [
     {
       "Value": "1",
       "Rotation": {
         "x": 0.0,
         "y": 0.0,
-        "z": 90.0
+        "z": 0.0
       }
     },
     {
       "Value": "2",
       "Rotation": {
-        "x": 270.0,
+        "x": 90.0,
         "y": 0.0,
         "z": 0.0
       }
@@ -68,7 +62,7 @@
       "Rotation": {
         "x": 0.0,
         "y": 0.0,
-        "z": 0.0
+        "z": 90.0
       }
     },
     {
@@ -76,13 +70,13 @@
       "Rotation": {
         "x": 0.0,
         "y": 0.0,
-        "z": 180.0
+        "z": -90.0
       }
     },
     {
       "Value": "5",
       "Rotation": {
-        "x": 90.0,
+        "x": -90.0,
         "y": 0.0,
         "z": 0.0
       }
@@ -92,7 +86,7 @@
       "Rotation": {
         "x": 0.0,
         "y": 0.0,
-        "z": 270.0
+        "z": -180.0
       }
     }
   ]

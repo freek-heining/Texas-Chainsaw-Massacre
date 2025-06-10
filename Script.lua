@@ -6,46 +6,110 @@ require("Dice_Tray")
 require("Behavior_Restrictions")
 -- Dealing 4 random Horror Tiles
 require("Horror_Tiles")
+-- Set all interactables
+require("Set_Interactables")
 
 function onLoad()
-    UI.setAttribute("setupWindow", "active", false)
+    --UI.setAttribute("setupWindow", "active", false)
+    broadcastToAll("First determine the Red / Sawyer player before choosing it!")
+    SetInteractableFalse()
 end
 
 function StartGame(achievements, currentScenarioIndex)
-    SawyerDeckGUID = "0a2ad0"
-    SawyerDeckAchievGUID = "4300c2"
-    DesperationDeckGUID = "dc7f3e"
-    DesperationDeckAchievGUID = "7ba0bc"
-    InjuryDeckGUID = "ab13cc"
-    InjuryDeckAchievGUID = "f1ac4c"
-    SawyerDeck = getObjectFromGUID(SawyerDeckGUID)
-    SawyerDeckAchiev = getObjectFromGUID(SawyerDeckAchievGUID)
-    DesperationDeck = getObjectFromGUID(DesperationDeckGUID)
-    DesperationDeckAchiev = getObjectFromGUID(DesperationDeckAchievGUID)
-    InjuryDeck = getObjectFromGUID(InjuryDeckGUID)
-    InjuryDeckAchiev = getObjectFromGUID(InjuryDeckAchievGUID)
+    local sawyerDeckGUID = "0a2ad0"
+    local sawyerDeckAchievGUID = "4300c2"
+    local desperationDeckGUID = "dc7f3e"
+    local desperationDeckAchievGUID = "7ba0bc"
+    local injuryDeckGUID = "ab13cc"
+    local injuryDeckAchievGUID = "f1ac4c"
+    local sawyerDeck = getObjectFromGUID(sawyerDeckGUID)
+    local sawyerDeckAchiev = getObjectFromGUID(sawyerDeckAchievGUID)
+    local desperationDeck = getObjectFromGUID(desperationDeckGUID)
+    local desperationDeckAchiev = getObjectFromGUID(desperationDeckAchievGUID)
+    local injuryDeck = getObjectFromGUID(injuryDeckGUID)
+    local injuryDeckAchiev = getObjectFromGUID(injuryDeckAchievGUID)
 
-    broadcastToAll("First determine the Red / Sawyer player before choosing it!")
+    local personalItemDeckGUID = "d89d3a"
+    local personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
+
     UI.setAttribute("setupWindow", "active", false)
 
-    -- #1 Deal Horror Tiles
+    -- #1: Deal Horror Tiles
     startLuaCoroutine(Global, "DealHorrorTilesCoroutine")
 
-    -- #2 Deal Sawyer Cards
+    -- #2: Shuffle & Deal Sawyer Cards
     if achievements then
-        SawyerDeckAchiev.setPosition({12.16, 2.58, -21.00})
-        SawyerDeck.destruct()
+        sawyerDeckAchiev.shuffle()
+        sawyerDeckAchiev.setPosition({12.16, 2.58, -21.00})
+        sawyerDeck.destruct()
     else
-        SawyerDeck.setPosition({12.16, 2.58, -21.00})
-        SawyerDeckAchiev.destruct()
+        sawyerDeck.shuffle()
+        sawyerDeck.setPosition({12.16, 2.58, -21.00})
+        sawyerDeckAchiev.destruct()
     end
 
-    -- #3 Deal Sawyer Cards
+    -- #3: Shuffle & Deal Sawyer Cards
     if achievements then
-        DesperationDeckAchiev.setPosition({32.82, 2.58, 8.41})
-        DesperationDeck.destruct()
+        desperationDeckAchiev.shuffle()
+        desperationDeckAchiev.setPosition({32.82, 2.58, 8.41})
+        desperationDeck.destruct()
     else
-        DesperationDeck.setPosition({32.82, 2.58, 8.41})
-        DesperationDeckAchiev.destruct()
-    end    
+        desperationDeck.shuffle()
+        desperationDeck.setPosition({32.82, 2.58, 8.41})
+        desperationDeckAchiev.destruct()
+    end
+
+    -- #4: Shuffle & Deal Injury Cards
+    if achievements then
+        injuryDeckAchiev.shuffle()
+        injuryDeckAchiev.setPosition({32.64, 2.58, -4.83}, {0.00, 270.00, 180.00})
+        injuryDeck.destruct()
+    else
+        injuryDeck.shuffle()
+        injuryDeck.setPosition({32.64, 2.58, -4.83}, {0.00, 270.00, 180.00})
+        injuryDeckAchiev.destruct()
+    end
+
+    -- #5: Shuffle & Deal 6 Personal Items
+    local personalItemPositions = {
+        {25.40, 2.58, -4.60},
+        {25.40, 2.58, -8.20},
+        {25.40, 2.58, -11.80},
+        {25.40, 2.58, -15.40},
+        {25.40, 2.58, -19.00},
+        {25.40, 2.58, -22.60}
+    }
+    personalItemDeck.shuffle()
+
+    for i = 1, 6 do
+        personalItemDeck.takeObject({
+            position = personalItemPositions[i],
+            flip = true
+        })
+    end
+
+    personalItemDeck.destruct()
+
+    broadcastToAll("Roll a D6 to determine first pick on Personal Items, then continue clockwise in player order. Discard the rest")
+
+    -- #6: Set Scenario Cards
+    local ScenariosScriptingZoneGUID = "6a561d"
+    local ScenariosScriptingZone = getObjectFromGUID(ScenariosScriptingZoneGUID)
+
+    local scenarioNames = {
+        "Scenario Card A: Who Will Survive?",
+        "Scenario Card B: Burn it Down",
+        "Scenario Card C: Ransack",
+        "Scenario Card D: I Dare You",
+        "Scenario Card E: Things Happened Here"
+    }
+
+    for i, object in ipairs(ScenariosScriptingZone.getObjects()) do
+        if object.type == "Tile" and object.getName() ~=  scenarioNames[currentScenarioIndex] then
+            object.destruct()
+        elseif object.type == "Tile" then
+            object.locked = false
+            Wait.time(function() object.locked = true end, 1)
+        end
+    end
 end

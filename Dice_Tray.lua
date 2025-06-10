@@ -121,7 +121,6 @@ function RollDice(player, amount, id)
             for _, number in pairs(randomUniqueNumbers) do
                 numberOfSuccesses = numberOfSuccesses + interpretDieValue(diceObjects[number].getValue())
             end
-            log(numberOfSuccesses)
 
             if numberOfSuccesses == 0 then
                 broadcastToAll("Scoring 0 success...", player.color)
