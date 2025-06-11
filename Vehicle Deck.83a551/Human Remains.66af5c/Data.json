@@ -1,0 +1,55 @@
+{
+  "GUID": "66af5c",
+  "Name": "Card",
+  "Transform": {
+    "posX": 33.51085,
+    "posY": 2.65927315,
+    "posZ": 10.2324381,
+    "rotX": 0.002712089,
+    "rotY": 269.241058,
+    "rotZ": 0.00106007839,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Human Remains",
+  "Description": "When revealed, raise the Panic Meter.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 5606,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "56": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14748704114641423168/664E26F434035A492C6586DC14296FBAA7AAC40F/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/15425889228915953923/8CEC2BCB9E26EBE41CCEB40C107DF01FF79B1E09/",
+      "NumWidth": 4,
+      "NumHeight": 3,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

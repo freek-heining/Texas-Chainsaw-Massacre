@@ -1,6 +1,7 @@
 local scenarioIndex = 0
 
 function SetupGame(achievements, chosenScenarioIndex)
+ --#GUIDs
     local sawyerDeckGUID = "0a2ad0"
     local sawyerDeckAchievGUID = "4300c2"
     local desperationDeckGUID = "dc7f3e"
@@ -13,15 +14,13 @@ function SetupGame(achievements, chosenScenarioIndex)
     local desperationDeckAchiev = getObjectFromGUID(desperationDeckAchievGUID)
     local injuryDeck = getObjectFromGUID(injuryDeckGUID)
     local injuryDeckAchiev = getObjectFromGUID(injuryDeckAchievGUID)
-
-
     local itemDeckGUID = "920a1b"
-    local itemDeck = getObjectFromGUID(itemDeckGUID)
     local itemDeckAchievGUID = "ad86a4"
-    local itemDeckAchiev = getObjectFromGUID(itemDeckAchievGUID)
     local personalItemDeckGUID = "d89d3a"
+    local itemDeck = getObjectFromGUID(itemDeckGUID)
+    local itemDeckAchiev = getObjectFromGUID(itemDeckAchievGUID)
     local personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
-
+--
     UI.setAttribute("setupWindow", "active", false)
 
     scenarioIndex = chosenScenarioIndex
@@ -81,7 +80,11 @@ function SetupGame(achievements, chosenScenarioIndex)
         })
     end
 
-    personalItemDeck.destruct()
+    local itemDieGUID = "2bd87f"
+    local itemDie = getObjectFromGUID(itemDieGUID)
+    itemDie.setPosition({28.70, 2.92, -22.22})
+
+    personalItemDeck.setPosition({42.24, 2.66, -14.00})
 
     broadcastToAll("Roll a D6 to determine first pick on Personal Items, then continue clockwise in player order. Discard the rest")
 
@@ -118,25 +121,51 @@ function SetupGame(achievements, chosenScenarioIndex)
     -- #8: Set Scenario Cards
     startLuaCoroutine(Global, "SetupItemsCoroutine")
 
+    -- #9: Set Vehicle Cards
+    startLuaCoroutine(Global, "SetupVehiclesCoroutine")
+end
+
+function SetupVehiclesCoroutine()
+    local vehicleDeckGUID = "83a551"
+    local vehicleDeck = getObjectFromGUID(vehicleDeckGUID)
+    
+    vehicleDeck.shuffle()
+    for _ = 1, 60 do coroutine.yield(0) end
+
+    if scenarioIndex == 1 then
+        -- Delete 3 randoms excluding 3 named
+        local iterator = 1
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
+            log(iterator)
+            if iterator > 3 then
+                log("Break")
+                break
+            end
+            if not (vehicleCard.name == "Orange Car" or vehicleCard.name == "Blue Truck" or vehicleCard.name == "Green Van") then
+                iterator = iterator + 1
+                log(vehicleCard.name)
+                vehicleDeck.takeObject({
+                    position = {37.39, 2.58, 12.88},
+                    callback_function = function(card)
+                        card.destruct()
+                    end
+                })
+            end
+
+            for _ = 1, 30 do coroutine.yield(0) end
+        end
+
+    -- elseif scenarioIndex == 2 then
+    -- elseif scenarioIndex == 3 then
+    -- elseif scenarioIndex == 4 then
+    -- elseif scenarioIndex == 5 then
+    end
+
+    return 1
 end
 
 function SetupItemsCoroutine()
-    local function splitDealItems()
-        -- split() returns a table
-        local splitItemDecksTable = ActiveItemDeck.split(2)
-        splitItemDecksTable[1].setPosition({5.73, 2.58, 4.95})
-        splitItemDecksTable[1].setRotation({0.00, 0.00, 180.00})
-        splitItemDecksTable[2].setPosition({24.70, 2.58, 5.07})
-        splitItemDecksTable[2].setRotation({0.00, 0.00, 180.00})
-
-        for _ = 1, 30 do
-            coroutine.yield(0)
-        end
-
-        splitItemDecksTable[1].locked = true
-        splitItemDecksTable[2].locked = true
-    end
-
+--GUIDs
     local ScenariosADeckGUID = "382ea5"
     local ScenariosADeck = getObjectFromGUID(ScenariosADeckGUID)
     local ScenariosBDeckGUID = "12acdc"
@@ -151,6 +180,22 @@ function SetupItemsCoroutine()
     local photoTokensStack = getObjectFromGUID(photoTokensStackGUID)
     local lootTokensStackGUID = "ceac14"
     local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
+--
+
+    local function splitDealItems()
+        -- split() returns a table
+        local splitItemDecksTable = ActiveItemDeck.split(2)
+        splitItemDecksTable[1].setPosition({5.73, 2.58, 4.95})
+        splitItemDecksTable[1].setRotation({0.00, 0.00, 180.00})
+        splitItemDecksTable[2].setPosition({24.70, 2.58, 5.07})
+        splitItemDecksTable[2].setRotation({0.00, 0.00, 180.00})
+
+        for _ = 1, 30 do coroutine.yield(0) end
+
+        splitItemDecksTable[1].locked = true
+        splitItemDecksTable[2].locked = true
+    end
+
 
 
     -- ActiveItemDeck = global that holds itemDeck or itemDeckAchiev
@@ -233,7 +278,6 @@ function SetupItemsCoroutine()
 
             -- remainder contains reference to last object from container
             if lootTokensStack.remainder ~= nil then
-                log(lootTokensStack.remainder)
                 lootTokensStack.remainder.setPositionSmooth(scenarioCLootTokenPositions[7], false, false)
                 lootTokensStack.remainder.setRotation({ 0, 270, 180 })
             end
@@ -286,7 +330,6 @@ function SetupItemsCoroutine()
 
             -- remainder contains reference to last object from container
             if photoTokensStack.remainder ~= nil then
-                log(photoTokensStack.remainder)
                 photoTokensStack.remainder.setPositionSmooth(scenarioDPhotoTokenPositions[6], false, false)
                 photoTokensStack.remainder.setRotation({ 0, 270, 180 })
             end
@@ -308,6 +351,7 @@ function SetupItemsCoroutine()
             {-25.02, 2.71, 0.00},
             {-25.02, 2.71, -2.00}
         }
+
         ScenariosADeck.destruct()
         ScenariosBDeck.destruct()
         ScenariosCDeck.destruct()
@@ -317,6 +361,10 @@ function SetupItemsCoroutine()
         ScenarioDECard.locked = false
         ScenariosEDeck.locked = false
 
+        ScenariosEDeck.flip()
+        for _ = 1, 60 do coroutine.yield(0) end
+        ScenariosEDeck.shuffle()
+
         -- 3 Photo Tokens
         for i = 1, 3 do
             photoTokensStack.takeObject({
@@ -324,23 +372,25 @@ function SetupItemsCoroutine()
                 rotation = { 0, 270, 180 }
             })
 
-            for _ = 1, 20 do
-                coroutine.yield(0)
-            end
+            for _ = 1, 20 do coroutine.yield(0) end
         end
+
+        photoTokensStack.destruct()
+
+        -- Move 1 random scenario card facedown near board before merging the rest
+        ScenariosEDeck.takeObject({
+            position = {-25.56, 2.58, -6.78},
+            rotation = {0.00, 0.00, 180.00},
+        })
 
         -- Merge decks
         ActiveItemDeck.putObject(ScenariosEDeck)
         
-        for _ = 1, 100 do
-            coroutine.yield(0)
-        end
+        for _ = 1, 100 do coroutine.yield(0) end
         
         ActiveItemDeck.shuffle()
 
-        for _ = 1, 60 do
-            coroutine.yield(0)
-        end
+        for _ = 1, 60 do coroutine.yield(0) end
 
         splitDealItems()
 
