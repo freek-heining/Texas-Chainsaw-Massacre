@@ -1,21 +1,6 @@
--- Setup Menu
-require("Menu")
--- Dice Tray 
-require("Dice_Tray")
--- Restrict certain player actions
-require("Behavior_Restrictions")
--- Dealing 4 random Horror Tiles
-require("Horror_Tiles")
--- Set all interactables
-require("Set_Interactables")
+local scenarioIndex = 0
 
-function onLoad()
-    UI.setAttribute("setupWindow", "active", false)
-    broadcastToAll("First determine the Red / Sawyer player before choosing it!")
-    SetInteractableFalse()
-end
-
-function SetupGame(achievements, currentScenarioIndex)
+function SetupGame(achievements, chosenScenarioIndex)
     local sawyerDeckGUID = "0a2ad0"
     local sawyerDeckAchievGUID = "4300c2"
     local desperationDeckGUID = "dc7f3e"
@@ -38,6 +23,8 @@ function SetupGame(achievements, currentScenarioIndex)
     local personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
 
     UI.setAttribute("setupWindow", "active", false)
+
+    scenarioIndex = chosenScenarioIndex
 
     -- #1: Deal Horror Tiles
     startLuaCoroutine(Global, "DealHorrorTilesCoroutine")
@@ -77,18 +64,19 @@ function SetupGame(achievements, currentScenarioIndex)
 
     -- #5: Shuffle & Deal 6 Personal Items
     local personalItemPositions = {
-        {25.40, 2.58, -4.60},
-        {25.40, 2.58, -8.20},
-        {25.40, 2.58, -11.80},
-        {25.40, 2.58, -15.40},
-        {25.40, 2.58, -19.00},
-        {25.40, 2.58, -22.60}
+        {32.70, 2.58, -19.16},
+        {28.70, 2.58, -19.16},
+        {24.70, 2.58, -19.16},
+        {32.70, 2.58, -14.00},
+        {28.70, 2.58, -14.00},
+        {24.70, 2.58, -14.00}
     }
     personalItemDeck.shuffle()
 
     for i = 1, 6 do
         personalItemDeck.takeObject({
             position = personalItemPositions[i],
+            rotation = {0.00, 0.00, 0.00},
             flip = true
         })
     end
@@ -110,7 +98,7 @@ function SetupGame(achievements, currentScenarioIndex)
     }
 
     for i, object in ipairs(ScenariosScriptingZone.getObjects()) do
-        if object.type == "Tile" and object.getName() ~=  scenarioNames[currentScenarioIndex] then
+        if object.type == "Tile" and object.getName() ~=  scenarioNames[chosenScenarioIndex] then
             object.destruct()
         elseif object.type == "Tile" then
             object.locked = false
@@ -120,17 +108,35 @@ function SetupGame(achievements, currentScenarioIndex)
 
     -- #7: Set Item Cards
     if achievements then
-        itemDeckAchiev.shuffle()
-        
+        ActiveItemDeck = itemDeckAchiev
         itemDeck.destruct()
     else
-        itemDeck.shuffle()
-      
+        ActiveItemDeck = itemDeck
         itemDeckAchiev.destruct()
     end
 
-
     -- #8: Set Scenario Cards
+    startLuaCoroutine(Global, "SetupItemsCoroutine")
+
+end
+
+function SetupItemsCoroutine()
+    local function splitDealItems()
+        -- split() returns a table
+        local splitItemDecksTable = ActiveItemDeck.split(2)
+        splitItemDecksTable[1].setPosition({5.73, 2.58, 4.95})
+        splitItemDecksTable[1].setRotation({0.00, 0.00, 180.00})
+        splitItemDecksTable[2].setPosition({24.70, 2.58, 5.07})
+        splitItemDecksTable[2].setRotation({0.00, 0.00, 180.00})
+
+        for _ = 1, 30 do
+            coroutine.yield(0)
+        end
+
+        splitItemDecksTable[1].locked = true
+        splitItemDecksTable[2].locked = true
+    end
+
     local ScenariosADeckGUID = "382ea5"
     local ScenariosADeck = getObjectFromGUID(ScenariosADeckGUID)
     local ScenariosBDeckGUID = "12acdc"
@@ -141,5 +147,206 @@ function SetupGame(achievements, currentScenarioIndex)
     local ScenarioDECard = getObjectFromGUID(ScenarioDECardGUID)
     local ScenariosEDeckGUID = "8c348f"
     local ScenariosEDeck = getObjectFromGUID(ScenariosEDeckGUID)
+    local photoTokensStackGUID = "764fd1"
+    local photoTokensStack = getObjectFromGUID(photoTokensStackGUID)
+    local lootTokensStackGUID = "ceac14"
+    local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
 
+
+    -- ActiveItemDeck = global that holds itemDeck or itemDeckAchiev
+    -- Scenario A
+    if scenarioIndex == 1 then
+        ScenariosBDeck.destruct()
+        ScenariosCDeck.destruct()
+        ScenarioDECard.destruct()
+        ScenariosEDeck.destruct()
+        photoTokensStack.destruct()
+        lootTokensStack.destruct()
+
+        ActiveItemDeck.locked = false
+        ScenariosADeck.locked = false
+
+        -- Merge decks
+        ActiveItemDeck.putObject(ScenariosADeck)
+        
+        for _ = 1, 100 do
+            coroutine.yield(0)
+        end
+        
+        ActiveItemDeck.shuffle()
+
+        for _ = 1, 60 do
+            coroutine.yield(0)
+        end
+
+        splitDealItems()
+
+    -- Scenario B    
+    elseif scenarioIndex == 2 then
+        local scenarioBCardPositions = {
+            {-25.60, 2.58, -7.00},
+            {-25.60, 2.58, 0.00},
+            {-25.60, 2.58, 7.00}
+        }
+        ScenariosADeck.destruct()
+        ScenariosCDeck.destruct()
+        ScenarioDECard.destruct()
+        ScenariosEDeck.destruct()
+        photoTokensStack.destruct()
+        lootTokensStack.destruct()
+
+        for i = 1, 3 do
+            ScenariosBDeck.takeObject({
+                position = scenarioBCardPositions[i],
+                rotation = { 0, 0, 0 }
+            })
+        end
+            
+        splitDealItems()
+
+    -- Scenario C 
+    elseif scenarioIndex == 3 then
+        local scenarioCLootTokenPositions = {
+            {-25.02, 2.71, 6.00},
+            {-25.02, 2.71, 4.00},
+            {-25.02, 2.71, 2.00},
+            {-25.02, 2.71, 0.00},
+            {-25.02, 2.71, -2.00},
+            {-25.02, 2.71, -4.00},
+            {-25.02, 2.71, -6.00}
+        }
+        ScenariosADeck.destruct()
+        ScenariosBDeck.destruct()
+        ScenarioDECard.destruct()
+        ScenariosEDeck.destruct()
+        photoTokensStack.destruct()
+
+        ActiveItemDeck.locked = false
+        ScenariosCDeck.locked = false
+
+        -- 7 Loot Tokens
+        for i = 1, 6 do
+            lootTokensStack.takeObject({
+                position = scenarioCLootTokenPositions[i],
+                rotation = { 0, 270, 180 }
+            })
+
+            -- remainder contains reference to last object from container
+            if lootTokensStack.remainder ~= nil then
+                log(lootTokensStack.remainder)
+                lootTokensStack.remainder.setPositionSmooth(scenarioCLootTokenPositions[7], false, false)
+                lootTokensStack.remainder.setRotation({ 0, 270, 180 })
+            end
+
+            for _ = 1, 20 do
+                coroutine.yield(0)
+            end
+        end
+
+        -- Merge decks
+        ActiveItemDeck.putObject(ScenariosCDeck)
+        
+        for _ = 1, 100 do
+            coroutine.yield(0)
+        end
+        
+        ActiveItemDeck.shuffle()
+
+        for _ = 1, 60 do
+            coroutine.yield(0)
+        end
+
+        splitDealItems()
+
+    -- Scenario D
+    elseif scenarioIndex == 4 then
+        local scenarioDPhotoTokenPositions = {
+            {-25.02, 2.71, 5.00},
+            {-25.02, 2.71, 3.00},
+            {-25.02, 2.71, 1.00},
+            {-25.02, 2.71, -1.00},
+            {-25.02, 2.71, -3.00},
+            {-25.02, 2.71, -5.00},
+        }
+        ScenariosADeck.destruct()
+        ScenariosBDeck.destruct()
+        ScenariosCDeck.destruct()
+        ScenariosEDeck.destruct()
+        lootTokensStack.destruct()
+
+        ActiveItemDeck.locked = false
+        ScenarioDECard.locked = false
+
+        -- 6 Photo Tokens
+        for i = 1, 6 do
+            photoTokensStack.takeObject({
+                position = scenarioDPhotoTokenPositions[i],
+                rotation = { 0, 270, 180 }
+            })
+
+            -- remainder contains reference to last object from container
+            if photoTokensStack.remainder ~= nil then
+                log(photoTokensStack.remainder)
+                photoTokensStack.remainder.setPositionSmooth(scenarioDPhotoTokenPositions[6], false, false)
+                photoTokensStack.remainder.setRotation({ 0, 270, 180 })
+            end
+
+            for _ = 1, 20 do
+                coroutine.yield(0)
+            end
+        end
+
+        splitDealItems()
+
+        ScenarioDECard.setPosition({36.65, 2.58, -17.00})
+        ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+
+    -- Scenario E
+    elseif scenarioIndex == 5 then
+        local scenarioEPhotoTokenPositions = {
+            {-25.02, 2.71, 2.00},
+            {-25.02, 2.71, 0.00},
+            {-25.02, 2.71, -2.00}
+        }
+        ScenariosADeck.destruct()
+        ScenariosBDeck.destruct()
+        ScenariosCDeck.destruct()
+        lootTokensStack.destruct()
+
+        ActiveItemDeck.locked = false
+        ScenarioDECard.locked = false
+        ScenariosEDeck.locked = false
+
+        -- 3 Photo Tokens
+        for i = 1, 3 do
+            photoTokensStack.takeObject({
+                position = scenarioEPhotoTokenPositions[i],
+                rotation = { 0, 270, 180 }
+            })
+
+            for _ = 1, 20 do
+                coroutine.yield(0)
+            end
+        end
+
+        -- Merge decks
+        ActiveItemDeck.putObject(ScenariosEDeck)
+        
+        for _ = 1, 100 do
+            coroutine.yield(0)
+        end
+        
+        ActiveItemDeck.shuffle()
+
+        for _ = 1, 60 do
+            coroutine.yield(0)
+        end
+
+        splitDealItems()
+
+        ScenarioDECard.setPosition({36.65, 2.58, -17.00})
+        ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+    end
+
+    return 1
 end
