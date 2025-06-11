@@ -132,20 +132,24 @@ function SetupVehiclesCoroutine()
     vehicleDeck.shuffle()
     for _ = 1, 60 do coroutine.yield(0) end
 
-    if scenarioIndex == 1 then
-        -- Delete 3 randoms excluding 3 named
+    local vehicleGuid
+
+    if scenarioIndex == 1 or scenarioIndex == 2 then
         local iterator = 1
         for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
-            log(iterator)
             if iterator > 3 then
-                log("Break")
                 break
             end
+            
+            vehicleGuid = vehicleCard.guid
+            
+            -- Delete 3 randoms excluding 3 named
             if not (vehicleCard.name == "Orange Car" or vehicleCard.name == "Blue Truck" or vehicleCard.name == "Green Van") then
                 iterator = iterator + 1
-                log(vehicleCard.name)
+
                 vehicleDeck.takeObject({
                     position = {37.39, 2.58, 12.88},
+                    guid = vehicleGuid,
                     callback_function = function(card)
                         card.destruct()
                     end
@@ -154,9 +158,40 @@ function SetupVehiclesCoroutine()
 
             for _ = 1, 30 do coroutine.yield(0) end
         end
+    elseif scenarioIndex == 3 then
+        local iterator = 1
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
+            if iterator > 3 then
+                break
+            end
+            log("IT: " .. iterator)
+            log(vehicleCard.name)
 
-    -- elseif scenarioIndex == 2 then
-    -- elseif scenarioIndex == 3 then
+            vehicleGuid = vehicleCard.guid
+
+            -- Seperate Blue Truck
+            if vehicleCard.name == "Blue Truck" then
+                vehicleDeck.takeObject({
+                    position = {36.65, 2.58, -17.00},
+                    rotation = {0.00, 0.00, 0.00},
+                    guid = vehicleGuid
+                })
+
+            -- Delete 3 randoms excluding 1 named
+            elseif not (vehicleCard.name == "Pile of Parts") then
+                iterator = iterator + 1
+                
+                vehicleDeck.takeObject({
+                    position = {37.39, 2.58, 12.88},
+                    guid = vehicleGuid,
+                    callback_function = function(card)
+                        card.destruct()
+                    end
+                })
+            end
+
+            for _ = 1, 30 do coroutine.yield(0) end
+        end
     -- elseif scenarioIndex == 4 then
     -- elseif scenarioIndex == 5 then
     end
