@@ -54,9 +54,6 @@
     "path": "./Scenario Card B- Burn it Down.0fdd50"
   },
   {
-    "path": "./Scenario Card C- Ransack.bf3bc5"
-  },
-  {
     "path": "./Scenario Card D- I Dare You.6fc7e2"
   },
   {
@@ -225,9 +222,6 @@
     "path": "./Scenario Card B- Burn it Down.d4b904"
   },
   {
-    "path": "./Scenario Card C- Ransack.339a5f"
-  },
-  {
     "path": "./Scenario Card D- I Dare You.1ec062"
   },
   {
@@ -277,5 +271,11 @@
   },
   {
     "path": "./ScenariosScriptingZone.6a561d"
+  },
+  {
+    "path": "./Scenario Card C- Ransack.339a5f"
+  },
+  {
+    "path": "./Scenario Card C- Ransack.bf3bc5"
   }
 ]

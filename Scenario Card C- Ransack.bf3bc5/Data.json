@@ -2,12 +2,12 @@
   "GUID": "bf3bc5",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 40.9998627,
-    "posY": 2.85996079,
-    "posZ": 5.500144,
-    "rotX": 359.9796,
-    "rotY": 270.0028,
-    "rotZ": 359.9769,
+    "posX": 40.99981,
+    "posY": 2.86258674,
+    "posZ": 5.4978857,
+    "rotX": 0.00127402716,
+    "rotY": 269.999573,
+    "rotZ": -0.00374014559,
     "scaleX": 3.3,
     "scaleY": 1.0,
     "scaleZ": 3.3
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360782623,
-    "g": 0.360782623,
-    "b": 0.360782623
+    "r": 0.360782474,
+    "g": 0.360782474,
+    "b": 0.360782474
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
@@ -40,8 +40,8 @@
   "HideWhenFaceDown": false,
   "Hands": false,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16199794377338992966/2D7158A774B58EDFD3CCC0121996DE0AE7CF947D/",
-    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12510068455320080832/4A1AE3EB351A32CD3C16889AC7379CEFB960B4EE/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16027846308750517699/B6B17F1340B16CBC3DAA0475C3A320031E03C407/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16741735041944586096/292B61F9673FF535A70DD639B5F663056796D39A/",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {

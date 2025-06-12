@@ -134,6 +134,7 @@ function SetupVehiclesCoroutine()
 
     local vehicleGuid
 
+    -- Scenario 1 & 2
     if scenarioIndex == 1 or scenarioIndex == 2 then
         local iterator = 1
         for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
@@ -158,6 +159,7 @@ function SetupVehiclesCoroutine()
 
             for _ = 1, 30 do coroutine.yield(0) end
         end
+    -- Scenario 3
     elseif scenarioIndex == 3 then
         local iterator = 1
         for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
@@ -192,7 +194,11 @@ function SetupVehiclesCoroutine()
 
             for _ = 1, 30 do coroutine.yield(0) end
         end
+
+    -- Scenario 4
     -- elseif scenarioIndex == 4 then
+    
+    -- Scenario 5
     -- elseif scenarioIndex == 5 then
     end
 

@@ -1,7 +1,7 @@
 {
-  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v5.8",
-  "EpochTime": 1749644291,
-  "Date": "6/11/2025 2:18:11 PM",
+  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v5.9",
+  "EpochTime": 1749728649,
+  "Date": "6/12/2025 1:44:09 PM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -448,16 +448,6 @@
     },
     {
       "Type": 0,
-      "Name": "Scenario_C_Front",
-      "URL": "https://steamusercontent-a.akamaihd.net/ugc/16199794377338992966/2D7158A774B58EDFD3CCC0121996DE0AE7CF947D/"
-    },
-    {
-      "Type": 0,
-      "Name": "Scenario_C_Back",
-      "URL": "https://steamusercontent-a.akamaihd.net/ugc/12510068455320080832/4A1AE3EB351A32CD3C16889AC7379CEFB960B4EE/"
-    },
-    {
-      "Type": 0,
       "Name": "Scenario_D_Front",
       "URL": "https://steamusercontent-a.akamaihd.net/ugc/15422823020581021818/E7436A1FF723A6FDC3BB5667CACF5D827EBD24D2/"
     },
@@ -475,6 +465,16 @@
       "Type": 0,
       "Name": "Scenario_E_Front",
       "URL": "https://steamusercontent-a.akamaihd.net/ugc/11554232178650614633/868448F9CA493867F9D1CA462F8ED9D8CDFC8519/"
+    },
+    {
+      "Type": 0,
+      "Name": "Scenario_C_Front",
+      "URL": "https://steamusercontent-a.akamaihd.net/ugc/16027846308750517699/B6B17F1340B16CBC3DAA0475C3A320031E03C407/"
+    },
+    {
+      "Type": 0,
+      "Name": "Scenario_C_Back",
+      "URL": "https://steamusercontent-a.akamaihd.net/ugc/16741735041944586096/292B61F9673FF535A70DD639B5F663056796D39A/"
     }
   ]
 }
