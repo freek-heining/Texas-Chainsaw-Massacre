@@ -2,12 +2,12 @@
   "GUID": "ef14ce",
   "Name": "Card",
   "Transform": {
-    "posX": 33.8948,
-    "posY": 2.67720127,
-    "posZ": 10.6388788,
-    "rotX": 359.98645,
-    "rotY": 270.00473,
-    "rotZ": 0.3046297,
+    "posX": 41.5694771,
+    "posY": 2.70321536,
+    "posZ": 12.9543438,
+    "rotX": 0.000403258979,
+    "rotY": 270.0187,
+    "rotZ": 180.001038,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35
@@ -25,6 +25,9 @@
     "g": 0.713235259,
     "b": 0.713235259
   },
+  "Tags": [
+    "Vehicle"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

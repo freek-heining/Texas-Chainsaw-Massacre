@@ -1,7 +1,7 @@
--- Setup Menu
+-- Setup Menu / UI
 require("Menu")
--- Dice Tray 
-require("Dice_Tray")
+-- Dice Tray UI
+require("Dice_Tray_Automation")
 -- Restrict certain player actions
 require("Behavior_Restrictions")
 -- Dealing 4 random Horror Tiles
@@ -10,9 +10,14 @@ require("DealHorrorTilesCoroutine")
 require("Set_Interactables")
 -- Setup Game
 require("Setup_Game")
+-- Deal Vehicles
+require("DealVehicles")
+-- Deal Vehicle Scenario C
+require("DealVehicles_ScenarioC")
 
 function onLoad()
     --UI.setAttribute("setupWindow", "active", false)
-    broadcastToAll("First determine the Red / Sawyer player before choosing it!")
+    broadcastToAll("- First determine the Red / Sawyer player before choosing it!")
     SetInteractableFalse()
+    Turns.enable = true
 end

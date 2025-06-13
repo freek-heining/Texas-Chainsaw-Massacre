@@ -2,12 +2,12 @@
   "GUID": "e133be",
   "Name": "Card",
   "Transform": {
-    "posX": 33.5171967,
-    "posY": 2.659273,
-    "posZ": 10.2428007,
-    "rotX": 0.002722411,
-    "rotY": 269.283356,
-    "rotZ": 0.00105193444,
+    "posX": 41.06868,
+    "posY": 2.683892,
+    "posZ": 12.8367405,
+    "rotX": 0.0005126264,
+    "rotY": 270.0187,
+    "rotZ": 180.001923,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35
@@ -25,6 +25,9 @@
     "g": 0.713235259,
     "b": 0.713235259
   },
+  "Tags": [
+    "Vehicle"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

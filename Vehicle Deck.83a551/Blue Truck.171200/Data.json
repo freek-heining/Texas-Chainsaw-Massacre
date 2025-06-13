@@ -2,12 +2,12 @@
   "GUID": "171200",
   "Name": "Card",
   "Transform": {
-    "posX": 42.54561,
-    "posY": 2.6974988,
-    "posZ": 12.741107,
-    "rotX": 359.992645,
-    "rotY": 269.910339,
-    "rotZ": 0.000903916371,
+    "posX": 41.8083153,
+    "posY": 3.4339397,
+    "posZ": 12.5430136,
+    "rotX": 0.00485309,
+    "rotY": 269.6131,
+    "rotZ": 180.572861,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35
@@ -25,6 +25,9 @@
     "g": 0.713235259,
     "b": 0.713235259
   },
+  "Tags": [
+    "Vehicle"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

@@ -1,7 +1,7 @@
 {
-  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v5.9",
-  "EpochTime": 1749728649,
-  "Date": "6/12/2025 1:44:09 PM",
+  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v6.0",
+  "EpochTime": 1749738819,
+  "Date": "6/12/2025 4:33:39 PM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -233,7 +233,12 @@
     "Hiding": 0
   },
   "ComponentTags": {
-    "labels": []
+    "labels": [
+      {
+        "displayed": "Vehicle",
+        "normalized": "vehicle"
+      }
+    ]
   },
   "Turns": {
     "Enable": false,

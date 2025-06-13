@@ -3,9 +3,9 @@
   "Name": "DeckCustom",
   "Transform": {
     "posX": 42.24603,
-    "posY": 2.6253624,
+    "posY": 2.62536263,
     "posZ": 12.8815384,
-    "rotX": -0.0001687135,
+    "rotX": -0.0001621184,
     "rotY": 270.0,
     "rotZ": 180.0,
     "scaleX": 1.35,
@@ -25,6 +25,9 @@
     "g": 0.713235259,
     "b": 0.713235259
   },
+  "Tags": [
+    "Vehicle"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": true,
@@ -41,14 +44,14 @@
   "Hands": false,
   "SidewaysCard": false,
   "DeckIDs": [
-    5607,
-    5600,
-    5602,
     5601,
-    5604,
     5603,
+    5606,
     5605,
-    5606
+    5604,
+    5600,
+    5607,
+    5602
   ],
   "CustomDeck": {
     "56": {

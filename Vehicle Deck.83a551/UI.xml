@@ -1,0 +1,30 @@
+<Defaults>
+    <TableLayout
+    cellBackgroundColor="clear" 
+    rowBackgroundColor="#942d28"
+    width="400"
+    height="210"
+    scale="0.6 0.6 0.6"
+    useGlobalCellPadding="true"
+    cellPadding="30 30 30 30"
+    raycastTarget="1"
+    />
+    <Cell
+    />
+    <Button 
+    ignoreLayout="false"
+    fontSize="60"
+    fontStyle="Bold"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
+    shadow="#00000099"
+    shadowDistance="3 -3"
+    padding="5 5 5 5"
+    />  
+</Defaults>
+
+<TableLayout id="vehicleDeal" active="false" rotation="180 0 0" position="0 230 -1">
+    <Row>
+        <Cell><Button id="ButtonDealVehicles" onClick="Global/DealVehiclesScenarioC">Deal Vehicles</Button></Cell>
+    </Row>
+</TableLayout>

@@ -86,7 +86,7 @@ function SetupGame(achievements, chosenScenarioIndex)
 
     personalItemDeck.setPosition({42.24, 2.66, -14.00})
 
-    broadcastToAll("Roll a D6 to determine first pick on Personal Items, then continue clockwise in player order. Discard the rest")
+    broadcastToAll("- Roll the red die to determine first pick on Personal Items, then continue clockwise in player order. Discard the rest.")
 
     -- #6: Set Scenario Boards
     local ScenariosScriptingZoneGUID = "6a561d"
@@ -129,8 +129,7 @@ function SetupVehiclesCoroutine()
     local vehicleDeckGUID = "83a551"
     local vehicleDeck = getObjectFromGUID(vehicleDeckGUID)
     
-    vehicleDeck.shuffle()
-    for _ = 1, 60 do coroutine.yield(0) end
+
 
     local vehicleGuid
 
@@ -159,28 +158,37 @@ function SetupVehiclesCoroutine()
 
             for _ = 1, 30 do coroutine.yield(0) end
         end
-    -- Scenario 3
-    elseif scenarioIndex == 3 then
-        local iterator = 1
-        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
-            if iterator > 3 then
-                break
-            end
-            log("IT: " .. iterator)
-            log(vehicleCard.name)
 
+        for _ = 1, 30 do coroutine.yield(0) end
+        vehicleDeck.shuffle()
+        for _ = 1, 60 do coroutine.yield(0) end
+        DealVehicles()
+
+    -- Scenario 3 (manual dealing)
+    elseif scenarioIndex == 3 then
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
             vehicleGuid = vehicleCard.guid
 
-            -- Seperate Blue Truck
+            -- Seperate and move Blue Truck
             if vehicleCard.name == "Blue Truck" then
                 vehicleDeck.takeObject({
                     position = {36.65, 2.58, -17.00},
                     rotation = {0.00, 0.00, 0.00},
                     guid = vehicleGuid
                 })
+            end
+        end
+        
+        local iterator = 1
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
+            if iterator > 3 then
+                break
+            end
+
+            vehicleGuid = vehicleCard.guid
 
             -- Delete 3 randoms excluding 1 named
-            elseif not (vehicleCard.name == "Pile of Parts") then
+            if not (vehicleCard.name == "Pile of Parts") then
                 iterator = iterator + 1
                 
                 vehicleDeck.takeObject({
@@ -195,11 +203,72 @@ function SetupVehiclesCoroutine()
             for _ = 1, 30 do coroutine.yield(0) end
         end
 
+        -- Enable deal button
+        vehicleDeck.UI.setAttribute("vehicleDeal", "active", true)
+
+        broadcastToAll("- Place the Blue Truck on a vehicle space of choice, then press the 'Deal Vehicles' button.")
+
     -- Scenario 4
-    -- elseif scenarioIndex == 4 then
-    
+    elseif scenarioIndex == 4 then
+        local iterator = 1
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
+            if iterator > 3 then
+                break
+            end
+            
+            vehicleGuid = vehicleCard.guid
+            
+            -- Delete 3 randoms excluding 2 named
+            if not (vehicleCard.name == "Secret Stash" or vehicleCard.name == "Green Van") then
+                iterator = iterator + 1
+
+                vehicleDeck.takeObject({
+                    position = {37.39, 2.58, 12.88},
+                    guid = vehicleGuid,
+                    callback_function = function(card)
+                        card.destruct()
+                    end
+                })
+            end
+
+            for _ = 1, 30 do coroutine.yield(0) end
+        end
+
+        for _ = 1, 30 do coroutine.yield(0) end
+        vehicleDeck.shuffle()
+        for _ = 1, 60 do coroutine.yield(0) end
+        DealVehicles()
+
     -- Scenario 5
-    -- elseif scenarioIndex == 5 then
+    elseif scenarioIndex == 5 then
+        local iterator = 1
+        for _, vehicleCard in ipairs(vehicleDeck.getObjects()) do
+            if iterator > 3 then
+                break
+            end
+            
+            vehicleGuid = vehicleCard.guid
+            
+            -- Delete 3 randoms excluding 1 named
+            if not (vehicleCard.name == "Secret Stash") then
+                iterator = iterator + 1
+
+                vehicleDeck.takeObject({
+                    position = {37.39, 2.58, 12.88},
+                    guid = vehicleGuid,
+                    callback_function = function(card)
+                        card.destruct()
+                    end
+                })
+            end
+
+            for _ = 1, 30 do coroutine.yield(0) end
+        end
+
+        for _ = 1, 30 do coroutine.yield(0) end
+        vehicleDeck.shuffle()
+        for _ = 1, 60 do coroutine.yield(0) end
+        DealVehicles()
     end
 
     return 1
