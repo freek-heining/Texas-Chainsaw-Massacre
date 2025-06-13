@@ -1,29 +1,36 @@
+-- scenarioIndex holds active scenario
 local scenarioIndex = 0
+-- activeItemDeck holds itemDeck or itemDeckAchiev
+local activeItemDeck
 
+-- Run after player pressed 'Start Game' from menu
 function SetupGame(achievements, chosenScenarioIndex)
- --#GUIDs
     local sawyerDeckGUID = "0a2ad0"
     local sawyerDeckAchievGUID = "4300c2"
     local desperationDeckGUID = "dc7f3e"
     local desperationDeckAchievGUID = "7ba0bc"
     local injuryDeckGUID = "ab13cc"
     local injuryDeckAchievGUID = "f1ac4c"
+    local itemDeckGUID = "920a1b"
+    local itemDeckAchievGUID = "ad86a4"
+    local personalItemDeckGUID = "d89d3a"
     local sawyerDeck = getObjectFromGUID(sawyerDeckGUID)
     local sawyerDeckAchiev = getObjectFromGUID(sawyerDeckAchievGUID)
     local desperationDeck = getObjectFromGUID(desperationDeckGUID)
     local desperationDeckAchiev = getObjectFromGUID(desperationDeckAchievGUID)
     local injuryDeck = getObjectFromGUID(injuryDeckGUID)
     local injuryDeckAchiev = getObjectFromGUID(injuryDeckAchievGUID)
-    local itemDeckGUID = "920a1b"
-    local itemDeckAchievGUID = "ad86a4"
-    local personalItemDeckGUID = "d89d3a"
     local itemDeck = getObjectFromGUID(itemDeckGUID)
     local itemDeckAchiev = getObjectFromGUID(itemDeckAchievGUID)
     local personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
---
+
     UI.setAttribute("setupWindow", "active", false)
 
+    -- scenarioIndex holds active scenario
     scenarioIndex = chosenScenarioIndex
+
+    -- Global used in Bury_Cards
+    AchievementsUsed = achievements
 
     -- #1: Deal Horror Tiles
     startLuaCoroutine(Global, "DealHorrorTilesCoroutine")
@@ -31,33 +38,45 @@ function SetupGame(achievements, chosenScenarioIndex)
     -- #2: Shuffle & Deal Sawyer Cards
     if achievements then
         sawyerDeckAchiev.shuffle()
-        sawyerDeckAchiev.setPosition({12.16, 2.58, -21.00})
+        sawyerDeckAchiev.locked=false
+        sawyerDeckAchiev.setPosition({12.16, 2.7, -21.00})
+        Wait.time(function() sawyerDeckAchiev.locked = true end, 1)
         sawyerDeck.destruct()
     else
         sawyerDeck.shuffle()
-        sawyerDeck.setPosition({12.16, 2.58, -21.00})
+        sawyerDeck.locked=false
+        sawyerDeck.setPosition({12.16, 2.7, -21.00})
+        Wait.time(function() sawyerDeck.locked = true end, 1)
         sawyerDeckAchiev.destruct()
     end
 
-    -- #3: Shuffle & Deal Sawyer Cards
+    -- #3: Shuffle & Deal Desperation Cards
     if achievements then
         desperationDeckAchiev.shuffle()
-        desperationDeckAchiev.setPosition({32.82, 2.58, 8.41})
+        desperationDeckAchiev.locked=false
+        desperationDeckAchiev.setPosition({32.82, 2.7, 8.41})
+        Wait.time(function() desperationDeckAchiev.locked = true end, 1)
         desperationDeck.destruct()
     else
         desperationDeck.shuffle()
-        desperationDeck.setPosition({32.82, 2.58, 8.41})
+        desperationDeck.locked=false
+        desperationDeck.setPosition({32.82, 2.7, 8.41})
+        Wait.time(function() desperationDeck.locked = true end, 1)
         desperationDeckAchiev.destruct()
     end
 
     -- #4: Shuffle & Deal Injury Cards
     if achievements then
         injuryDeckAchiev.shuffle()
-        injuryDeckAchiev.setPosition({32.64, 2.58, -4.83}, {0.00, 270.00, 180.00})
+        injuryDeckAchiev.locked=false
+        injuryDeckAchiev.setPosition({32.64, 2.7, -4.83}, {0.00, 270.00, 180.00})
+        Wait.time(function() injuryDeckAchiev.locked = true end, 1)
         injuryDeck.destruct()
     else
         injuryDeck.shuffle()
-        injuryDeck.setPosition({32.64, 2.58, -4.83}, {0.00, 270.00, 180.00})
+        injuryDeck.locked=false
+        injuryDeck.setPosition({32.64, 2.7, -4.83}, {0.00, 270.00, 180.00})
+        Wait.time(function() injuryDeck.locked = true end, 1)
         injuryDeckAchiev.destruct()
     end
 
@@ -110,16 +129,17 @@ function SetupGame(achievements, chosenScenarioIndex)
     end
 
     -- #7: Set Item Cards
+    -- activeItemDeck holds itemDeck or itemDeckAchiev
     if achievements then
-        ActiveItemDeck = itemDeckAchiev
+        activeItemDeck = itemDeckAchiev
         itemDeck.destruct()
     else
-        ActiveItemDeck = itemDeck
+        activeItemDeck = itemDeck
         itemDeckAchiev.destruct()
     end
 
-    -- #8: Set Scenario Cards
-    startLuaCoroutine(Global, "SetupItemsCoroutine")
+    -- #8: Set Scenario Items
+    startLuaCoroutine(Global, "SetupScenarioItemsCoroutine")
 
     -- #9: Set Vehicle Cards
     startLuaCoroutine(Global, "SetupVehiclesCoroutine")
@@ -128,9 +148,6 @@ end
 function SetupVehiclesCoroutine()
     local vehicleDeckGUID = "83a551"
     local vehicleDeck = getObjectFromGUID(vehicleDeckGUID)
-    
-
-
     local vehicleGuid
 
     -- Scenario 1 & 2
@@ -274,8 +291,7 @@ function SetupVehiclesCoroutine()
     return 1
 end
 
-function SetupItemsCoroutine()
---GUIDs
+function SetupScenarioItemsCoroutine()
     local ScenariosADeckGUID = "382ea5"
     local ScenariosADeck = getObjectFromGUID(ScenariosADeckGUID)
     local ScenariosBDeckGUID = "12acdc"
@@ -290,11 +306,10 @@ function SetupItemsCoroutine()
     local photoTokensStack = getObjectFromGUID(photoTokensStackGUID)
     local lootTokensStackGUID = "ceac14"
     local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
---
 
     local function splitDealItems()
         -- split() returns a table
-        local splitItemDecksTable = ActiveItemDeck.split(2)
+        local splitItemDecksTable = activeItemDeck.split(2)
         splitItemDecksTable[1].setPosition({5.73, 2.58, 4.95})
         splitItemDecksTable[1].setRotation({0.00, 0.00, 180.00})
         splitItemDecksTable[2].setPosition({24.70, 2.58, 5.07})
@@ -302,13 +317,15 @@ function SetupItemsCoroutine()
 
         for _ = 1, 30 do coroutine.yield(0) end
 
+        -- Globals used in Bury_Cards
+        ItemDeck1 = splitItemDecksTable[1]
+        ItemDeck2 = splitItemDecksTable[2]
+
         splitItemDecksTable[1].locked = true
         splitItemDecksTable[2].locked = true
     end
 
-
-
-    -- ActiveItemDeck = global that holds itemDeck or itemDeckAchiev
+    -- activeItemDeck = global that holds itemDeck or itemDeckAchiev
     -- Scenario A
     if scenarioIndex == 1 then
         ScenariosBDeck.destruct()
@@ -318,17 +335,17 @@ function SetupItemsCoroutine()
         photoTokensStack.destruct()
         lootTokensStack.destruct()
 
-        ActiveItemDeck.locked = false
+        activeItemDeck.locked = false
         ScenariosADeck.locked = false
 
         -- Merge decks
-        ActiveItemDeck.putObject(ScenariosADeck)
+        activeItemDeck.putObject(ScenariosADeck)
         
         for _ = 1, 100 do
             coroutine.yield(0)
         end
         
-        ActiveItemDeck.shuffle()
+        activeItemDeck.shuffle()
 
         for _ = 1, 60 do
             coroutine.yield(0)
@@ -376,7 +393,7 @@ function SetupItemsCoroutine()
         ScenariosEDeck.destruct()
         photoTokensStack.destruct()
 
-        ActiveItemDeck.locked = false
+        activeItemDeck.locked = false
         ScenariosCDeck.locked = false
 
         -- 7 Loot Tokens
@@ -398,13 +415,13 @@ function SetupItemsCoroutine()
         end
 
         -- Merge decks
-        ActiveItemDeck.putObject(ScenariosCDeck)
+        activeItemDeck.putObject(ScenariosCDeck)
         
         for _ = 1, 100 do
             coroutine.yield(0)
         end
         
-        ActiveItemDeck.shuffle()
+        activeItemDeck.shuffle()
 
         for _ = 1, 60 do
             coroutine.yield(0)
@@ -428,7 +445,7 @@ function SetupItemsCoroutine()
         ScenariosEDeck.destruct()
         lootTokensStack.destruct()
 
-        ActiveItemDeck.locked = false
+        activeItemDeck.locked = false
         ScenarioDECard.locked = false
 
         -- 6 Photo Tokens
@@ -467,7 +484,7 @@ function SetupItemsCoroutine()
         ScenariosCDeck.destruct()
         lootTokensStack.destruct()
 
-        ActiveItemDeck.locked = false
+        activeItemDeck.locked = false
         ScenarioDECard.locked = false
         ScenariosEDeck.locked = false
 
@@ -494,11 +511,11 @@ function SetupItemsCoroutine()
         })
 
         -- Merge decks
-        ActiveItemDeck.putObject(ScenariosEDeck)
+        activeItemDeck.putObject(ScenariosEDeck)
         
         for _ = 1, 100 do coroutine.yield(0) end
         
-        ActiveItemDeck.shuffle()
+        activeItemDeck.shuffle()
 
         for _ = 1, 60 do coroutine.yield(0) end
 

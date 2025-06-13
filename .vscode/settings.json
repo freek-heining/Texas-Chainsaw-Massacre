@@ -5,7 +5,9 @@
         "diceObjects",
         "onObjectNumberTyped",
         "onPlayerAction",
-        "tryObjectRandomize"
+        "tryObjectRandomize",
+        "onObjectEnterZone",
+        "onObjectLeaveZone"
     ],
     "Lua.diagnostics.disable": [
         "undefined-global"

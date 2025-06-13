@@ -14,6 +14,8 @@ require("Setup_Game")
 require("DealVehicles")
 -- Deal Vehicle Scenario C
 require("DealVehicles_ScenarioC")
+-- Bury Cards
+require("Bury_Cards")
 
 function onLoad()
     --UI.setAttribute("setupWindow", "active", false)
