@@ -307,7 +307,18 @@ function SetupScenarioItemsCoroutine()
     local lootTokensStackGUID = "ceac14"
     local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
 
+    -- Shuffle, Split, Deal itemdeck
     local function splitDealItems()
+        for _ = 1, 100 do
+            coroutine.yield(0)
+        end
+        
+        activeItemDeck.shuffle()
+
+        for _ = 1, 60 do
+            coroutine.yield(0)
+        end
+        
         -- split() returns a table
         local splitItemDecksTable = activeItemDeck.split(2)
         splitItemDecksTable[1].setPosition({5.73, 2.58, 4.95})
@@ -340,16 +351,6 @@ function SetupScenarioItemsCoroutine()
 
         -- Merge decks
         activeItemDeck.putObject(ScenariosADeck)
-        
-        for _ = 1, 100 do
-            coroutine.yield(0)
-        end
-        
-        activeItemDeck.shuffle()
-
-        for _ = 1, 60 do
-            coroutine.yield(0)
-        end
 
         splitDealItems()
 
@@ -367,6 +368,7 @@ function SetupScenarioItemsCoroutine()
         photoTokensStack.destruct()
         lootTokensStack.destruct()
 
+        -- 3 Siphoned Fuel cards
         for i = 1, 3 do
             ScenariosBDeck.takeObject({
                 position = scenarioBCardPositions[i],
@@ -417,16 +419,6 @@ function SetupScenarioItemsCoroutine()
         -- Merge decks
         activeItemDeck.putObject(ScenariosCDeck)
         
-        for _ = 1, 100 do
-            coroutine.yield(0)
-        end
-        
-        activeItemDeck.shuffle()
-
-        for _ = 1, 60 do
-            coroutine.yield(0)
-        end
-
         splitDealItems()
 
     -- Scenario D
@@ -466,10 +458,11 @@ function SetupScenarioItemsCoroutine()
             end
         end
 
-        splitDealItems()
-
+        -- Camera card
         ScenarioDECard.setPosition({36.65, 2.58, -17.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+
+        splitDealItems()
 
     -- Scenario E
     elseif scenarioIndex == 5 then
@@ -488,6 +481,7 @@ function SetupScenarioItemsCoroutine()
         ScenarioDECard.locked = false
         ScenariosEDeck.locked = false
 
+        -- Prepare E deck for drawing 1 random
         ScenariosEDeck.flip()
         for _ = 1, 60 do coroutine.yield(0) end
         ScenariosEDeck.shuffle()
@@ -512,17 +506,12 @@ function SetupScenarioItemsCoroutine()
 
         -- Merge decks
         activeItemDeck.putObject(ScenariosEDeck)
-        
-        for _ = 1, 100 do coroutine.yield(0) end
-        
-        activeItemDeck.shuffle()
 
-        for _ = 1, 60 do coroutine.yield(0) end
-
-        splitDealItems()
-
+        -- Camera card
         ScenarioDECard.setPosition({36.65, 2.58, -17.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+
+        splitDealItems()
     end
 
     return 1

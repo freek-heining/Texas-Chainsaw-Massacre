@@ -2,11 +2,11 @@
   "GUID": "1c5f72",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": 10.6356888,
-    "posY": 3.29454255,
-    "posZ": 23.2077332,
-    "rotX": -0.0002012197,
-    "rotY": 269.769775,
+    "posX": 10.6328783,
+    "posY": 3.29454231,
+    "posZ": 22.9499779,
+    "rotX": -0.0002030234,
+    "rotY": 269.9929,
     "rotZ": 179.999985,
     "scaleX": 1.14999986,
     "scaleY": 1.14999986,
@@ -25,6 +25,9 @@
     "g": 0.7490196,
     "b": 0.6862744
   },
+  "Tags": [
+    "Trespasser"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

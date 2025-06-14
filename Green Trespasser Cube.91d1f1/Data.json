@@ -2,11 +2,11 @@
   "GUID": "91d1f1",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": -29.4077587,
-    "posY": 3.29207349,
-    "posZ": 23.1981735,
-    "rotX": -0.000200298513,
-    "rotY": 269.9815,
+    "posX": -29.329319,
+    "posY": 3.29207325,
+    "posZ": 22.975647,
+    "rotX": -0.000199300834,
+    "rotY": 269.987549,
     "rotZ": 179.999985,
     "scaleX": 1.14999986,
     "scaleY": 1.14999986,
@@ -23,8 +23,11 @@
   "ColorDiffuse": {
     "r": 0.627451062,
     "g": 0.78039217,
-    "b": 0.184309214
+    "b": 0.184308857
   },
+  "Tags": [
+    "Trespasser"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

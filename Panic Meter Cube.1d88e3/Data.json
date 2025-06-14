@@ -2,11 +2,11 @@
   "GUID": "1d88e3",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": 11.7611837,
-    "posY": 3.14100933,
-    "posZ": -14.3620415,
-    "rotX": -1.98906146E-05,
-    "rotY": 353.93396,
+    "posX": 11.7611847,
+    "posY": 3.141009,
+    "posZ": -14.3620405,
+    "rotX": -1.91345061E-05,
+    "rotY": 353.9339,
     "rotZ": 179.999817,
     "scaleX": 1.14999986,
     "scaleY": 1.14999986,
@@ -25,6 +25,9 @@
     "g": 0.0,
     "b": 0.0
   },
+  "Tags": [
+    "Panic"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,

@@ -1,0 +1,69 @@
+{
+  "GUID": "f6ba31",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 32.8196678,
+    "posY": 2.615947,
+    "posZ": 2.71503425,
+    "rotX": -0.000128426153,
+    "rotY": 269.984,
+    "rotZ": 9.745651E-07,
+    "scaleX": 1.42,
+    "scaleY": 1.0,
+    "scaleZ": 1.42
+  },
+  "Nickname": "Bury",
+  "Description": "Place card(s) to bury automatically after 2 seconds.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18018262680332011202/9EF213EC588B4F898676D2FDF15C82F20323F063/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.0,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 0.0007099685,
+        "y": 0.05000186,
+        "z": -0.000299639185
+      },
+      "Rotation": {
+        "x": -7.70647E-09,
+        "y": 0.01663834,
+        "z": 180.0
+      }
+    }
+  ]
+}

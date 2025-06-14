@@ -60,7 +60,8 @@ function DealVehiclesScenarioC()
         for i = 1, 4 do
             vehicleDeck.takeObject({
                 position = freeVehicleLocations[i][1],
-                rotation = freeVehicleLocations[i][2]
+                rotation = freeVehicleLocations[i][2],
+                smooth = false
             })
         end
     end

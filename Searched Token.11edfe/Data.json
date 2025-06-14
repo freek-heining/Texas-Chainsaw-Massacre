@@ -1,19 +1,19 @@
 {
-  "GUID": "ceac14",
+  "GUID": "11edfe",
   "Name": "Custom_Tile_Stack",
   "Transform": {
-    "posX": -24.9999924,
-    "posY": 3.61540246,
-    "posZ": 11.0,
-    "rotX": -0.000167645761,
-    "rotY": 270.0,
-    "rotZ": 180.0,
-    "scaleX": 0.63,
+    "posX": 6.47132349,
+    "posY": 2.53904581,
+    "posZ": -4.999929,
+    "rotX": 0.000175677254,
+    "rotY": 89.98942,
+    "rotZ": -1.34949153E-06,
+    "scaleX": 0.62,
     "scaleY": 1.0,
-    "scaleZ": 0.63
+    "scaleZ": 0.62
   },
-  "Nickname": "Loot Token",
-  "Description": "Used in Scenrario C: Ransack",
+  "Nickname": "Searched Token",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,10 +21,13 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.3607819,
-    "g": 0.3607819,
-    "b": 0.3607819
+    "r": 0.360781431,
+    "g": 0.360781431,
+    "b": 0.360781431
   },
+  "Tags": [
+    "Search"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
   "Locked": false,
@@ -41,15 +44,15 @@
   "Hands": false,
   "MaterialIndex": -1,
   "MeshIndex": -1,
-  "Number": 7,
+  "Number": 5,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16013449759615909738/F4DD0C479040B5101C6D9A5C5BF067893BCCBE73/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18104992666219217344/F6A2A7C7AE490CC9FC23FF6EAF1091F52F82BD6B/",
     "ImageSecondaryURL": "",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {
-      "Type": 3,
-      "Thickness": 0.1460434,
+      "Type": 2,
+      "Thickness": 0.146042943,
       "Stackable": true,
       "Stretch": true
     }
