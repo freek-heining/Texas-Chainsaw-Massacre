@@ -35,17 +35,13 @@ local item2CardOrDeckToBury
 
 -- If not nil, move card/deck to bottom deck
 local function buryCardOrDeck(cardOrDeckToBury, activeDeck)
-    log("---- Burying:")
-    log(cardOrDeckToBury)
-    log(activeDeck)
-
+    log("bury")
     Wait.time(function ()
-        if cardOrDeckToBury then
-            activeDeck.locked = false
-            cardOrDeckToBury.setPosition(cardOrDeckToBury.getPosition() + vector(0, -1, 0))
-            activeDeck.putObject(cardOrDeckToBury)
-            activeDeck.locked = true
-        end
+        log("bury wait")
+        activeDeck.locked = false
+        cardOrDeckToBury.setPosition(cardOrDeckToBury.getPosition() + vector(0, -1, 0))
+        activeDeck.putObject(cardOrDeckToBury)
+        activeDeck.locked = true
     end, 2)
 end
 
@@ -103,35 +99,35 @@ function onObjectEnterZone(zone, object)
 --      
     -- Check all 5 bury zones seperately. Also triggers when deck is created inside!
     -- Sawyer
-    if zone == burySawyerScriptingZone and object.type == "Card" or object.type == "Deck" then
+    if (zone == burySawyerScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         sawyerCardOrDeckToBury = object
         local position = {17.72, 2.8, -21.00}
         local rotation = {0.00, 180.00, 180.00}
         tidyUpCards(sawyerCardOrDeckToBury, position, rotation)
         buryCardOrDeck(sawyerCardOrDeckToBury, activeSawyerDeck)
     -- Desperation
-    elseif zone == buryDesperationScriptingZone and object.type == "Card" or object.type == "Deck"  then
+    elseif (zone == buryDesperationScriptingZone) and (object.type == "Card" or object.type == "Deck")  then
         DesperationCardOrDeckToBury = object
         local position = {32.82, 2.8, 2.72}
         local rotation = {0.00, 270.00, 180.00}
         tidyUpCards(DesperationCardOrDeckToBury, position, rotation)
         buryCardOrDeck(DesperationCardOrDeckToBury, activeDesperationDeck)
     -- Injury
-    elseif zone == buryInujryScriptingZone and object.type == "Card" or object.type == "Deck"  then
+    elseif (zone == buryInujryScriptingZone) and (object.type == "Card" or object.type == "Deck")  then
         injuryCardOrDeckToBury = object
         local position = {32.64, 2.8, -8.88}
         local rotation = {0.00, 270.00, 180.00}
         tidyUpCards(injuryCardOrDeckToBury, position, rotation)
         buryCardOrDeck(injuryCardOrDeckToBury, activeInjuryDeck)
     -- Item Ground Floor
-    elseif zone == buryItem1ScriptingZone and object.type == "Card" or object.type == "Deck"  then
+    elseif (zone == buryItem1ScriptingZone) and (object.type == "Card" or object.type == "Deck")  then
         item1CardOrDeckToBury = object
         local position = {5.73, 2.8, 0.00}
         local rotation = {0.00, 0.00, 180.00}
         tidyUpCards(item1CardOrDeckToBury, position, rotation)
         buryCardOrDeck(item1CardOrDeckToBury, itemDeck1)
     -- Item 1st Floor
-    elseif zone == buryItem2ScriptingZone and object.type == "Card" or object.type == "Deck"  then
+    elseif (zone == buryItem2ScriptingZone) and (object.type == "Card" or object.type == "Deck")  then
         item2CardOrDeckToBury = object
         local position = {24.70, 2.8, 0.00}
         local rotation = {0.00, 0.00, 180.00}
@@ -142,22 +138,25 @@ end
 
 -- Card leaving and/or a deck is created
 function onObjectLeaveZone(zone, object)
-    -- Stop cards/decks from burying by setting variable to nil and cancel all Waits
+    log("leave")
+    -- Stop cards/decks from burying by cancelling all queued Waits
+    -- Sawyer
     if (zone == burySawyerScriptingZone) and (object == sawyerCardOrDeckToBury) then
-        sawyerCardOrDeckToBury = nil
         Wait.stopAll()
 
-        -- Check if a deck is created, set variable and continue burying. Wait needed otherwise it's to fast for check
+        -- Check if a deck > 2 cards is created, set variable and continue burying. Wait needed otherwise it's to fast for check. 
+        -- (Deck of 2 is handled via onObjectEnterZone, because the creation of a deck counts as entering a zone)
         Wait.time(function ()
             for _, zoneObject in ipairs(burySawyerScriptingZone.getObjects()) do
                 if zoneObject.type == "Deck" then
+                    log("deck seen")
                     sawyerCardOrDeckToBury = zoneObject
                     buryCardOrDeck(sawyerCardOrDeckToBury, activeSawyerDeck)
                 end
             end
         end, 0.1)
+    -- Desperation
     elseif (zone == buryDesperationScriptingZone) and (object == DesperationCardOrDeckToBury) then
-        DesperationCardOrDeckToBury = nil
         Wait.stopAll()
 
         Wait.time(function ()
@@ -168,8 +167,8 @@ function onObjectLeaveZone(zone, object)
                 end
             end
         end, 0.1)
+    -- Injury
     elseif (zone == buryInujryScriptingZone) and (object == injuryCardOrDeckToBury) then
-        injuryCardOrDeckToBury = nil
         Wait.stopAll()
 
         Wait.time(function ()
@@ -180,8 +179,8 @@ function onObjectLeaveZone(zone, object)
                 end
             end
         end, 0.1)
+    -- Item Ground Floor        
     elseif (zone == buryItem1ScriptingZone) and (object == item1CardOrDeckToBury) then
-        item1CardOrDeckToBury = nil
         Wait.stopAll()
 
         Wait.time(function ()
@@ -192,8 +191,8 @@ function onObjectLeaveZone(zone, object)
                 end
             end
         end, 0.1)
+    -- Item 1st Floor        
     elseif (zone == buryItem2ScriptingZone) and (object == item2CardOrDeckToBury) then
-        item2CardOrDeckToBury = nil
         Wait.stopAll()
 
         Wait.time(function ()
