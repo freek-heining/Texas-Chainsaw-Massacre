@@ -27,6 +27,8 @@ local activeDesperationDeck
 local activeInjuryDeck
 local itemDeck1
 local itemDeck2
+
+-- Hold references to cards/decks on bury spots
 local sawyerCardOrDeckToBury
 local DesperationCardOrDeckToBury
 local injuryCardOrDeckToBury
@@ -35,7 +37,6 @@ local item2CardOrDeckToBury
 
 -- If not nil, move card/deck to bottom deck
 local function buryCardOrDeck(cardOrDeckToBury, activeDeck)
-    log("bury")
     Wait.time(function ()
         log("bury wait")
         activeDeck.locked = false
@@ -48,6 +49,7 @@ end
 -- Tidy up cards. Y needs to be around 2.8 or higher, else cards go to bottom!
 local function tidyUpCards(cardOrDeckToBury, position, rotation)
     Wait.time(function ()
+        cardOrDeckToBury.highlightOn("Green", 1)
         cardOrDeckToBury.setPositionSmooth(position, false, true)
         cardOrDeckToBury.setRotationSmooth(rotation, false, true)
         if not cardOrDeckToBury.is_face_down then
@@ -101,6 +103,12 @@ function onObjectEnterZone(zone, object)
     -- Sawyer
     if (zone == burySawyerScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         sawyerCardOrDeckToBury = object
+        if sawyerCardOrDeckToBury.type == "Deck" then
+            log("Deck entering")
+        end
+        if sawyerCardOrDeckToBury.type == "Card" then
+            log("Card entering")
+        end        
         local position = {17.72, 2.8, -21.00}
         local rotation = {0.00, 180.00, 180.00}
         tidyUpCards(sawyerCardOrDeckToBury, position, rotation)
@@ -138,18 +146,22 @@ end
 
 -- Card leaving and/or a deck is created
 function onObjectLeaveZone(zone, object)
-    log("leave")
     -- Stop cards/decks from burying by cancelling all queued Waits
     -- Sawyer
-    if (zone == burySawyerScriptingZone) and (object == sawyerCardOrDeckToBury) then
+    if (zone == burySawyerScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         Wait.stopAll()
 
+        if sawyerCardOrDeckToBury.type == "Deck" then
+            log("Deck leaving")
+        end
+        if sawyerCardOrDeckToBury.type == "Card" then
+            log("Card leaving")
+        end    
         -- Check if a deck > 2 cards is created, set variable and continue burying. Wait needed otherwise it's to fast for check. 
         -- (Deck of 2 is handled via onObjectEnterZone, because the creation of a deck counts as entering a zone)
         Wait.time(function ()
             for _, zoneObject in ipairs(burySawyerScriptingZone.getObjects()) do
                 if zoneObject.type == "Deck" then
-                    log("deck seen")
                     sawyerCardOrDeckToBury = zoneObject
                     buryCardOrDeck(sawyerCardOrDeckToBury, activeSawyerDeck)
                 end
