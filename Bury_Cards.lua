@@ -44,6 +44,8 @@ local function buryCardOrDeck(cardOrDeckToBury, activeDeck, deckNumber)
         waitBury[deckNumber] = nil
     end
 
+    cardOrDeckToBury.highlightOn("Teal", 2)
+
     waitBury[deckNumber] = Wait.time(function ()
         waitBury[deckNumber] = nil
         activeDeck.locked = false
