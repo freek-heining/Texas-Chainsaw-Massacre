@@ -1,19 +1,19 @@
 {
-  "GUID": "b9804c",
-  "Name": "Custom_Tile",
+  "GUID": "a55210",
+  "Name": "Custom_Tile_Stack",
   "Transform": {
-    "posX": 21.0,
-    "posY": 2.56598115,
-    "posZ": 23.1769562,
-    "rotX": 2.916944E-07,
-    "rotY": 0.002915366,
-    "rotZ": -0.000168363651,
+    "posX": -24.9999714,
+    "posY": 3.4963367,
+    "posZ": -11.0000629,
+    "rotX": -0.00017144208,
+    "rotY": 270.000031,
+    "rotZ": 180.0,
     "scaleX": 0.63,
     "scaleY": 1.0,
     "scaleZ": 0.63
   },
-  "Nickname": "Hidden Token Blue",
-  "Description": "",
+  "Nickname": "Photo Token",
+  "Description": "Used in Scenario D: I Dare You",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -25,9 +25,12 @@
     "g": 0.36078158,
     "b": 0.36078158
   },
+  "Tags": [
+    "Photo"
+  ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
-  "Locked": false,
+  "Locked": true,
   "Grid": true,
   "Snap": true,
   "IgnoreFoW": false,
@@ -39,15 +42,18 @@
   "GridProjection": false,
   "HideWhenFaceDown": false,
   "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "Number": 6,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/10676446208862683028/CDB986FFC4DB0C4D0498369E23158E3840307AC5/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16082417618935411111/9BAFCCC29A05BBA18B48D8167E34CF9C6A4EB3A8/",
     "ImageSecondaryURL": "",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {
       "Type": 3,
       "Thickness": 0.1509485,
-      "Stackable": false,
+      "Stackable": true,
       "Stretch": true
     }
   }

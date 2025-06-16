@@ -39,7 +39,7 @@
     class="carouselImage"
     preserveAspect="true"  
     onClick="ScenarioClick" 
-    tooltip="(Click for backside) Selected scenario to play. Generally ranging from A for beginners to E for experts." 
+    tooltip="Selected scenario to play. Difficulty generally ranging from A for beginners to E for experts. (Click for backside)" 
     tooltipOffset="-200"
     />
     <Text

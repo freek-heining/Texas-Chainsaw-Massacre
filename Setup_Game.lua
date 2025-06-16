@@ -153,6 +153,9 @@ function SetupVehiclesCoroutine()
     local vehicleDeck = getObjectFromGUID(vehicleDeckGUID)
     local vehicleGuid
 
+    vehicleDeck.shuffle()
+    for _ = 1, 60 do coroutine.yield(0) end
+
     -- Scenario 1 & 2
     if scenarioIndex == 1 or scenarioIndex == 2 then
         local iterator = 1
@@ -305,7 +308,7 @@ function SetupScenarioItemsCoroutine()
     local ScenarioDECard = getObjectFromGUID(ScenarioDECardGUID)
     local ScenariosEDeckGUID = "8c348f"
     local ScenariosEDeck = getObjectFromGUID(ScenariosEDeckGUID)
-    local photoTokensStackGUID = "764fd1"
+    local photoTokensStackGUID = "a55210"
     local photoTokensStack = getObjectFromGUID(photoTokensStackGUID)
     local lootTokensStackGUID = "ceac14"
     local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
