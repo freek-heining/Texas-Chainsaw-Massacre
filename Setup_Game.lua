@@ -95,7 +95,10 @@ function SetupGame(achievements, chosenScenarioIndex)
         personalItemDeck.takeObject({
             position = personalItemPositions[i],
             rotation = {0.00, 0.00, 0.00},
-            flip = true
+            flip = true,
+            callback_function = function (card)
+                card.addTag("Personal Item")
+            end
         })
     end
 
@@ -372,7 +375,10 @@ function SetupScenarioItemsCoroutine()
         for i = 1, 3 do
             ScenariosBDeck.takeObject({
                 position = scenarioBCardPositions[i],
-                rotation = { 0, 0, 0 }
+                rotation = { 0, 0, 0 },
+                callback_function = function (card)
+                    card.addTag("Item")
+                end
             })
         end
             
@@ -461,6 +467,7 @@ function SetupScenarioItemsCoroutine()
         -- Camera card
         ScenarioDECard.setPosition({36.65, 2.58, -17.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+        ScenarioDECard.addTag("Scenario Item")
 
         splitDealItems()
 
@@ -502,6 +509,9 @@ function SetupScenarioItemsCoroutine()
         ScenariosEDeck.takeObject({
             position = {-25.56, 2.58, -6.78},
             rotation = {0.00, 0.00, 180.00},
+            callback_function = function (card)
+                card.addTag("Scenario Item")
+            end
         })
 
         -- Merge decks
@@ -510,6 +520,7 @@ function SetupScenarioItemsCoroutine()
         -- Camera card
         ScenarioDECard.setPosition({36.65, 2.58, -17.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
+        ScenarioDECard.addTag("Scenario Item")
 
         splitDealItems()
     end

@@ -16,6 +16,8 @@ require("DealVehicles")
 require("DealVehicles_ScenarioC")
 -- Bury Cards
 require("Bury_Cards")
+-- Tagging Cards
+require("Tagging_Cards")
 
 function onLoad()
     --UI.setAttribute("setupWindow", "active", false)

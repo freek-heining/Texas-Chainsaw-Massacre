@@ -51,19 +51,5 @@
       "StandUp": false,
       "Stackable": false
     }
-  },
-  "AttachedSnapPoints": [
-    {
-      "Position": {
-        "x": -2.89556077E-08,
-        "y": 0.0499978065,
-        "z": 1.35184507E-07
-      },
-      "Rotation": {
-        "x": -1.204437E-08,
-        "y": -0.00135579251,
-        "z": 180.0
-      }
-    }
-  ]
+  }
 }

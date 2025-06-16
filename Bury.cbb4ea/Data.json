@@ -2,9 +2,9 @@
   "GUID": "cbb4ea",
   "Name": "Custom_Token",
   "Transform": {
-    "posX": 5.72999954,
+    "posX": 5.72993851,
     "posY": 2.61602855,
-    "posZ": 7.141824E-05,
+    "posZ": -0.3970359,
     "rotX": 3.68631227E-05,
     "rotY": 0.01814656,
     "rotZ": -0.000181392432,
@@ -51,19 +51,5 @@
       "StandUp": false,
       "Stackable": false
     }
-  },
-  "AttachedSnapPoints": [
-    {
-      "Position": {
-        "x": 3.5093683E-06,
-        "y": 0.0499994755,
-        "z": -6.56171233E-06
-      },
-      "Rotation": {
-        "x": 3.61434722E-08,
-        "y": 0.004598465,
-        "z": 180.0
-      }
-    }
-  ]
+  }
 }

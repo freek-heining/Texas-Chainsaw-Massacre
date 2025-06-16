@@ -7,7 +7,9 @@
         "onPlayerAction",
         "tryObjectRandomize",
         "onObjectEnterZone",
-        "onObjectLeaveZone"
+        "onObjectLeaveZone",
+        "onObjectSpawn",
+        "onObjectLeaveContainer"
     ],
     "Lua.diagnostics.disable": [
         "undefined-global"

@@ -1,19 +1,19 @@
 {
-  "GUID": "45f92b",
+  "GUID": "9dd8c1",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": -24.99999,
-    "posY": 2.56873274,
-    "posZ": -15.0000067,
-    "rotX": 3.07357368E-05,
-    "rotY": 180.000092,
-    "rotZ": 0.000146502236,
-    "scaleX": 0.78,
-    "scaleY": 0.78,
-    "scaleZ": 0.78
+    "posX": 15.7427025,
+    "posY": 2.6852622,
+    "posZ": -11.4955807,
+    "rotX": 0.0217039771,
+    "rotY": 209.999985,
+    "rotZ": 0.0147115737,
+    "scaleX": 0.7750002,
+    "scaleY": 0.7750002,
+    "scaleZ": 0.7
   },
-  "Nickname": "Old Man",
-  "Description": "Starts in the Pantry",
+  "Nickname": "Grandpa",
+  "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -40,12 +40,12 @@
   "HideWhenFaceDown": false,
   "Hands": false,
   "CustomMesh": {
-    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/12530658409649046282/73EDC946F53E0163368C0BCD856C0D466DB685C2/",
-    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/12889694286811447427/E2A0C7D039788941B814E5C1BA363824FA1B462F/",
+    "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/16313285373015948654/5E59012F97E48B557D59ADF9F6331EFA87DB79EB/",
+    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/12716927002039801508/7DEAE4DC44E0A9A879DA1AD43EA3D2DB4786DDA2/",
     "NormalURL": "",
-    "ColliderURL": "https://steamusercontent-a.akamaihd.net/ugc/14465363718687799239/174E2A853670549E6D6405AA3011D5F9F8D625FE/",
+    "ColliderURL": "",
     "Convex": true,
-    "MaterialIndex": 0,
+    "MaterialIndex": 3,
     "TypeIndex": 1,
     "CustomShader": {
       "SpecularColor": {
@@ -53,7 +53,7 @@
         "g": 1.0,
         "b": 1.0
       },
-      "SpecularIntensity": 0.2,
+      "SpecularIntensity": 0.0,
       "SpecularSharpness": 2.0,
       "FresnelStrength": 0.0
     },
