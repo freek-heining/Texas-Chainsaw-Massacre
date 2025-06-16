@@ -377,7 +377,7 @@ function SetupScenarioItemsCoroutine()
                 position = scenarioBCardPositions[i],
                 rotation = { 0, 0, 0 },
                 callback_function = function (card)
-                    card.addTag("Item")
+                    card.addTag("Item1 Card")
                 end
             })
         end
@@ -415,6 +415,7 @@ function SetupScenarioItemsCoroutine()
             if lootTokensStack.remainder ~= nil then
                 lootTokensStack.remainder.setPositionSmooth(scenarioCLootTokenPositions[7], false, false)
                 lootTokensStack.remainder.setRotation({ 0, 270, 180 })
+                lootTokensStack.remainder.locked = false
             end
 
             for _ = 1, 20 do
@@ -457,6 +458,7 @@ function SetupScenarioItemsCoroutine()
             if photoTokensStack.remainder ~= nil then
                 photoTokensStack.remainder.setPositionSmooth(scenarioDPhotoTokenPositions[6], false, false)
                 photoTokensStack.remainder.setRotation({ 0, 270, 180 })
+                photoTokensStack.remainder.locked = false
             end
 
             for _ = 1, 20 do

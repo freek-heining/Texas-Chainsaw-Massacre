@@ -1,0 +1,241 @@
+{
+  "GUID": "7cd743",
+  "Name": "Custom_Tile",
+  "Transform": {
+    "posX": -10.0,
+    "posY": 2.566076,
+    "posZ": 3.96253256E-07,
+    "rotX": -0.0001675416,
+    "rotY": 269.9923,
+    "rotZ": 5.54387469E-08,
+    "scaleX": 13.9913893,
+    "scaleY": 1.0,
+    "scaleZ": 13.9913893
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.36078167,
+    "g": 0.36078167,
+    "b": 0.36078167
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/14012084390504055007/FA2BF709D6D8E5305A1AF50E88D5CFE8498CED4C/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 0,
+      "Thickness": 0.148437813,
+      "Stackable": false,
+      "Stretch": true
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 0.769008756,
+        "y": 0.148437485,
+        "z": -0.9145385
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.384691536,
+        "y": 0.148437932,
+        "z": -0.663124144
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.6509078,
+        "y": 0.148437575,
+        "z": -0.9049739
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.09705908,
+        "y": 0.1484377,
+        "z": -0.237753764
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.382523537,
+        "y": 0.1484378,
+        "z": -0.08316202
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.389904082,
+        "y": 0.1484371,
+        "z": 0.231335461
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.13225992,
+        "y": 0.148438111,
+        "z": 0.364005268
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.493706167,
+        "y": 0.148438483,
+        "z": 0.6227612
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.181493014,
+        "y": 0.148437545,
+        "z": 0.6923957
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.502013743,
+        "y": 0.1484375,
+        "z": -0.0468488373
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.631863534,
+        "y": 0.148438424,
+        "z": 0.356198847
+      },
+      "Tags": [
+        "Search"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.752338052,
+        "y": 0.148438156,
+        "z": 0.6364342
+      },
+      "Rotation": {
+        "x": 5.34419E-08,
+        "y": 0.008032302,
+        "z": 180.0
+      },
+      "Tags": [
+        "Vehicle"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.7473956,
+        "y": 0.14843826,
+        "z": 0.1679351
+      },
+      "Rotation": {
+        "x": -1.90499154E-08,
+        "y": 0.008032302,
+        "z": 180.0
+      },
+      "Tags": [
+        "Vehicle"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.571023464,
+        "y": 0.148438081,
+        "z": -0.6670393
+      },
+      "Rotation": {
+        "x": -9.135946E-09,
+        "y": 0.008032302,
+        "z": 180.0
+      },
+      "Tags": [
+        "Vehicle"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.3417524,
+        "y": 0.1484375,
+        "z": -0.6992399
+      },
+      "Rotation": {
+        "x": -3.29240857E-09,
+        "y": 40.47338,
+        "z": 180.0
+      },
+      "Tags": [
+        "Vehicle"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.525732458,
+        "y": 0.148438632,
+        "z": -0.546263039
+      },
+      "Rotation": {
+        "x": -1.07874234E-08,
+        "y": 40.47336,
+        "z": 180.0
+      },
+      "Tags": [
+        "Vehicle"
+      ]
+    }
+  ]
+}

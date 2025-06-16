@@ -3,9 +3,9 @@
   "Name": "Custom_Tile_Stack",
   "Transform": {
     "posX": -24.9999924,
-    "posY": 3.61540246,
+    "posY": 3.615403,
     "posZ": 11.0,
-    "rotX": -0.000178391216,
+    "rotX": -0.0001855659,
     "rotY": 270.0,
     "rotZ": 180.0,
     "scaleX": 0.63,
@@ -21,13 +21,13 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360781729,
-    "g": 0.360781729,
-    "b": 0.360781729
+    "r": 0.36078167,
+    "g": 0.36078167,
+    "b": 0.36078167
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
-  "Locked": false,
+  "Locked": true,
   "Grid": true,
   "Snap": true,
   "IgnoreFoW": false,
