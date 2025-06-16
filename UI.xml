@@ -39,9 +39,15 @@
     class="carouselImage"
     preserveAspect="true"  
     onClick="ScenarioClick" 
-    tooltip="Selected scenario to play (Click for backside)" 
+    tooltip="(Click for backside) Selected scenario to play. Generally ranging from A for beginners to E for experts." 
     tooltipOffset="-200"
     />
+    <Text
+    fontSize="15"
+    fontStyle="Italic"
+    color="#f0eddc"
+    alignment="MiddleLeft"
+    />      
 </Defaults>
 
 <TableLayout id="setupWindow">
@@ -67,7 +73,7 @@
     <!-- Row 4 -->
     <Row preferredHeight="70">
         <Cell />
-        <Cell><Button tooltip="Good luck!" onClick="ButtonStartGameClick" width="170" height="60">Start Game</Button></Cell>
-        <Cell />
+        <Cell><Button onClick="ButtonStartGameClick" width="170" height="60">Start Game</Button></Cell>
+        <Cell width = "300"><Text>Made by: Freich</Text></Cell>
     </Row>    
 </TableLayout>

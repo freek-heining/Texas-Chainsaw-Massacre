@@ -1,0 +1,58 @@
+{
+  "GUID": "e7b0d2",
+  "Name": "Card",
+  "Transform": {
+    "posX": 32.7,
+    "posY": 2.579555,
+    "posZ": -14.0,
+    "rotX": -6.58467769E-09,
+    "rotY": 1.038875E-07,
+    "rotZ": -0.00016257212,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Tags": [
+    "Personal Item"
+  ],
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 4801,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "48": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9301335914065674899/DC46937F43CB5E47E4F76934A6DAA33C878AAEF9/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 5,
+      "NumHeight": 3,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

@@ -19,7 +19,9 @@ require("Tagging_Cards")
 
 function onLoad()
     --UI.setAttribute("setupWindow", "active", false)
-    broadcastToAll("- Collectively determine the Sawyer / Red player before choosing it!")
+    printToAll("- Welcome to the Texas Chainsaw Massacre: Slaughterhouse!", {240/255, 237/255, 220/255})
+    printToAll("- In this game, there are no winners — there are only survivors.", {240/255, 237/255, 220/255})
+    printToAll("- Collectively determine the Sawyer / Red player before choosing it!", {240/255, 237/255, 220/255})
     SetInteractableFalse()
     Turns.enable = true
 end
