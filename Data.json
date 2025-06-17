@@ -1,7 +1,7 @@
 {
   "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v7.1",
-  "EpochTime": 1750153814,
-  "Date": "6/17/2025 11:50:14 AM",
+  "EpochTime": 1750155432,
+  "Date": "6/17/2025 12:17:12 PM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -379,6 +379,11 @@
       "Type": 0,
       "Name": "Scenario_C_Back",
       "URL": "https://steamusercontent-a.akamaihd.net/ugc/16741735041944586096/292B61F9673FF535A70DD639B5F663056796D39A/"
+    },
+    {
+      "Type": 0,
+      "Name": "Banner_Image",
+      "URL": "https://steamusercontent-a.akamaihd.net/ugc/15025465439412116185/7756522778C4976CFAC2BA2FA13D984A62FD47B1/"
     }
   ],
   "SnapPoints": [

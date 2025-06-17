@@ -54,7 +54,7 @@
     <!-- Row 1 -->
     <Row preferredHeight="200">
         <Cell />
-        <Cell padding="0 0 0 10"><Image image="Title_Image" preserveAspect="true"/></Cell>
+        <Cell padding="0 0 0 10"><Image image="Banner_Image" preserveAspect="true"/></Cell>
         <Cell><Button onClick="ButtonCloseWindowClick" tooltip="Skip setup and just look around" rectAlignment="UpperRight" width="40" height="40">X</Button></Cell>
     </Row>
     <!-- Row 2 -->
