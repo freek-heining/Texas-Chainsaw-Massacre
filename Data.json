@@ -1,7 +1,7 @@
 {
-  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v7.0",
-  "EpochTime": 1750099476,
-  "Date": "6/16/2025 8:44:36 PM",
+  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v7.1",
+  "EpochTime": 1750153814,
+  "Date": "6/17/2025 11:50:14 AM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -21,21 +21,21 @@
     "Miniature Games",
     "Strategy Games",
     "Thematic Games",
-    "Backgrounds",
     "Cards",
-    "Components",
     "Dice",
     "Figurines",
     "Scripting",
     "Scripting: Automated",
     "User Interfaces",
-    "English",
     "Texas Chainsaw Massacre",
     "Horror",
     "Asymetrical",
     "One-versus-many",
     "Slaughterhouse",
-    "Prospero Hall"
+    "Prospero Hall",
+    "Cooperative Games",
+    "Components",
+    "Survival"
   ],
   "Gravity": 0.5,
   "PlayArea": 0.5,
@@ -147,7 +147,7 @@
     "SkipEmpty": false,
     "DisableInteractions": false,
     "PassTurns": true,
-    "TurnColor": "Red"
+    "TurnColor": "White"
   },
   "CameraStates": [
     null,
