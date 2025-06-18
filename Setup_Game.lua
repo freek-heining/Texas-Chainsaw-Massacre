@@ -14,6 +14,7 @@ function SetupGame(achievements, chosenScenarioIndex)
     local itemDeckGUID = "920a1b"
     local itemDeckAchievGUID = "ad86a4"
     local personalItemDeckGUID = "d89d3a"
+
     local sawyerDeck = getObjectFromGUID(sawyerDeckGUID)
     local sawyerDeckAchiev = getObjectFromGUID(sawyerDeckAchievGUID)
     local desperationDeck = getObjectFromGUID(desperationDeckGUID)
@@ -23,6 +24,7 @@ function SetupGame(achievements, chosenScenarioIndex)
     local itemDeck = getObjectFromGUID(itemDeckGUID)
     local itemDeckAchiev = getObjectFromGUID(itemDeckAchievGUID)
     local personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
+
 
     UI.setAttribute("setupWindow", "active", false)
 
@@ -95,10 +97,7 @@ function SetupGame(achievements, chosenScenarioIndex)
         personalItemDeck.takeObject({
             position = personalItemPositions[i],
             rotation = {0.00, 0.00, 0.00},
-            flip = true,
-            callback_function = function (card)
-                card.addTag("Personal Item")
-            end
+            flip = true
         })
     end
 
@@ -153,6 +152,12 @@ function SetupVehiclesCoroutine()
     local vehicleDeck = getObjectFromGUID(vehicleDeckGUID)
     local vehicleGuid
 
+    local vehicleDeckPosition = {24.97, 2.58, -8.45}
+    local vehicleTakePosition = {24.97, 2.58, -5.45}
+    local blueTruckPosition = {28.41, 2.58, -8.45}
+
+    vehicleDeck.setPosition(vehicleDeckPosition)
+    vehicleDeck.setRotation({0.00, 0.00, 180})
     vehicleDeck.shuffle()
     for _ = 1, 60 do coroutine.yield(0) end
 
@@ -171,7 +176,7 @@ function SetupVehiclesCoroutine()
                 iterator = iterator + 1
 
                 vehicleDeck.takeObject({
-                    position = {37.39, 2.58, 12.88},
+                    position = vehicleTakePosition,
                     guid = vehicleGuid,
                     callback_function = function(card)
                         card.destruct()
@@ -195,7 +200,7 @@ function SetupVehiclesCoroutine()
             -- Seperate and move Blue Truck
             if vehicleCard.name == "Blue Truck" then
                 vehicleDeck.takeObject({
-                    position = {36.65, 2.58, -17.00},
+                    position = blueTruckPosition,
                     rotation = {0.00, 0.00, 0.00},
                     guid = vehicleGuid
                 })
@@ -215,7 +220,7 @@ function SetupVehiclesCoroutine()
                 iterator = iterator + 1
                 
                 vehicleDeck.takeObject({
-                    position = {37.39, 2.58, 12.88},
+                    position = vehicleTakePosition,
                     guid = vehicleGuid,
                     callback_function = function(card)
                         card.destruct()
@@ -246,7 +251,7 @@ function SetupVehiclesCoroutine()
                 iterator = iterator + 1
 
                 vehicleDeck.takeObject({
-                    position = {37.39, 2.58, 12.88},
+                    position = vehicleTakePosition,
                     guid = vehicleGuid,
                     callback_function = function(card)
                         card.destruct()
@@ -277,7 +282,7 @@ function SetupVehiclesCoroutine()
                 iterator = iterator + 1
 
                 vehicleDeck.takeObject({
-                    position = {37.39, 2.58, 12.88},
+                    position = vehicleTakePosition,
                     guid = vehicleGuid,
                     callback_function = function(card)
                         card.destruct()
@@ -313,6 +318,11 @@ function SetupScenarioItemsCoroutine()
     local lootTokensStackGUID = "ceac14"
     local lootTokensStack = getObjectFromGUID(lootTokensStackGUID)
 
+    local trespasserAidFrontGUID = "2ec962"
+    local trespasserAidBackGUID = "dc8b18"
+    local trespasserAidFront = getObjectFromGUID(trespasserAidFrontGUID)
+    local trespasserAidBack = getObjectFromGUID(trespasserAidBackGUID)
+
     -- Shuffle, Split, Deal itemdeck
     local function splitDealItems()
         for _ = 1, 100 do
@@ -340,6 +350,12 @@ function SetupScenarioItemsCoroutine()
 
         splitItemDecksTable[1].locked = true
         splitItemDecksTable[2].locked = true
+
+        -- #8 Set Trespasser Aids (Needed the item spots to be clear first before moving this)
+        trespasserAidFront.setPosition({42.30, 2.58, -21.12})
+        trespasserAidFront.setRotation({0, 0, 0})
+        trespasserAidBack.setPosition({37.28, 2.58, -21.12})
+        trespasserAidBack.setRotation({0, 0, 0})
     end
 
     -- activeItemDeck = global that holds itemDeck or itemDeckAchiev
@@ -470,7 +486,7 @@ function SetupScenarioItemsCoroutine()
         end
 
         -- Camera card
-        ScenarioDECard.setPosition({36.65, 2.58, -17.00})
+        ScenarioDECard.setPosition({36.65, 2.58, -14.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
         ScenarioDECard.addTag("Scenario Item")
 
@@ -523,7 +539,7 @@ function SetupScenarioItemsCoroutine()
         activeItemDeck.putObject(ScenariosEDeck)
 
         -- Camera card
-        ScenarioDECard.setPosition({36.65, 2.58, -17.00})
+        ScenarioDECard.setPosition({36.65, 2.58, -14.00})
         ScenarioDECard.setRotation({0.00, 0.00, 0.00})
         ScenarioDECard.addTag("Scenario Item")
 

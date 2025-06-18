@@ -1,0 +1,138 @@
+{
+  "GUID": "905583",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 8.423088,
+    "posY": 2.61601925,
+    "posZ": 15.4200974,
+    "rotX": 8.42371E-06,
+    "rotY": 0.00490814168,
+    "rotZ": -0.00016965768,
+    "scaleX": 2.33,
+    "scaleY": 1.0,
+    "scaleZ": 2.33
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/13916318838386557306/366140A4A8E76C91916ED1A9FE3280167EC8D12A/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.1315784,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 2.69862819,
+        "y": 0.0500005074,
+        "z": 0.0002150186
+      },
+      "Rotation": {
+        "x": -2.01624157E-08,
+        "y": 0.00110040256,
+        "z": 180.0
+      },
+      "Tags": [
+        "Item1 Card",
+        "Item2 Card",
+        "Personal Item"
+      ]
+    },
+    {
+      "Position": {
+        "x": 1.34849048,
+        "y": 0.0499981977,
+        "z": 0.000238417735
+      },
+      "Rotation": {
+        "x": -2.88495148E-08,
+        "y": 0.00102457218,
+        "z": 180.0
+      },
+      "Tags": [
+        "Item1 Card",
+        "Item2 Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.001150871,
+        "y": 0.0500018671,
+        "z": 0.000262873684
+      },
+      "Rotation": {
+        "x": 2.67945421E-09,
+        "y": 0.0009525834,
+        "z": 180.0
+      },
+      "Tags": [
+        "Item1 Card",
+        "Item2 Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": -1.3461982,
+        "y": 0.050000295,
+        "z": 0.000282417226
+      },
+      "Rotation": {
+        "x": 4.29817E-08,
+        "y": 0.0008971327,
+        "z": 180.0
+      },
+      "Tags": [
+        "Item1 Card",
+        "Item2 Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": -2.69636655,
+        "y": 0.05000013,
+        "z": 0.000303767243
+      },
+      "Rotation": {
+        "x": -4.8085905E-08,
+        "y": 0.00083542167,
+        "z": 180.0
+      },
+      "Tags": [
+        "Item1 Card",
+        "Item2 Card"
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ function DealVehicles()
     -- Move 5 vehicle cards to board. Error when deck is not 5 cards!
     if not (vehicleDeck.getQuantity() == 5) then
         broadcastToAll("ERROR: Vehicle deck size should be 5!", "Red")
-        Player[Turns.turn_color].pingTable({42.25, 2.63, 12.88})
+        Player[Turns.turn_color].pingTable(vehicleDeck.getPosition())
     else
         for i = 1, 5 do
             vehicleDeck.takeObject({
@@ -40,6 +40,8 @@ function DealVehiclesScenarioC()
     local vehicleScriptingZone3 = getObjectFromGUID(vehicleScriptingZone3GUID)
     local vehicleScriptingZone4 = getObjectFromGUID(vehicleScriptingZone4GUID)
     local vehicleScriptingZone5 = getObjectFromGUID(vehicleScriptingZone5GUID)
+
+    local blueTruckPosition = {28.41, 2.58, -8.45}
 
     -- Position/Rotation
     local freeVehicleLocations = {
@@ -80,10 +82,10 @@ function DealVehiclesScenarioC()
     -- Move remaining 4 vehicle cards to board. Error when deck is not 4 cards!
     if not (vehicleDeck.getQuantity() == 4) then
         broadcastToAll("ERROR: Vehicle deck size should be 4!", "Red")
-        Player[Turns.turn_color].pingTable({42.25, 2.63, 12.88})
+        Player[Turns.turn_color].pingTable(vehicleDeck.getPosition())
     elseif not (#freeVehicleLocations == 4) then
         broadcastToAll("Error: Place the Blue Truck first!", "Red")
-        Player[Turns.turn_color].pingTable({36.65, 2.58, -17.00})
+        Player[Turns.turn_color].pingTable(blueTruckPosition)
     else
         for i = 1, 4 do
             vehicleDeck.takeObject({

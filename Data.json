@@ -1,7 +1,7 @@
 {
-  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v7.1",
-  "EpochTime": 1750155432,
-  "Date": "6/17/2025 12:17:12 PM",
+  "SaveName": "Texas Chainsaw Massacre: Slaughterhouse v7.4",
+  "EpochTime": 1750272184,
+  "Date": "6/18/2025 8:43:04 PM",
   "VersionNumber": "v13.3",
   "GameMode": "Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -21,21 +21,22 @@
     "Miniature Games",
     "Strategy Games",
     "Thematic Games",
+    "Cooperative Games",
     "Cards",
     "Dice",
     "Figurines",
     "Scripting",
     "Scripting: Automated",
     "User Interfaces",
+    "Components",
     "Texas Chainsaw Massacre",
     "Horror",
     "Asymetrical",
     "One-versus-many",
     "Slaughterhouse",
     "Prospero Hall",
-    "Cooperative Games",
-    "Components",
-    "Survival"
+    "Survival",
+    "English"
   ],
   "Gravity": 0.5,
   "PlayArea": 0.5,
@@ -136,6 +137,30 @@
       {
         "displayed": "Photo",
         "normalized": "photo"
+      },
+      {
+        "displayed": "Injury Card",
+        "normalized": "injury_card"
+      },
+      {
+        "displayed": "Item1 Card",
+        "normalized": "item1_card"
+      },
+      {
+        "displayed": "Desperation Card",
+        "normalized": "desperation_card"
+      },
+      {
+        "displayed": "Item2 Card",
+        "normalized": "item2_card"
+      },
+      {
+        "displayed": "Sawyer Card",
+        "normalized": "sawyer_card"
+      },
+      {
+        "displayed": "Personal Item",
+        "normalized": "personal_item"
       }
     ]
   },
@@ -475,6 +500,21 @@
       },
       "Tags": [
         "Photo"
+      ]
+    },
+    {
+      "Position": {
+        "x": 58.3117828,
+        "y": 0.9611349,
+        "z": -15.1526814
+      },
+      "Rotation": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0
+      },
+      "Tags": [
+        "Item1 Card"
       ]
     }
   ]

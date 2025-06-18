@@ -4,12 +4,14 @@ local desperationDeckGUID
 local desperationDeckAchievGUID
 local injuryDeckGUID
 local injuryDeckAchievGUID
+local personalItemDeckGUID
 local sawyerDeck
 local sawyerDeckAchiev
 local desperationDeck
 local desperationDeckAchiev
 local injuryDeck
 local injuryDeckAchiev
+local personalItemDeck
 
 local activeSawyerDeck
 local activeDesperationDeck
@@ -23,12 +25,14 @@ function onObjectLeaveContainer(container, object)
     desperationDeckAchievGUID = "7ba0bc"
     injuryDeckGUID = "ab13cc"
     injuryDeckAchievGUID = "f1ac4c"
+    personalItemDeckGUID = "d89d3a"
     sawyerDeck = getObjectFromGUID(sawyerDeckGUID)
     sawyerDeckAchiev = getObjectFromGUID(sawyerDeckAchievGUID)
     desperationDeck = getObjectFromGUID(desperationDeckGUID)
     desperationDeckAchiev = getObjectFromGUID(desperationDeckAchievGUID)
     injuryDeck = getObjectFromGUID(injuryDeckGUID)
     injuryDeckAchiev = getObjectFromGUID(injuryDeckAchievGUID)
+    personalItemDeck = getObjectFromGUID(personalItemDeckGUID)
 
     -- Set active decks
     if AchievementsUsed then
@@ -51,5 +55,7 @@ function onObjectLeaveContainer(container, object)
         object.addTag("Item1 Card")
     elseif container == ItemDeck2 and object.type == "Card" then
         object.addTag("Item2 Card")
+    elseif container == personalItemDeck and object.type == "Card" then
+        object.addTag("Personal Item")
     end
 end

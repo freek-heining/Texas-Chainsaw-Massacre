@@ -1,0 +1,117 @@
+{
+  "GUID": "b2afd9",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 29.4147663,
+    "posY": 2.61595821,
+    "posZ": 21.099968,
+    "rotX": 1.60910859E-05,
+    "rotY": 359.988861,
+    "rotZ": -0.000175205962,
+    "scaleX": 2.084478,
+    "scaleY": 1.0,
+    "scaleZ": 2.084478
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/14266037840314510487/1A7CA4014C460CBF0E034882C0CFCD2746BFC8DD/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.0,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": -2.254897,
+        "y": 0.04999826,
+        "z": -0.0007818108
+      },
+      "Rotation": {
+        "x": 3.735092E-08,
+        "y": 359.992126,
+        "z": 180.0
+      },
+      "Tags": [
+        "Injury Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": -0.755135059,
+        "y": 0.0500027053,
+        "z": -0.0005757412
+      },
+      "Rotation": {
+        "x": 4.4810065E-08,
+        "y": 359.9921,
+        "z": 180.0
+      },
+      "Tags": [
+        "Injury Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": 0.747774661,
+        "y": 0.0499993,
+        "z": -0.0003666414
+      },
+      "Rotation": {
+        "x": -4.888048E-08,
+        "y": 359.992035,
+        "z": 180.0
+      },
+      "Tags": [
+        "Injury Card"
+      ]
+    },
+    {
+      "Position": {
+        "x": 2.25382662,
+        "y": 0.04999782,
+        "z": -0.0001595453
+      },
+      "Rotation": {
+        "x": -3.16261E-08,
+        "y": 359.992,
+        "z": 180.0
+      },
+      "Tags": [
+        "Injury Card"
+      ]
+    }
+  ]
+}
