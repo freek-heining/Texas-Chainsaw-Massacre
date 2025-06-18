@@ -5,15 +5,15 @@
     "posX": -9.0,
     "posY": 2.56607,
     "posZ": -19.0,
-    "rotX": -3.75539155E-09,
+    "rotX": -3.07206727E-09,
     "rotY": 179.999619,
-    "rotZ": 0.000167490187,
+    "rotZ": 0.000167479389,
     "scaleX": 5.12,
     "scaleY": 1.0,
     "scaleZ": 5.121482
   },
   "Nickname": "Hitchhiker Board",
-  "Description": "Flip for Normal / Brutal",
+  "Description": "Flip for Normal / Brutal. \n- 3 Trespassers = 1 Brutal.\n- 4 Trespassers = 2 Brutal.",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360780656,
-    "g": 0.360780656,
-    "b": 0.360780656
+    "r": 0.360780627,
+    "g": 0.360780627,
+    "b": 0.360780627
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

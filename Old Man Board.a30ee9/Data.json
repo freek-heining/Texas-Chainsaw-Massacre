@@ -3,17 +3,17 @@
   "Name": "Custom_Tile",
   "Transform": {
     "posX": -21.0000019,
-    "posY": 2.566104,
+    "posY": 2.56610513,
     "posZ": -18.9999981,
-    "rotX": 2.98097262E-07,
+    "rotX": 2.84999061E-07,
     "rotY": 180.016037,
-    "rotZ": 0.000168023718,
+    "rotZ": 0.000168023165,
     "scaleX": 5.12,
     "scaleY": 1.0,
     "scaleZ": 5.12
   },
   "Nickname": "Old Man Board",
-  "Description": "Flip for Normal / Brutal",
+  "Description": "Flip for Normal / Brutal. \n- 3 Trespassers = 1 Brutal.\n- 4 Trespassers = 2 Brutal.",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360780656,
-    "g": 0.360780656,
-    "b": 0.360780656
+    "r": 0.360780627,
+    "g": 0.360780627,
+    "b": 0.360780627
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

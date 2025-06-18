@@ -3,17 +3,17 @@
   "Name": "Custom_Tile",
   "Transform": {
     "posX": 3.05011821,
-    "posY": 2.5660336,
+    "posY": 2.56603479,
     "posZ": -19.0044823,
-    "rotX": -1.39276415E-06,
+    "rotX": -1.39104441E-06,
     "rotY": 180.47728,
-    "rotZ": 0.000167584367,
+    "rotZ": 0.000167551072,
     "scaleX": 5.12,
     "scaleY": 1.0,
     "scaleZ": 5.12
   },
   "Nickname": "Leatherface Board",
-  "Description": "Flip for Normal / Brutal",
+  "Description": "Flip for Normal / Brutal. \n- 3 Trespassers = 1 Brutal.\n- 4 Trespassers = 2 Brutal.",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360780656,
-    "g": 0.360780656,
-    "b": 0.360780656
+    "r": 0.360780627,
+    "g": 0.360780627,
+    "b": 0.360780627
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
