@@ -45,9 +45,6 @@
     "path": "./Scenario Card E- Things Happened Here.ec4505"
   },
   {
-    "path": "./Custom_Tile.15fcfb"
-  },
-  {
     "path": "./Sawyer Player Aid - Front.cca8f7"
   },
   {
@@ -175,9 +172,6 @@
   },
   {
     "path": "./Fire Token.24f6eb"
-  },
-  {
-    "path": "./Custom_Tile.3eca25"
   },
   {
     "path": "./Loot Token.ceac14"
@@ -319,5 +313,14 @@
   },
   {
     "path": "./Custom_Token.f2e995"
+  },
+  {
+    "path": "./Custom_Tile.83fc1c"
+  },
+  {
+    "path": "./Custom_Tile.3eca25"
+  },
+  {
+    "path": "./Custom_Tile.15fcfb"
   }
 ]

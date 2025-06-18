@@ -1,18 +1,18 @@
 {
-  "GUID": "22a0bc",
+  "GUID": "83fc1c",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 40.9998627,
-    "posY": 3.30844116,
-    "posZ": -5.627163,
-    "rotX": 359.98056,
-    "rotY": 270.0113,
-    "rotZ": 180.0036,
-    "scaleX": 3.3,
+    "posX": -48.3,
+    "posY": 8.0,
+    "posZ": -6.93359375,
+    "rotX": 67.0,
+    "rotY": 90.0,
+    "rotZ": 0.0,
+    "scaleX": 6.0,
     "scaleY": 1.0,
-    "scaleZ": 3.3
+    "scaleZ": 6.0
   },
-  "Nickname": "Scenario Card A: Who Will Survive?",
+  "Nickname": "",
   "Description": "",
   "GMNotes": "",
   "AltLookAngle": {
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360781163,
-    "g": 0.360781163,
-    "b": 0.360781163
+    "r": 0.360781133,
+    "g": 0.360781133,
+    "b": 0.360781133
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
@@ -40,13 +40,13 @@
   "HideWhenFaceDown": false,
   "Hands": false,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/10163957584723187957/739A100552ECC87C499C7CD9DF1C960ABDDBB7BE/",
-    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14743002389404535089/4891846BB00B058D57388B3083EB5B913800B6FF/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15792952328710631880/753390FB806BAC0BE223482FAF35AF1269C0FEB3/",
+    "ImageSecondaryURL": "",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {
-      "Type": 3,
-      "Thickness": 0.146043554,
+      "Type": 0,
+      "Thickness": 0.30346632,
       "Stackable": false,
       "Stretch": true
     }
