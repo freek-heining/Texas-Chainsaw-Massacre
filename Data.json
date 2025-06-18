@@ -1,7 +1,7 @@
 {
   "SaveName": "The Texas Chainsaw Massacre: Slaughterhouse v1.0",
-  "EpochTime": 1750275175,
-  "Date": "6/18/2025 9:32:55 PM",
+  "EpochTime": 1750277006,
+  "Date": "6/18/2025 10:03:26 PM",
   "VersionNumber": "v13.3",
   "GameMode": "The Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -143,16 +143,16 @@
         "normalized": "injury_card"
       },
       {
-        "displayed": "Item1 Card",
-        "normalized": "item1_card"
+        "displayed": "Item Card",
+        "normalized": "item_card"
       },
       {
         "displayed": "Desperation Card",
         "normalized": "desperation_card"
       },
       {
-        "displayed": "Item2 Card",
-        "normalized": "item2_card"
+        "displayed": "",
+        "normalized": ""
       },
       {
         "displayed": "Sawyer Card",
@@ -512,10 +512,7 @@
         "x": 0.0,
         "y": 180.0,
         "z": 0.0
-      },
-      "Tags": [
-        "Item1 Card"
-      ]
+      }
     }
   ]
 }

@@ -396,7 +396,7 @@ function SetupScenarioItemsCoroutine()
                 position = scenarioBCardPositions[i],
                 rotation = { 0, 0, 0 },
                 callback_function = function (card)
-                    card.addTag("Item1 Card")
+                    card.addTag("Item Card")
                 end
             })
         end

@@ -2,12 +2,12 @@
   "GUID": "12acdc",
   "Name": "DeckCustom",
   "Transform": {
-    "posX": -42.9844627,
-    "posY": 2.60160351,
-    "posZ": 0.0591262169,
-    "rotX": 0.004237322,
-    "rotY": 269.710876,
-    "rotZ": 0.00214383565,
+    "posX": -42.984478,
+    "posY": 2.601542,
+    "posZ": 0.059234418,
+    "rotX": -0.000166047379,
+    "rotY": 269.7134,
+    "rotZ": 1.6899985E-05,
     "scaleX": 1.35,
     "scaleY": 1.0,
     "scaleZ": 1.35
@@ -41,9 +41,9 @@
   "Hands": false,
   "SidewaysCard": false,
   "DeckIDs": [
-    5200,
     5201,
-    5202
+    5202,
+    5200
   ],
   "CustomDeck": {
     "52": {

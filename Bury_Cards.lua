@@ -139,7 +139,7 @@ function onObjectEnterZone(zone, object)
 
         buryCardOrDeck(object, activeInjuryDeck, 3)
     -- Item Ground Floor
-    elseif (zone == buryItem1ScriptingZone) and (object.type == "Card" or object.type == "Deck") and (object.hasTag("Item1 Card")) then
+    elseif (zone == buryItem1ScriptingZone) and (object.type == "Card" or object.type == "Deck") and (object.hasTag("Item Card")) then
         local position = {5.73, 2.8, -0.40}
         local rotation = {0.00, 0.00, 180.00}
 
@@ -149,7 +149,7 @@ function onObjectEnterZone(zone, object)
         
         buryCardOrDeck(object, itemDeck1, 4)
     -- Item 1st Floor
-    elseif (zone == buryItem2ScriptingZone) and (object.type == "Card" or object.type == "Deck") and (object.hasTag("Item2 Card")) then
+    elseif (zone == buryItem2ScriptingZone) and (object.type == "Card" or object.type == "Deck") and (object.hasTag("Item Card")) then
         local position = {24.70, 2.8, -0.40}
         local rotation = {0.00, 0.00, 180.00}
 

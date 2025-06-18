@@ -65,8 +65,7 @@
         "z": 180.0
       },
       "Tags": [
-        "Item1 Card",
-        "Item2 Card",
+        "Item Card",
         "Personal Item"
       ]
     },
@@ -82,8 +81,8 @@
         "z": 180.0
       },
       "Tags": [
-        "Item1 Card",
-        "Item2 Card"
+        "Item Card",
+        "Personal Item"
       ]
     },
     {
@@ -98,8 +97,8 @@
         "z": 180.0
       },
       "Tags": [
-        "Item1 Card",
-        "Item2 Card"
+        "Item Card",
+        "Personal Item"
       ]
     },
     {
@@ -114,8 +113,8 @@
         "z": 180.0
       },
       "Tags": [
-        "Item1 Card",
-        "Item2 Card"
+        "Item Card",
+        "Personal Item"
       ]
     },
     {
@@ -130,8 +129,8 @@
         "z": 180.0
       },
       "Tags": [
-        "Item1 Card",
-        "Item2 Card"
+        "Item Card",
+        "Personal Item"
       ]
     }
   ]
