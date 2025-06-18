@@ -1,19 +1,19 @@
 {
-  "GUID": "24f6eb",
+  "GUID": "33fd11",
   "Name": "Custom_Tile_Stack",
   "Transform": {
-    "posX": 6.471167,
-    "posY": 2.54149914,
-    "posZ": -7.892384,
-    "rotX": -0.000173803026,
-    "rotY": 270.0029,
-    "rotZ": 1.91669824E-06,
-    "scaleX": 0.83,
+    "posX": 7.336116,
+    "posY": 2.53904438,
+    "posZ": -16.4149914,
+    "rotX": -2.92062555E-06,
+    "rotY": 180.000015,
+    "rotZ": 0.000175566543,
+    "scaleX": 0.829399645,
     "scaleY": 1.0,
-    "scaleZ": 0.83
+    "scaleZ": 0.829399645
   },
-  "Nickname": "Fire Token",
-  "Description": "",
+  "Nickname": "Noise / Fear Token",
+  "Description": "Flip for other side",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360780448,
-    "g": 0.360780448,
-    "b": 0.360780448
+    "r": 0.360780478,
+    "g": 0.360780478,
+    "b": 0.360780478
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
@@ -41,15 +41,15 @@
   "Hands": false,
   "MaterialIndex": -1,
   "MeshIndex": -1,
-  "Number": 7,
+  "Number": 4,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/15095248640828528067/81F3459C368540F30B8D2CEE6E7272814624AEED/",
-    "ImageSecondaryURL": "",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/13592742556315665614/6C672CBDB0C035098FE625A449EACDA726D8F4FA/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18422100651613329308/C3B8B41EAA461006508F227AE05ED52E4672D32A/",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,
     "CustomTile": {
       "Type": 2,
-      "Thickness": 0.1509485,
+      "Thickness": 0.1460428,
       "Stackable": true,
       "Stretch": true
     }

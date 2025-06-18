@@ -37,18 +37,24 @@ function SetupGame(achievements, chosenScenarioIndex)
     -- #1: Deal Horror Tiles
     startLuaCoroutine(Global, "DealHorrorTilesCoroutine")
 
-    -- #2: Shuffle & Deal Sawyer Cards
+    -- #2: Shuffle & Deal Sawyer Cards + 4 to red player
     if achievements then
         sawyerDeckAchiev.shuffle()
         sawyerDeckAchiev.locked=false
         sawyerDeckAchiev.setPosition({12.16, 2.7, -21.00})
-        Wait.time(function() sawyerDeckAchiev.locked = true end, 1)
+        Wait.time(function()
+            sawyerDeckAchiev.locked = true
+            sawyerDeckAchiev.deal(4, "Red")
+            end, 1)
         sawyerDeck.destruct()
     else
         sawyerDeck.shuffle()
         sawyerDeck.locked=false
         sawyerDeck.setPosition({12.16, 2.7, -21.00})
-        Wait.time(function() sawyerDeck.locked = true end, 1)
+        Wait.time(function() 
+            sawyerDeck.locked = true
+            sawyerDeck.deal(4, "Red")
+            end, 1)
         sawyerDeckAchiev.destruct()
     end
 
