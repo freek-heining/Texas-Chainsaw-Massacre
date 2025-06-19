@@ -9,7 +9,8 @@
         "onObjectEnterZone",
         "onObjectLeaveZone",
         "onObjectSpawn",
-        "onObjectLeaveContainer"
+        "onObjectLeaveContainer",
+        "onSave"
     ],
     "Lua.diagnostics.disable": [
         "undefined-global"

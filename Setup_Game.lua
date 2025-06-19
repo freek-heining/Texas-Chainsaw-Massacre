@@ -151,6 +151,9 @@ function SetupGame(achievements, chosenScenarioIndex)
 
     -- #9: Set Vehicle Cards
     startLuaCoroutine(Global, "SetupVehiclesCoroutine")
+
+    -- # 10 Set Global SetupDone to true and save state
+    Wait.time(function() SetupDone = true end, 5)
 end
 
 function SetupVehiclesCoroutine()
