@@ -31,7 +31,7 @@ function SetupGame(achievements, chosenScenarioIndex)
     -- scenarioIndex holds active scenario
     scenarioIndex = chosenScenarioIndex
 
-    -- Global used in Bury_Cards
+    -- Global used in Bury_Cards & Tagging_Cards
     AchievementsUsed = achievements
 
     -- #1: Deal Horror Tiles
@@ -151,9 +151,6 @@ function SetupGame(achievements, chosenScenarioIndex)
 
     -- #9: Set Vehicle Cards
     startLuaCoroutine(Global, "SetupVehiclesCoroutine")
-
-    -- # 10 Set Global SetupDone to true and save state
-    Wait.time(function() SetupDone = true end, 5)
 end
 
 function SetupVehiclesCoroutine()
@@ -353,7 +350,7 @@ function SetupScenarioItemsCoroutine()
 
         for _ = 1, 30 do coroutine.yield(0) end
 
-        -- Globals used in Bury_Cards
+        -- Globals for Item Decks used in Bury_Cards and Tagging_Cards
         ItemDeck1 = splitItemDecksTable[1]
         ItemDeck2 = splitItemDecksTable[2]
 

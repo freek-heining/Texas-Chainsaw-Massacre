@@ -17,16 +17,22 @@ require("Bury_Cards")
 -- Tagging Cards
 require("Tagging_Cards")
 
--- Set to true after setup is done. 
+-- Set to true in Setup_Game (after setup is done) 
 SetupDone = false
 
 function onLoad(state)
     local decodedState = JSON.decode(state)
+
     if decodedState then
         SetupDone = decodedState.setupDone
     end
 
+    -- Removes menu, restores achievements and Item Decks 1 & 2 on (re)load
     if SetupDone then
+        ItemDeck1 = getObjectFromGUID(decodedState.guids.item1Deck)
+        ItemDeck2 = getObjectFromGUID(decodedState.guids.item2Deck)
+        
+        AchievementsUsed = decodedState.achievementsUsed
         UI.setAttribute("setupWindow", "active", false)
     end
 
@@ -39,10 +45,18 @@ function onLoad(state)
     Turns.enable = true
 end
 
--- Save SetupDone so menu screen doesnt show on reload
+-- Save SetupDone, achievements and Item Decks 1 & 2
 function onSave()
-    local state = {
-        setupDone = SetupDone
-    }
-    return JSON.encode(state)
+    if SetupDone then
+        local state = {
+            setupDone = SetupDone,
+            achievementsUsed = AchievementsUsed,
+            guids = {
+                item1Deck = ItemDeck1.guid,
+                item2Deck = ItemDeck2.guid
+            }
+        }
+
+        return JSON.encode(state)
+    end
 end

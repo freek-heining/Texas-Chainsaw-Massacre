@@ -52,6 +52,8 @@ function onObjectLeaveContainer(container, object)
     elseif container == activeInjuryDeck and object.type == "Card" then
         object.addTag("Injury Card")
     elseif container == ItemDeck1 and object.type == "Card" then
+        log(ItemDeck1)
+        log(AchievementsUsed)
         object.addTag("Item Card")
     elseif container == ItemDeck2 and object.type == "Card" then
         object.addTag("Item Card")

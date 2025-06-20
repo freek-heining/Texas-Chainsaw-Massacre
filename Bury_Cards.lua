@@ -25,8 +25,6 @@ local injuryDeckAchiev
 local activeSawyerDeck
 local activeDesperationDeck
 local activeInjuryDeck
-local itemDeck1
-local itemDeck2
 
 local waitBury = {
     waitBurySawyer = nil,
@@ -57,7 +55,6 @@ end
 
 -- Tidy up cards. Y needs to be around 2.8 or higher, else cards go to bottom!
 local function tidyUpCards(cardOrDeck, position, rotation)
-    log("tidy")
     cardOrDeck.setPositionSmooth(position, false, true)
     cardOrDeck.setRotationSmooth(rotation, false, true)
 end
@@ -99,10 +96,7 @@ function onObjectEnterZone(zone, object)
         activeInjuryDeck = injuryDeck
     end
 
-    -- Set 2 local item decks from 2 Globals in Setup_Game
-    itemDeck1 = ItemDeck1
-    itemDeck2 = ItemDeck2
---      
+    -- Used for determine height/dropped from hand
     local objectPosition = object.getPosition()
     local objectYPosition = tonumber(objectPosition.y)
     
@@ -147,7 +141,7 @@ function onObjectEnterZone(zone, object)
             tidyUpCards(object, position, rotation)
         end
         
-        buryCardOrDeck(object, itemDeck1, 4)
+        buryCardOrDeck(object, ItemDeck1, 4)
     -- Item 1st Floor
     elseif (zone == buryItem2ScriptingZone) and (object.type == "Card" or object.type == "Deck") and (object.hasTag("Item Card")) then
         local position = {24.70, 2.8, -0.40}
@@ -157,7 +151,7 @@ function onObjectEnterZone(zone, object)
             tidyUpCards(object, position, rotation)
         end
         
-        buryCardOrDeck(object, itemDeck2, 5)
+        buryCardOrDeck(object, ItemDeck2, 5)
     end
 end
 
@@ -168,7 +162,6 @@ function onObjectLeaveZone(zone, object)
     if (zone == burySawyerScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         -- Cancel wait if leaving
         if waitBury[1] then
-            log("leaving wait")
             Wait.stop(waitBury[1])
             waitBury[1] = nil
         end
@@ -182,7 +175,6 @@ function onObjectLeaveZone(zone, object)
     -- Desperation
     elseif (zone == buryDesperationScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         if waitBury[2] then
-            log("leaving wait")
             Wait.stop(waitBury[2])
             waitBury[2] = nil
         end
@@ -195,7 +187,6 @@ function onObjectLeaveZone(zone, object)
     -- Injury
     elseif (zone == buryInujryScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         if waitBury[3] then
-            log("leaving wait")
             Wait.stop(waitBury[3])
             waitBury[3] = nil
         end
@@ -208,7 +199,6 @@ function onObjectLeaveZone(zone, object)
     -- Item Ground Floor        
     elseif (zone == buryItem1ScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         if waitBury[4] then
-            log("leaving wait")
             Wait.stop(waitBury[4])
             waitBury[4] = nil
         end
@@ -221,7 +211,6 @@ function onObjectLeaveZone(zone, object)
     -- Item 1st Floor        
     elseif (zone == buryItem2ScriptingZone) and (object.type == "Card" or object.type == "Deck") then
         if waitBury[5] then
-            log("leaving wait")
             Wait.stop(waitBury[5])
             waitBury[5] = nil
         end

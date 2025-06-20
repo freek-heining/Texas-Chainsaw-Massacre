@@ -24,6 +24,9 @@ function DealVehicles()
             })
         end
     end
+
+    -- End of setup reached
+    SetupDone = true log("true")
 end
 
 function DealVehiclesScenarioC()
@@ -95,4 +98,7 @@ function DealVehiclesScenarioC()
             })
         end
     end
+
+    -- End of setup reached
+    SetupDone = true log("true")
 end
