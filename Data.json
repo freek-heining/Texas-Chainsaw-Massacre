@@ -1,7 +1,7 @@
 {
-  "SaveName": "The Texas Chainsaw Massacre: Slaughterhouse v1.2",
-  "EpochTime": 1750364184,
-  "Date": "6/19/2025 10:16:24 PM",
+  "SaveName": "The Texas Chainsaw Massacre: Slaughterhouse v1.8",
+  "EpochTime": 1750456957,
+  "Date": "6/21/2025 12:02:37 AM",
   "VersionNumber": "v13.3",
   "GameMode": "The Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -151,8 +151,8 @@
         "normalized": "desperation_card"
       },
       {
-        "displayed": "",
-        "normalized": ""
+        "displayed": "Noise",
+        "normalized": "noise"
       },
       {
         "displayed": "Sawyer Card",
@@ -172,7 +172,7 @@
     "SkipEmpty": false,
     "DisableInteractions": false,
     "PassTurns": true,
-    "TurnColor": "White"
+    "TurnColor": "Green"
   },
   "CameraStates": [
     null,

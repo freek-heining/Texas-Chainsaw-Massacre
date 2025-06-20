@@ -16,6 +16,12 @@ require("DealVehicles")
 require("Bury_Cards")
 -- Tagging Cards
 require("Tagging_Cards")
+-- Getting Noise
+require("Get_Noise")
+-- Removing Noise
+require("Remove_Noise")
+-- Give Fear
+require("Give_Fear")
 
 -- Set to true in Setup_Game (after setup is done) 
 SetupDone = false
@@ -37,6 +43,7 @@ function onLoad(state)
     end
 
     --UI.setAttribute("setupWindow", "active", false)
+    
     printToAll("- Welcome to The Texas Chainsaw Massacre: Slaughterhouse!", {240/255, 237/255, 220/255})
     printToAll("- Collectively determine the Sawyer / Red player before choosing it!", {240/255, 237/255, 220/255})
     printToAll("- Read the Notebook for some clarifactions and overlooked rules.", {240/255, 237/255, 220/255})

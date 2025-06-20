@@ -1,0 +1,30 @@
+<Defaults>
+    <TableLayout
+    cellBackgroundColor="clear" 
+    rowBackgroundColor="#942d28"
+    width="280"
+    height="140"
+    scale="2 2 2"
+    useGlobalCellPadding="true"
+    cellPadding="20 20 20 20"
+    raycastTarget="1"
+    />
+    <Cell
+    />
+    <Button 
+    ignoreLayout="false"
+    fontSize="52"
+    fontStyle="Bold"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
+    shadow="#00000099"
+    shadowDistance="3 -3"
+    padding="5 5 5 5"
+    />  
+</Defaults>
+
+<TableLayout id="fear" active="true" rotation="0 0 180" position="0 450 -1">
+    <Row>
+        <Cell><Button id="ButtonRemoveFear" onClick="Global/RemoveFear">-1 Fear</Button></Cell>
+    </Row>
+</TableLayout>

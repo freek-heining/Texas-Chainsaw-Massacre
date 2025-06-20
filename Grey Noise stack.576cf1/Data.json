@@ -1,0 +1,72 @@
+{
+  "GUID": "576cf1",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 19.14,
+    "posY": 2.63724566,
+    "posZ": 15.4,
+    "rotX": 0.0,
+    "rotY": 0.05201677,
+    "rotZ": -0.000179212511,
+    "scaleX": 0.45,
+    "scaleY": 1.0,
+    "scaleZ": 0.45
+  },
+  "Nickname": "Grey Noise stack",
+  "Description": "Roll for Noise at end of turn, give rest to Sawyer as Fear.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18422100651613329308/C3B8B41EAA461006508F227AE05ED52E4672D32A/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.1242685,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": -0.00469591469,
+        "y": 0.0500006638,
+        "z": 0.00919747353
+      },
+      "Rotation": {
+        "x": -1.1487452E-05,
+        "y": -0.00149365037,
+        "z": 180.0
+      },
+      "Tags": [
+        "Noise"
+      ]
+    }
+  ]
+}

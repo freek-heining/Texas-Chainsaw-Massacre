@@ -126,9 +126,6 @@
     "path": "./Bone Die.520c5e"
   },
   {
-    "path": "./Noise - Fear Token.e93b7a"
-  },
-  {
     "path": "./Bone Die.ac4393"
   },
   {
@@ -178,9 +175,6 @@
   },
   {
     "path": "./Dice Tray.985b0d"
-  },
-  {
-    "path": "./Noise - Fear Token.0d8170"
   },
   {
     "path": "./HandTrigger.41aabe"
@@ -324,6 +318,45 @@
     "path": "./Custom_Tile.15fcfb"
   },
   {
-    "path": "./Noise - Fear Token.33fd11"
+    "path": "./Noise stack.17fc64"
+  },
+  {
+    "path": "./Noise Scripting Zone.4cced7"
+  },
+  {
+    "path": "./Yellow Noise stack.ba6091"
+  },
+  {
+    "path": "./Green Noise stack.fc500f"
+  },
+  {
+    "path": "./Grey Noise stack.576cf1"
+  },
+  {
+    "path": "./Blue Noise stack.3a208f"
+  },
+  {
+    "path": "./Noise - Fear Token.45136e"
+  },
+  {
+    "path": "./Noise - Fear Token.d2ea10"
+  },
+  {
+    "path": "./Fear stack.1acb50"
+  },
+  {
+    "path": "./Fear Scripting Zone.857de3"
+  },
+  {
+    "path": "./Green Noise Scripting Zone.4c956c"
+  },
+  {
+    "path": "./Yellow Noise Scripting Zone.36c74a"
+  },
+  {
+    "path": "./Grey Noise Scripting Zone.7ecbd2"
+  },
+  {
+    "path": "./Blue Noise Scripting Zone.cd79c8"
   }
 ]

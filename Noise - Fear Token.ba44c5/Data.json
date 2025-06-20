@@ -1,0 +1,60 @@
+{
+  "GUID": "ba44c5",
+  "Name": "Custom_Tile_Stack",
+  "Transform": {
+    "posX": 6.468992,
+    "posY": 2.63904643,
+    "posZ": -11.000989,
+    "rotX": -2.52545738E-06,
+    "rotY": 179.997177,
+    "rotZ": 0.000153361689,
+    "scaleX": 0.829399645,
+    "scaleY": 1.0,
+    "scaleZ": 0.829399645
+  },
+  "Nickname": "Noise / Fear Token",
+  "Description": "Flip for other side",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.360779941,
+    "g": 0.360779941,
+    "b": 0.360779941
+  },
+  "Tags": [
+    "Noise"
+  ],
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "MaterialIndex": -1,
+  "MeshIndex": -1,
+  "Number": 6,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18422100651613329308/C3B8B41EAA461006508F227AE05ED52E4672D32A/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13592742556315665614/6C672CBDB0C035098FE625A449EACDA726D8F4FA/",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomTile": {
+      "Type": 2,
+      "Thickness": 0.1460428,
+      "Stackable": true,
+      "Stretch": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<Defaults>
+    <TableLayout
+    cellBackgroundColor="clear" 
+    rowBackgroundColor="#942d28"
+    width="550"
+    height="140"
+    scale="0.3 0.3 0.3"
+    useGlobalCellPadding="true"
+    cellPadding="20 20 20 20"
+    raycastTarget="1"
+    />
+    <Cell
+    />
+    <Button 
+    ignoreLayout="false"
+    fontSize="51"
+    fontStyle="Bold"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
+    shadow="#00000099"
+    shadowDistance="3 -3"
+    padding="5 5 5 5"
+    />  
+</Defaults>
+
+<TableLayout id="noiseBlue" active="true" rotation="0 0 180" position="50 -140 -1">
+    <Row>
+        <Cell><Button id="ButtonGetNoiseBlue" onClick="Global/GetNoise(Blue)">+1 Noise</Button></Cell>
+        <Cell><Button id="ButtonRemoveNoiseBlue" onClick="Global/RemoveNoise(Blue)">-1 Noise</Button></Cell>
+        <Cell><Button id="ButtonGiveFearBlue" onClick="Global/GiveFear(Blue)">Give Fear</Button></Cell>
+    </Row>
+</TableLayout>

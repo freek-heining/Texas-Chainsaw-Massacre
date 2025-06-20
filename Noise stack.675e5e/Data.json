@@ -1,0 +1,72 @@
+{
+  "GUID": "675e5e",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 6.47,
+    "posY": 2.61602473,
+    "posZ": -10.9964256,
+    "rotX": -6.548663E-06,
+    "rotY": 180.0,
+    "rotZ": 0.000163704142,
+    "scaleX": 0.45,
+    "scaleY": 1.0,
+    "scaleZ": 0.45
+  },
+  "Nickname": "Noise stack",
+  "Description": "Place Noise Tokens here",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 0.3137255
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/18422100651613329308/C3B8B41EAA461006508F227AE05ED52E4672D32A/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.1,
+      "MergeDistancePixels": 15.1242685,
+      "StandUp": false,
+      "Stackable": false
+    }
+  },
+  "AttachedSnapPoints": [
+    {
+      "Position": {
+        "x": 0.00219482766,
+        "y": 0.04999995,
+        "z": 0.0101428693
+      },
+      "Rotation": {
+        "x": -5.284288E-06,
+        "y": -3.92805268E-05,
+        "z": 180.0
+      },
+      "Tags": [
+        "Noise"
+      ]
+    }
+  ]
+}
