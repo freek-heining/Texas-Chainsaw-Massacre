@@ -1,4 +1,4 @@
--- Get all dice objects in tray
+-- Returns all dice objects in tray and sets semi-random positions
 local function getDiceFromZone()
     local DiceTrayZoneGuid = "89711c"
     local DiceTrayZoneObject = getObjectFromGUID(DiceTrayZoneGuid)
@@ -83,10 +83,34 @@ function RollDice(player, amount, id)
         5
     )
 
-    -- Change button color to pushing player's color
+    -- Reset text color to default
     boardObject.UI.setAttribute("TextSuccessesLeft", "color", "#f0eddc")
     boardObject.UI.setAttribute("TextSuccessesRight", "color", "#f0eddc")
 
+    -- Set color of pressed button. Amount is a string from parameter!
+    if tonumber(amount) == 1 then
+        boardObject.UI.setAttribute("ButtonRollOneRight", "color", "Red")
+        boardObject.UI.setAttribute("ButtonRollOneLeft", "color", player.color)
+    elseif tonumber(amount) == 2 then
+        boardObject.UI.setAttribute("ButtonRollTwoRight", "color", player.color)
+        boardObject.UI.setAttribute("ButtonRollTwoLeft", "color", player.color)
+    elseif tonumber(amount) == 3 then
+        boardObject.UI.setAttribute("ButtonRollThreeRight", "color", player.color)
+        boardObject.UI.setAttribute("ButtonRollthreeLeft", "color", player.color)
+    end
+
+    Wait.time(
+        function()
+            -- Reset color of buttons
+            boardObject.UI.setAttribute("ButtonRollOneRight", "color", "#f0eddc")
+            boardObject.UI.setAttribute("ButtonRollOneLeft", "color", "#f0eddc")
+            boardObject.UI.setAttribute("ButtonRollTwoRight", "color", "#f0eddc")
+            boardObject.UI.setAttribute("ButtonRollTwoLeft", "color", "#f0eddc")
+            boardObject.UI.setAttribute("ButtonRollThreeRight", "color", "#f0eddc")
+            boardObject.UI.setAttribute("ButtonRollthreeLeft", "color", "#f0eddc")
+        end,
+        5
+    )
 
     -- Create random unique numbers for rolling, equal amount to amount of button
     while tableSize < tonumber(amount) do
@@ -109,9 +133,10 @@ function RollDice(player, amount, id)
 
     local diceObjects = getDiceFromZone()
 
-    -- Only roll the randomly selected numbers dice
+    -- Only roll the randomly selected numbers/dice and highlight them for some time
     for _, number in pairs(randomUniqueNumbers) do
         diceObjects[number].roll()
+        diceObjects[number].highlightOn(player.color, 10)
     end
 
     -- get values of rolled dice after some time
@@ -132,8 +157,9 @@ function RollDice(player, amount, id)
             
             -- Change text color to pushing player's color
             boardObject.UI.setAttribute("TextSuccessesLeft", "color", player.color)
-            boardObject.UI.setAttribute("TextSuccessesRight", "color", player.color)   
+            boardObject.UI.setAttribute("TextSuccessesRight", "color", player.color)
 
+            -- Change number of successes text
             boardObject.UI.setAttribute("TextSuccessesLeft", "text", numberOfSuccesses)
             boardObject.UI.setAttribute("TextSuccessesRight", "text", numberOfSuccesses)
         end,
@@ -145,11 +171,12 @@ end
 local numberTriggered -- Prevents message spam
 function onObjectNumberTyped(object, player_color, number)
     if not numberTriggered and object.type == "Dice" then
-        broadcastToAll(player_color .. " typed '" .. number .. "' whilst hovering over a die. Please use the buttons only...", player_color)
+        broadcastToAll(player_color .. " typed '" .. number .. "' whilst hovering over a die. Please use the tray buttons only...", player_color)
         numberTriggered = true
         Wait.time(function() numberTriggered = false end, 2)
     end
 
+    -- Return true to block default behavior
     if object.type == "Dice" then
         return true
     end
