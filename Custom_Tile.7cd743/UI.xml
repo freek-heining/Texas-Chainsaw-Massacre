@@ -10,8 +10,6 @@
     columnWidths="150 183 183 183"
     raycastTarget="1"
     />
-    <Cell
-    />
     <Button 
     ignoreLayout="false"
     fontSize="40"
@@ -27,8 +25,30 @@
     color="#f0eddc"
     alignment="MiddleLeft"
     />  
+
+    <TableLayout 
+    class="boardLocks"
+    cellBackgroundColor="clear" 
+    rowBackgroundColor="#942d28"
+    width="120"
+    height="60"
+    scale="0.1 0.1 0.1"
+    useGlobalCellPadding="true"
+    cellPadding="10 10 10 10"
+    />    
+    <Button
+    class="boardLocks" 
+    ignoreLayout="false"
+    fontSize="25"
+    fontStyle="Bold"
+    textColor="#373737"
+    colors="#f0eddc|#fffceb|#dedbcb|#A3A19670"
+    shadow="#00000099"
+    shadowDistance="3 -3"
+    />  
 </Defaults>
 
+<!-- Dice Tray -->
 <TableLayout rotation="0 0 -90" position="-67 172 -1">
     <Row>
         <Cell><Text>Roll:</Text></Cell>
@@ -52,5 +72,24 @@
     <Row>
         <Cell columnSpan="2"><Text>Successes:</Text></Cell>
         <Cell columnSpan="2"><Text id="TextSuccessesLeft">0</Text></Cell>
+    </Row>
+</TableLayout>
+
+<!-- Board Locks -->
+<TableLayout class="boardLocks" active="true" rotation="0 0 -90" position="-176 -93 -1">
+    <Row>
+        <Cell><Button id="ButtonLockLeatherface" class="boardLocks" onClick="Global/ButtonLockLeatherface">Lock</Button></Cell>
+    </Row>
+</TableLayout>
+
+<TableLayout class="boardLocks" active="true" rotation="0 0 -90" position="-176 -7 -1">
+    <Row>
+        <Cell><Button id="ButtonLockHitchhiker" class="boardLocks" onClick="Global/ButtonLockHitchhiker">Lock</Button></Cell>
+    </Row>
+</TableLayout>
+
+<TableLayout class="boardLocks" active="true" rotation="0 0 -90" position="-176 78 -1">
+    <Row>
+        <Cell><Button id="ButtonLockOldMan" class="boardLocks" onClick="Global/ButtonLockOldMan">Lock</Button></Cell>
     </Row>
 </TableLayout>
