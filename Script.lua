@@ -48,7 +48,7 @@ function onLoad(state)
         UI.setAttribute("setupWindow", "active", false)
     end
 
-    UI.setAttribute("setupWindow", "active", false)
+    --UI.setAttribute("setupWindow", "active", false)
     
     printToAll("- Welcome to The Texas Chainsaw Massacre: Slaughterhouse!", {240/255, 237/255, 220/255})
     printToAll("- Collectively determine the Sawyer / Red player before choosing it!", {240/255, 237/255, 220/255})
