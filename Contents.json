@@ -120,9 +120,6 @@
     "path": "./HandTrigger.0b313e"
   },
   {
-    "path": "./Custom_Model.b1cd0c"
-  },
-  {
     "path": "./Bone Die.520c5e"
   },
   {
@@ -358,5 +355,8 @@
   },
   {
     "path": "./Blue Noise Scripting Zone.cd79c8"
+  },
+  {
+    "path": "./Custom_Model.b1cd0c"
   }
 ]

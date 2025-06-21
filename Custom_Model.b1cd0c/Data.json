@@ -41,8 +41,8 @@
   "Hands": false,
   "CustomMesh": {
     "MeshURL": "https://steamusercontent-a.akamaihd.net/ugc/16401498604963625169/BF2F3C3E77C92D362A1B478D36CB3C28F13C768B/",
-    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/17520016243170610283/5FEBD6227C40382A0033422D244EF05276BA9D1B/",
-    "NormalURL": "https://steamusercontent-a.akamaihd.net/ugc/13639882626864244231/D7A700A1E0D8354A7A092B01D19C7176FEDAAB98/",
+    "DiffuseURL": "https://steamusercontent-a.akamaihd.net/ugc/13653990314236520713/C17B13603742DED6CE71208651475A8E8C3E969B/",
+    "NormalURL": "https://steamusercontent-a.akamaihd.net/ugc/10622816223586892410/79CD8BB8C010667F1DB161B7A118FD8EE475A358/",
     "ColliderURL": "",
     "Convex": true,
     "MaterialIndex": 1,
@@ -192,8 +192,8 @@
         "z": 0.389618874
       },
       "Rotation": {
-        "x": -1.70669023E-06,
-        "y": 0.0284937788,
+        "x": -1.70669068E-06,
+        "y": 0.0284937918,
         "z": 3.95130428E-07
       },
       "Tags": [
