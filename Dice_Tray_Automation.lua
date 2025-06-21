@@ -1,3 +1,6 @@
+-- Stores wait id so we can stop it manually if we want
+local waitHighlight
+
 -- Returns all dice objects in tray and sets semi-random positions
 local function getDiceFromZone()
     local DiceTrayZoneGuid = "89711c"
@@ -18,7 +21,12 @@ local function getDiceFromZone()
     end
 
     -- Reset to random x dice positions to keep them from going over the edge
+    -- Reset highlighting
     for i, die in ipairs(diceObjects) do
+        if waitHighlight then
+            Wait.stop(waitHighlight)
+        end
+        die.highlightOff()
         local randomXFloat = math.random() + math.random(-3, 2)
         local vecRandom = Vector(randomXFloat, 0, 0)
         die.setPosition(diceStartPositions[i]:add(vecRandom))
@@ -133,11 +141,19 @@ function RollDice(player, amount, id)
 
     local diceObjects = getDiceFromZone()
 
-    -- Only roll the randomly selected numbers/dice and highlight them for some time
+    -- Only roll the randomly selected numbers/dice and highlight them (duration parameter is buggy so not used). 
     for _, number in pairs(randomUniqueNumbers) do
         diceObjects[number].roll()
-        diceObjects[number].highlightOn(player.color, 10)
+        diceObjects[number].highlightOn(player.color)
     end
+
+    -- Turn off highlighting after 10 seconds
+    waitHighlight = Wait.time(
+        function ()
+            for i, die in ipairs(diceObjects) do
+                die.highlightOff()
+            end
+        end, 10)
 
     -- get values of rolled dice after some time
     Wait.time(
