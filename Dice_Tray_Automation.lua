@@ -1,6 +1,9 @@
 -- Stores wait id so we can stop it manually if we want
 local waitHighlight
 
+-- Global used in Behavior_Restrictions
+DiceRolling = false
+
 -- Returns all dice objects in tray and sets semi-random positions
 local function getDiceFromZone()
     local DiceTrayZoneGuid = "89711c"
@@ -62,6 +65,12 @@ end
 function RollDice(player, amount, id)
     local randomUniqueNumbers = {}
     local tableSize = 0
+
+    -- Sets DiceRolling back to false in 4 seconds
+    DiceRolling = true
+    Wait.time(function ()
+        DiceRolling = false
+    end, 4)
 
     -- amount is value 1-3 from button
     if amount == 1 then
@@ -181,21 +190,4 @@ function RollDice(player, amount, id)
         end,
         3
     )
-end
-
--- Prevent dice change with num keys (cheating)
-local numberTriggered -- Prevents message spam
-function onObjectNumberTyped(object, player_color, number)
-    if not numberTriggered and object.type == "Dice" then
-        broadcastToAll(player_color .. " typed '" .. number .. "' whilst hovering over a die. Please use the tray buttons only...", player_color)
-        numberTriggered = true
-        Wait.time(function() numberTriggered = false end, 2)
-    end
-
-    -- Return true to block default behavior
-    if object.type == "Dice" then
-        return true
-    end
-
-    return false
 end
