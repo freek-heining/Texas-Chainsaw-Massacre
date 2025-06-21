@@ -3,7 +3,7 @@
     cellBackgroundColor="clear" 
     rowBackgroundColor="#942d28"
     width="280"
-    height="140"
+    height="280"
     scale="2 2 2"
     useGlobalCellPadding="true"
     cellPadding="20 20 20 20"
@@ -23,7 +23,10 @@
     />  
 </Defaults>
 
-<TableLayout id="fear" active="true" rotation="0 0 180" position="0 450 -1">
+<TableLayout id="fear" active="true" rotation="0 0 180" position="0 600 -1">
+    <Row>
+        <Cell><Button id="ButtonTakeFear" onClick="Global/TakeFear">+1 Fear</Button></Cell>
+    </Row>
     <Row>
         <Cell><Button id="ButtonRemoveFear" onClick="Global/RemoveFear">-1 Fear</Button></Cell>
     </Row>

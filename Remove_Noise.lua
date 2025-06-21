@@ -20,7 +20,7 @@ function RemoveNoise(Player, color)
     blueNoiseScriptingZone = getObjectFromGUID(blueNoiseScriptingZoneGUID)
 
     -- Noise Stack positions
-    local height = 1
+    local height = 0.2
     local noiseStackPos = noiseStack.getPosition()
     local noiseStackDiscardPos = {noiseStackPos.x, noiseStackPos.y + height, noiseStackPos.z}
 
@@ -32,26 +32,26 @@ function RemoveNoise(Player, color)
     }
 
     -- Check amount of tokens in Trespasser Noise zone
-    -- If Trespasser zone only has 1 object found, every Noise token is taken. The 1 object remaining is the Custom Token on table
+    -- If Trespasser zone only has 1 object found, all Noise is removed. The 1 object remaining is the Custom Token on table
     local counterNoise = 0
     for _, _ in ipairs(trespasserNoiseScriptingZones[color].getObjects()) do
         counterNoise = counterNoise + 1
     end
-    if counterNoise == 1 then
+    if counterNoise <= 1 then
         broadcastToAll("No Noise left!", color)
-    end
-
-    -- Otherwise we discard. Break is important for animation smooth, so it doesn't return multiple moving tokens
-    for _, object in ipairs(trespasserNoiseScriptingZones[color].getObjects()) do
-        if object.name == "Custom_Tile_Stack" then
-            object.takeObject({
-                position = noiseStackDiscardPos,
-                smooth = true
-            })
-            break
-        elseif object.name == "Custom_Tile" then
-            object.setPositionSmooth(noiseStackDiscardPos, false, false)
-            break
+    else
+        -- Otherwise we discard. Break is important for animation smooth, so it doesn't return multiple moving tokens
+        for _, object in ipairs(trespasserNoiseScriptingZones[color].getObjects()) do
+            if object.name == "Custom_Tile_Stack" then
+                object.takeObject({
+                    position = noiseStackDiscardPos,
+                    smooth = true
+                })
+                break
+            elseif object.name == "Custom_Tile" then
+                object.setPositionSmooth(noiseStackDiscardPos, false, false)
+                break
+            end
         end
     end
 end

@@ -2,8 +2,8 @@
     <TableLayout
     cellBackgroundColor="clear" 
     rowBackgroundColor="#942d28"
-    width="600"
-    height="140"
+    width="550"
+    height="145"
     scale="0.3 0.3 0.3"
     useGlobalCellPadding="true"
     cellPadding="20 20 20 20"

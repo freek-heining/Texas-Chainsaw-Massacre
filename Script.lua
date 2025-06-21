@@ -22,6 +22,10 @@ require("Get_Noise")
 require("Remove_Noise")
 -- Give Fear
 require("Give_Fear")
+-- Remove Fear
+require("Remove_Fear")
+-- Take Fear
+require("Take_Fear")
 
 -- Set to true in Setup_Game (after setup is done) 
 SetupDone = false

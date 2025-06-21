@@ -20,7 +20,7 @@ function GetNoise(Player, color)
     noiseScriptingZone = getObjectFromGUID(noiseScriptingZoneGUID)
 
     -- Trespasser Noise Stack positions
-    local height = 1
+    local height = 0.2
     local greenNoiseStackPos = greenNoiseStack.getPosition()
     local greenNoiseStackDealPos = {greenNoiseStackPos.x, greenNoiseStackPos.y + height, greenNoiseStackPos.z}
     local yellowNoiseStackPos = yellowNoiseStack.getPosition()
@@ -44,21 +44,21 @@ function GetNoise(Player, color)
     for _, _ in ipairs(noiseScriptingZone.getObjects()) do
         counterNoise = counterNoise + 1
     end
-    if counterNoise == 1 then
+    if counterNoise <= 1 then
         broadcastToAll("No Noise left!", "Red")
-    end
-
-    -- Otherwise we draw. Break is important for animation smooth, so it doesn't return multiple moving tokens
-    for _, object in ipairs(noiseScriptingZone.getObjects()) do
-        if object.name == "Custom_Tile_Stack" then
-            object.takeObject({
-                position = noiseStackDealPositions[color],
-                smooth = true
-            })
-            break
-        elseif object.name == "Custom_Tile" then
-            object.setPositionSmooth(noiseStackDealPositions[color], false, false)
-            break
+    else
+        -- Otherwise we draw. Break is important for animation smooth, so it doesn't return multiple moving tokens
+        for _, object in ipairs(noiseScriptingZone.getObjects()) do
+            if object.name == "Custom_Tile_Stack" then
+                object.takeObject({
+                    position = noiseStackDealPositions[color],
+                    smooth = true
+                })
+                break
+            elseif object.name == "Custom_Tile" then
+                object.setPositionSmooth(noiseStackDealPositions[color], false, false)
+                break
+            end
         end
     end
 end
