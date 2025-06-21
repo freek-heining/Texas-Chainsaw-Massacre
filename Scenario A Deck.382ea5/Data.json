@@ -41,16 +41,16 @@
   "Hands": false,
   "SidewaysCard": false,
   "DeckIDs": [
-    5100,
-    5101,
-    5102,
-    5103,
-    5104,
-    5105
+    6500,
+    6501,
+    6502,
+    6503,
+    6504,
+    6505
   ],
   "CustomDeck": {
-    "51": {
-      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15092710986018653023/0F9A390D2C4D923AC6123453B3111BA866D30167/",
+    "65": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15044485272784100685/FC209EC9050B41639951F9BCB85535C5B0B1D4F2/",
       "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
       "NumWidth": 4,
       "NumHeight": 2,
