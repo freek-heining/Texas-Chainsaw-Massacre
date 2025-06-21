@@ -2,12 +2,12 @@
   "GUID": "339a5f",
   "Name": "Custom_Tile",
   "Transform": {
-    "posX": 40.9998627,
-    "posY": 3.011448,
-    "posZ": -5.62450171,
-    "rotX": 359.98056,
-    "rotY": 269.998962,
-    "rotZ": 180.0036,
+    "posX": 40.99928,
+    "posY": 3.01386571,
+    "posZ": -5.623294,
+    "rotX": -0.000162382465,
+    "rotY": 269.982666,
+    "rotZ": 180.0,
     "scaleX": 3.3,
     "scaleY": 1.0,
     "scaleZ": 3.3
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.3607804,
-    "g": 0.3607804,
-    "b": 0.3607804
+    "r": 0.360780329,
+    "g": 0.360780329,
+    "b": 0.360780329
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,
@@ -40,7 +40,7 @@
   "HideWhenFaceDown": false,
   "Hands": false,
   "CustomImage": {
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16199794377338992966/2D7158A774B58EDFD3CCC0121996DE0AE7CF947D/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16027846308750517699/B6B17F1340B16CBC3DAA0475C3A320031E03C407/",
     "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16741735041944586096/292B61F9673FF535A70DD639B5F663056796D39A/",
     "ImageScalar": 1.0,
     "WidthScale": 0.0,

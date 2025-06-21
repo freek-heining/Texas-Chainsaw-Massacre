@@ -1,7 +1,7 @@
 {
-  "SaveName": "The Texas Chainsaw Massacre: Slaughterhouse v2.0",
-  "EpochTime": 1750523495,
-  "Date": "6/21/2025 6:31:35 PM",
+  "SaveName": "The Texas Chainsaw Massacre: Slaughterhouse v2.1",
+  "EpochTime": 1750532637,
+  "Date": "6/21/2025 9:03:57 PM",
   "VersionNumber": "v13.3",
   "GameMode": "The Texas Chainsaw Massacre: Slaughterhouse",
   "GameType": "Game",
@@ -172,7 +172,7 @@
     "SkipEmpty": false,
     "DisableInteractions": false,
     "PassTurns": true,
-    "TurnColor": "Red"
+    "TurnColor": "White"
   },
   "CameraStates": [
     null,
