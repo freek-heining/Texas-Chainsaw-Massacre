@@ -2,7 +2,7 @@
 
 <Defaults>
     <TableLayout 
-    cellBackgroundColor="clear" 
+    cellBackgroundColor="Clear" 
     rowBackgroundColor="#942d28"
     width="1000"
     height="850"
@@ -22,9 +22,10 @@
     />
     <Toggle 
     ignoreLayout="true"
-    fontStyle="Bold"
-    textColor="White" 
-    fontSize="18"
+    toggleWidth="25"
+    toggleHeight="25"
+    rectAlignment="MiddleRight"
+    offsetXY="-45 0"
     />
     <Tooltip
     tooltipTextColor="#bf161c"
@@ -34,9 +35,9 @@
     tooltipOffset="5"
     />
     <Image
+    class="carouselImage"
     shadow="#00000099"
     shadowDistance="3 -3"   
-    class="carouselImage"
     preserveAspect="true"  
     onClick="ScenarioClick" 
     tooltip="Selected scenario to play. Difficulty generally ranging from A for beginners to E for experts. (Click for backside)" 
@@ -47,6 +48,12 @@
     fontStyle="Italic"
     color="#f0eddc"
     alignment="MiddleLeft"
+    />      
+    <Text
+    class="checkbox"
+    fontSize="18"
+    fontStyle="Bold"
+    alignment="MiddleCenter"
     />      
 </Defaults>
 
@@ -65,8 +72,8 @@
     <Row preferredHeight="40">
         <Cell />
         <Cell>
-            <Toggle id="toggleAchievements" text="Use Achievement Cards" tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!" 
-                width="250" onValueChanged="ToggleAchievementsChanged"></Toggle>
+            <Toggle id="toggleAchievements" tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!" onValueChanged="ToggleAchievementsChanged"></Toggle>
+            <Text class="checkbox">Use Achievement Cards</Text>
         </Cell>
         <Cell />
     </Row>

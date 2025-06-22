@@ -32,9 +32,10 @@ local xmlTable = {
                 tag="Toggle",
                 attributes={
                     ignoreLayout="true",
-                    fontStyle="Bold",
-                    textColor="White",
-                    fontSize="18",
+                    toggleWidth="25",
+                    toggleHeight="25",
+                    rectAlignment="MiddleRight",
+                    offsetXY="-45 0",
                 },
             },
             {
@@ -50,9 +51,9 @@ local xmlTable = {
             {
                 tag="Image",
                 attributes={
+                    class="carouselImage",
                     shadow="#00000099",
                     shadowDistance="3 -3",
-                    class="carouselImage",
                     preserveAspect="true",
                     onClick="ScenarioClick",
                     tooltip="Selected scenario to play. Difficulty generally ranging from A for beginners to E for experts. (Click for backside)",
@@ -66,6 +67,15 @@ local xmlTable = {
                     fontStyle="Italic",
                     color="#f0eddc",
                     alignment="MiddleLeft",
+                },
+            },
+            {
+                tag="Text",
+                attributes={
+                    class="checkbox",
+                    fontSize="18",
+                    fontStyle="Bold",
+                    alignment="MiddleCenter",
                 },
             },
         },
@@ -134,11 +144,16 @@ local xmlTable = {
                                 tag="Toggle",
                                 attributes={
                                     id="toggleAchievements",
-                                    text="Use Achievement Cards",
                                     tooltip="Adds 4 Sawyer, 2 Desperation, 2 Injury and 2 item cards to the game. Only recommended for experienced players!",
-                                    width="250",
                                     onValueChanged="ToggleAchievementsChanged",
                                 },
+                            },
+                            {
+                                tag="Text",
+                                    attributes={
+                                        class="checkbox"
+                                    },
+                                    value="Use Achievement Cards"
                             },
                         },
                     },
