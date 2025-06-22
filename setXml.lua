@@ -39,7 +39,7 @@ local xmlTable = {
                 },
             },
             {
-                tag="tooltip",
+                tag="Tooltip",
                 attributes={
                     tooltipTextColor="#bf161c",
                     tooltipBorderColor="#942d28",
