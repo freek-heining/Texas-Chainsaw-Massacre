@@ -28,6 +28,8 @@ require("Remove_Fear")
 require("Take_Fear")
 -- Locking Boards
 require("Locking_Boards")
+-- XML Refreshing
+require("setXml")
 
 -- Set to true in Setup_Game (after setup is done) 
 SetupDone = false
@@ -48,8 +50,6 @@ function onLoad(state)
         UI.setAttribute("setupWindow", "active", false)
     end
 
-    --UI.setAttribute("setupWindow", "active", false)
-    
     printToAll("- Welcome to The Texas Chainsaw Massacre: Slaughterhouse!", {240/255, 237/255, 220/255})
     printToAll("- Collectively determine the Sawyer / Red player before choosing it!", {240/255, 237/255, 220/255})
     printToAll("- Read the Notebook for some clarifactions and overlooked rules.", {240/255, 237/255, 220/255})
@@ -58,6 +58,9 @@ function onLoad(state)
     SetInteractableFalse()
     
     Turns.enable = true
+
+    -- Load UI xml after slight delay. It was buggy otherwise. Hope this will fix it for all clients...
+    Wait.time(function() SetXmlTable() end, 1)
 end
 
 -- Save SetupDone, achievements and Item Decks 1 & 2
