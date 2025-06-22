@@ -31,23 +31,25 @@ require("Locking_Boards")
 -- XML Refreshing
 require("setXml")
 
--- Set to true in Setup_Game (after setup is done) 
+-- Set to true in DealVehicles.lua (after whole setup is done) 
 SetupDone = false
 
 function onLoad(state)
     local decodedState = JSON.decode(state)
 
+    -- Retrieve value from loading state
     if decodedState then
         SetupDone = decodedState.setupDone
     end
 
-    -- Removes menu, restores achievements and Item Decks 1 & 2 on (re)load
+    log("SetupDone = " .. tostring(SetupDone))
+    
+    -- Restores achievements and Item Decks 1 & 2 on (re)load
     if SetupDone then
         ItemDeck1 = getObjectFromGUID(decodedState.guids.item1Deck)
         ItemDeck2 = getObjectFromGUID(decodedState.guids.item2Deck)
         
         AchievementsUsed = decodedState.achievementsUsed
-        UI.setAttribute("setupWindow", "active", false)
     end
 
     printToAll("- Welcome to The Texas Chainsaw Massacre: Slaughterhouse!", {240/255, 237/255, 220/255})
@@ -59,11 +61,14 @@ function onLoad(state)
     
     Turns.enable = true
 
+    -- Only run when setup is not done
     -- Load UI xml after slight delay. It was buggy otherwise. Hope this will fix it for all clients...
-    Wait.time(function() SetXmlTable() end, 1)
+    if not SetupDone then
+        Wait.time(function() SetXmlTable() end, 1)
+    end
 end
 
--- Save SetupDone, achievements and Item Decks 1 & 2
+-- Save SetupDone, achievements and Item Decks 1 & 2, ONLY when setup is compeltely finished
 function onSave()
     if SetupDone then
         local state = {

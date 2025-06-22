@@ -256,5 +256,5 @@ local xmlTable = {
 
 function SetXmlTable()
     UI.setXmlTable(xmlTable)
-    log(xmlTable)
+    log("Set XML")
 end
