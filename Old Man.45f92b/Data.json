@@ -2,12 +2,12 @@
   "GUID": "45f92b",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": -24.999979,
+    "posX": -24.9999771,
     "posY": 2.56873226,
-    "posZ": -15.00001,
-    "rotX": -2.47594089E-05,
+    "posZ": -15.0000086,
+    "rotX": -8.110824E-06,
     "rotY": 179.999985,
-    "rotZ": 0.000175877343,
+    "rotZ": 0.000164911689,
     "scaleX": 0.78,
     "scaleY": 0.78,
     "scaleZ": 0.78
@@ -68,8 +68,8 @@
   },
   "Rigidbody": {
     "Mass": 1.0,
-    "Drag": 10.0,
-    "AngularDrag": 10.0,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
     "UseGravity": true
   }
 }

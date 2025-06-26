@@ -3,11 +3,11 @@
   "Name": "Custom_Token",
   "Transform": {
     "posX": 20.8110352,
-    "posY": 4.26765728,
+    "posY": 4.267658,
     "posZ": 13.6994905,
-    "rotX": -0.00226575229,
-    "rotY": -0.00480796862,
-    "rotZ": 0.01697093,
+    "rotX": -0.002268267,
+    "rotY": -0.004793255,
+    "rotZ": 0.0169450417,
     "scaleX": 0.5869074,
     "scaleY": 0.59,
     "scaleZ": 0.59
@@ -60,8 +60,8 @@
   },
   "Rigidbody": {
     "Mass": 0.9,
-    "Drag": 10.0,
-    "AngularDrag": 10.0,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
     "UseGravity": true
   }
 }

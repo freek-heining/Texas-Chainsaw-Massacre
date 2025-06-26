@@ -3,11 +3,11 @@
   "Name": "Custom_Model",
   "Transform": {
     "posX": -13.0000029,
-    "posY": 2.56603956,
+    "posY": 2.56604,
     "posZ": -14.9999866,
-    "rotX": -0.000172662621,
+    "rotX": -0.000176781643,
     "rotY": 300.000031,
-    "rotZ": -0.000102906,
+    "rotZ": -0.000100435427,
     "scaleX": 1.0,
     "scaleY": 1.0,
     "scaleZ": 1.0
@@ -68,8 +68,8 @@
   },
   "Rigidbody": {
     "Mass": 1.0,
-    "Drag": 10.0,
-    "AngularDrag": 10.0,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
     "UseGravity": true
   }
 }

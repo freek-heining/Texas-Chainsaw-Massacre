@@ -6,8 +6,8 @@
     "posY": 4.23118734,
     "posZ": 13.70004,
     "rotX": 359.931854,
-    "rotY": 0.001758647,
-    "rotZ": 0.0231416449,
+    "rotY": 0.00178161426,
+    "rotZ": 0.0231421627,
     "scaleX": 0.5500004,
     "scaleY": 0.5500004,
     "scaleZ": 0.5500004
@@ -60,8 +60,8 @@
   },
   "Rigidbody": {
     "Mass": 0.9,
-    "Drag": 10.0,
-    "AngularDrag": 10.0,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
     "UseGravity": true
   }
 }
