@@ -4,10 +4,10 @@
   "Transform": {
     "posX": 20.8110352,
     "posY": 4.267655,
-    "posZ": 13.6994886,
-    "rotX": -0.002297264,
-    "rotY": -0.004905442,
-    "rotZ": 0.01702029,
+    "posZ": 13.6994905,
+    "rotX": -0.00225411379,
+    "rotY": -0.004801374,
+    "rotZ": 0.0169925038,
     "scaleX": 0.5869074,
     "scaleY": 0.59,
     "scaleZ": 0.59
@@ -46,7 +46,7 @@
     "WidthScale": 0.0,
     "CustomToken": {
       "Thickness": 0.298974156,
-      "MergeDistancePixels": 15.0,
+      "MergeDistancePixels": 19.9342079,
       "StandUp": true,
       "Stackable": false
     }

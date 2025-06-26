@@ -1,0 +1,75 @@
+{
+  "GUID": "ba0836",
+  "Name": "DeckCustom",
+  "Transform": {
+    "posX": 5.73,
+    "posY": 2.63509774,
+    "posZ": 4.95,
+    "rotX": -7.254906E-06,
+    "rotY": 2.54513088E-06,
+    "rotZ": 179.999832,
+    "scaleX": 1.35,
+    "scaleY": 1.0,
+    "scaleZ": 1.35
+  },
+  "Nickname": "Item Deck",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": true,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": false,
+  "SidewaysCard": false,
+  "DeckIDs": [
+    5702,
+    5705,
+    5703,
+    5700,
+    5712,
+    5707,
+    6500,
+    5706,
+    6502,
+    5710
+  ],
+  "CustomDeck": {
+    "57": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16607684319277147401/F715CA48F91A06C1715E4CF69AA4D761AE9DC2EB/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 4,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    },
+    "65": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15044485272784100685/FC209EC9050B41639951F9BCB85535C5B0B1D4F2/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/9773340911111346143/351BCDE84F887392418320CE1566E4D42B549A4B/",
+      "NumWidth": 4,
+      "NumHeight": 2,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

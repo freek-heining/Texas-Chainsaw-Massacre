@@ -3,13 +3,13 @@
   "Name": "ScriptingTrigger",
   "Transform": {
     "posX": 17.72,
-    "posY": 2.4,
+    "posY": 2.7,
     "posZ": -21.0,
     "rotX": 0.0,
     "rotY": 180.000015,
     "rotZ": 0.0,
     "scaleX": 4.165639,
-    "scaleY": 1.5,
+    "scaleY": 0.5,
     "scaleZ": 5.76
   },
   "Nickname": "Bury_Sawyer_Scripting_Zone",

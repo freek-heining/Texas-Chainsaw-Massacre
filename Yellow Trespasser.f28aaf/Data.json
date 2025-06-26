@@ -2,12 +2,12 @@
   "GUID": "f28aaf",
   "Name": "Custom_Token",
   "Transform": {
-    "posX": -1.78247869,
+    "posX": -1.78247857,
     "posY": 4.231187,
     "posZ": 13.70004,
     "rotX": 359.931854,
-    "rotY": 0.00163921586,
-    "rotZ": 0.0231506154,
+    "rotY": 0.00172686542,
+    "rotZ": 0.0231408291,
     "scaleX": 0.5500004,
     "scaleY": 0.5500004,
     "scaleZ": 0.5500004
@@ -46,7 +46,7 @@
     "WidthScale": 0.0,
     "CustomToken": {
       "Thickness": 0.303937852,
-      "MergeDistancePixels": 14.9716482,
+      "MergeDistancePixels": 19.905859,
       "StandUp": true,
       "Stackable": false
     }

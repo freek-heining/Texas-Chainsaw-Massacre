@@ -3,17 +3,17 @@
   "Name": "Custom_Tile",
   "Transform": {
     "posX": -9.0,
-    "posY": 2.5660708,
+    "posY": 2.56607056,
     "posZ": -19.0,
-    "rotX": -5.92951572E-08,
+    "rotX": -8.420212E-08,
     "rotY": 179.999619,
-    "rotZ": 0.000167559643,
+    "rotZ": 0.000167567254,
     "scaleX": 5.12,
     "scaleY": 1.0,
     "scaleZ": 5.121482
   },
   "Nickname": "Hitchhiker Board",
-  "Description": "Flip for Normal / Brutal. \n- 3 Trespassers = 1 Brutal.\n- 4 Trespassers = 2 Brutal.",
+  "Description": "Flip for Normal / Brutal. \n- 3 Trespassers = 1 Brutal.\n- 4 Trespassers = 3 Brutal.",
   "GMNotes": "",
   "AltLookAngle": {
     "x": 0.0,
@@ -21,9 +21,9 @@
     "z": 0.0
   },
   "ColorDiffuse": {
-    "r": 0.360779673,
-    "g": 0.360779673,
-    "b": 0.360779673
+    "r": 0.360779554,
+    "g": 0.360779554,
+    "b": 0.360779554
   },
   "LayoutGroupSortIndex": 0,
   "Value": 0,

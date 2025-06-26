@@ -1,0 +1,58 @@
+{
+  "GUID": "6376b1",
+  "Name": "Card",
+  "Transform": {
+    "posX": 23.1320686,
+    "posY": 2.60460162,
+    "posZ": -19.6072063,
+    "rotX": 0.00503642764,
+    "rotY": 179.999466,
+    "rotZ": 179.301224,
+    "scaleX": 1.86,
+    "scaleY": 1.0,
+    "scaleZ": 1.86
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.713235259,
+    "g": 0.713235259,
+    "b": 0.713235259
+  },
+  "Tags": [
+    "Sawyer Card"
+  ],
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": true,
+  "Hands": true,
+  "CardID": 4109,
+  "SidewaysCard": false,
+  "CustomDeck": {
+    "41": {
+      "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13746759534843471655/C101470A6E0A53053D8DC27AEF015ACD9618047E/",
+      "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/17641837453150798682/F99AFCD02AB758F0606A82DD7FDBBE3A37B4AB5C/",
+      "NumWidth": 6,
+      "NumHeight": 4,
+      "BackIsHidden": true,
+      "UniqueBack": false,
+      "Type": 0
+    }
+  }
+}

@@ -3,13 +3,13 @@
   "Name": "ScriptingTrigger",
   "Transform": {
     "posX": 5.73031235,
-    "posY": 2.4,
-    "posZ": -0.4027124,
+    "posY": 2.7,
+    "posZ": -0.4,
     "rotX": 0.0,
     "rotY": 180.0,
     "rotZ": 0.0,
     "scaleX": 2.95,
-    "scaleY": 1.5,
+    "scaleY": 0.5,
     "scaleZ": 4.17
   },
   "Nickname": "Bury_Item1_Scripting_Zone",

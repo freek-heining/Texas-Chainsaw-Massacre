@@ -3,13 +3,13 @@
   "Name": "ScriptingTrigger",
   "Transform": {
     "posX": 32.8006973,
-    "posY": 2.4,
+    "posY": 2.7,
     "posZ": 2.7,
     "rotX": 0.0,
     "rotY": 90.0,
     "rotZ": 0.0,
     "scaleX": 4.2,
-    "scaleY": 1.5,
+    "scaleY": 0.5,
     "scaleZ": 5.72
   },
   "Nickname": "Bury_Desperation_Scripting_Zone",
