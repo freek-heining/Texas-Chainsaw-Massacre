@@ -1,0 +1,67 @@
+{
+  "GUID": "be2f12",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 20.8110371,
+    "posY": 4.267656,
+    "posZ": 13.6994915,
+    "rotX": -0.002289262,
+    "rotY": -0.004682734,
+    "rotZ": 0.0169642624,
+    "scaleX": 0.5869074,
+    "scaleY": 0.59,
+    "scaleZ": 0.59
+  },
+  "Nickname": "Dead Grey Trepasser",
+  "Description": "You died, but your items can still be swapped.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/12887510061168234649/69A26B1213848132A6810CAC8365303179E51155/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.298974156,
+      "MergeDistancePixels": 19.9342079,
+      "StandUp": true,
+      "Stackable": false
+    }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.9,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
+    "UseGravity": true
+  }
+}

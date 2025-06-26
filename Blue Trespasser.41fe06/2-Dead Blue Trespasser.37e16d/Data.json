@@ -1,0 +1,67 @@
+{
+  "GUID": "37e16d",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": 43.3508835,
+    "posY": 4.24187,
+    "posZ": 13.7025776,
+    "rotX": 0.0888910145,
+    "rotY": -0.004659323,
+    "rotZ": 0.0108700562,
+    "scaleX": 0.607489169,
+    "scaleY": 0.61,
+    "scaleZ": 0.61
+  },
+  "Nickname": "Dead Blue Trespasser",
+  "Description": "You died, but your items can still be swapped.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/10817529307437470183/1BCEF82EA90785325D6212A1C4A3D8703979E03D/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.2990039,
+      "MergeDistancePixels": 20.2625122,
+      "StandUp": true,
+      "Stackable": false
+    }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.9,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
+    "UseGravity": true
+  }
+}

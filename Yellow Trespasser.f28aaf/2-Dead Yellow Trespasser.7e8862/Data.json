@@ -1,0 +1,67 @@
+{
+  "GUID": "7e8862",
+  "Name": "Custom_Token",
+  "Transform": {
+    "posX": -1.78017938,
+    "posY": 2.88517356,
+    "posZ": 13.7050753,
+    "rotX": 80.835495,
+    "rotY": 359.863251,
+    "rotZ": 179.987488,
+    "scaleX": 0.5500004,
+    "scaleY": 0.5500004,
+    "scaleZ": 0.5500004
+  },
+  "Nickname": "Dead Yellow Trespasser",
+  "Description": "You died, but your items can still be swapped.",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "CustomImage": {
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/16844229479783756910/C5A01C1A038C1C94B197FF8E17594961FED7CEF3/",
+    "ImageSecondaryURL": "",
+    "ImageScalar": 1.0,
+    "WidthScale": 0.0,
+    "CustomToken": {
+      "Thickness": 0.303937852,
+      "MergeDistancePixels": 19.905859,
+      "StandUp": true,
+      "Stackable": false
+    }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.9,
+    "Drag": 5.0,
+    "AngularDrag": 5.0,
+    "UseGravity": true
+  }
+}

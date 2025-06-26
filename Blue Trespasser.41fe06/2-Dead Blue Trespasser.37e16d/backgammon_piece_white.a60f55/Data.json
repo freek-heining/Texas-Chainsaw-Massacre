@@ -1,0 +1,43 @@
+{
+  "GUID": "a60f55",
+  "Name": "backgammon_piece_white",
+  "Transform": {
+    "posX": 0.186113909,
+    "posY": -2.646598,
+    "posZ": -0.0110599836,
+    "rotX": 359.988953,
+    "rotY": 270.0022,
+    "rotZ": 0.0888961554,
+    "scaleX": 2.027497,
+    "scaleY": 0.8756571,
+    "scaleZ": 2.03587723
+  },
+  "Nickname": "",
+  "Description": "",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 0.7333333,
+    "g": 0.7333333,
+    "b": 0.7333333,
+    "a": 0.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false
+}
