@@ -3,11 +3,11 @@
   "Name": "Custom_Token",
   "Transform": {
     "posX": 20.8110352,
-    "posY": 4.267657,
+    "posY": 4.26765728,
     "posZ": 13.6994905,
-    "rotX": -0.00225919136,
-    "rotY": -0.004795018,
-    "rotZ": 0.0169791859,
+    "rotX": -0.00226575229,
+    "rotY": -0.00480796862,
+    "rotZ": 0.01697093,
     "scaleX": 0.5869074,
     "scaleY": 0.59,
     "scaleZ": 0.59
@@ -50,5 +50,18 @@
       "StandUp": true,
       "Stackable": false
     }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.9,
+    "Drag": 10.0,
+    "AngularDrag": 10.0,
+    "UseGravity": true
   }
 }

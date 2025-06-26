@@ -2,12 +2,12 @@
   "GUID": "f28aaf",
   "Name": "Custom_Token",
   "Transform": {
-    "posX": -1.78247869,
+    "posX": -1.78247893,
     "posY": 4.23118734,
     "posZ": 13.70004,
     "rotX": 359.931854,
-    "rotY": 0.00174099451,
-    "rotZ": 0.0231394265,
+    "rotY": 0.001758647,
+    "rotZ": 0.0231416449,
     "scaleX": 0.5500004,
     "scaleY": 0.5500004,
     "scaleZ": 0.5500004
@@ -50,5 +50,18 @@
       "StandUp": true,
       "Stackable": false
     }
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 0.9,
+    "Drag": 10.0,
+    "AngularDrag": 10.0,
+    "UseGravity": true
   }
 }

@@ -2,12 +2,12 @@
   "GUID": "b0b279",
   "Name": "Custom_Model",
   "Transform": {
-    "posX": -13.0000038,
-    "posY": 2.566039,
+    "posX": -13.0000029,
+    "posY": 2.56603956,
     "posZ": -14.9999866,
-    "rotX": -0.000145469181,
+    "rotX": -0.000172662621,
     "rotY": 300.000031,
-    "rotZ": -8.120535E-05,
+    "rotZ": -0.000102906,
     "scaleX": 1.0,
     "scaleY": 1.0,
     "scaleZ": 1.0
@@ -58,5 +58,18 @@
       "FresnelStrength": 0.0
     },
     "CastShadows": true
+  },
+  "PhysicsMaterial": {
+    "StaticFriction": 1.0,
+    "DynamicFriction": 0.7,
+    "Bounciness": 0.0,
+    "FrictionCombine": 0,
+    "BounceCombine": 0
+  },
+  "Rigidbody": {
+    "Mass": 1.0,
+    "Drag": 10.0,
+    "AngularDrag": 10.0,
+    "UseGravity": true
   }
 }
